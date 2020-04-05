@@ -1,0 +1,1073 @@
+
+body {
+  background-image: url("images/table.jpg");
+}
+
+table {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, hr {
+  margin: 2px;
+}
+
+.game-start {
+  background-color: #CAE8E0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 35rem;
+  height: 35rem;
+  /* TEST: TURN TO "none" FOR PRESET BOARD AND PLAYERS; "block" FOR NORMAL PLAY */
+  display: none;
+}
+
+.names-tokens {
+  display: none;
+}
+
+.selector {
+  height: 1.25rem;
+}
+
+.name-token-select {
+  float: left;
+  width: 21rem;
+}
+
+.token-selected {
+  height: 15rem;
+}
+
+.name-token-list {
+  float: left;
+}
+
+.token-small {
+  height: 2.5rem;
+}
+
+.player-list {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  clear: left;
+}
+
+.next-names-tokens {
+  display: none;
+}
+
+.turn-order {
+  display: none;
+}
+
+.dice-roll {
+  display: none;
+  /* width: 15rem; */
+}
+
+.to-roll-dice {
+  float: left;
+}
+
+.rolling-div {
+  width: 16rem;
+  float: left;
+}
+
+.dice1-turn-order {
+  width: 5rem;
+}
+
+.dice2-turn-order {
+  width: 5rem;
+}
+
+.results-div {
+  float: left;
+}
+
+.player-list-dice-results {
+  font-size: 1.5rem;
+}
+
+.dice-small {
+  height: 2.5rem;
+}
+
+.auto-random {
+  display: none;
+}
+
+.player-decide {
+  display: none;
+}
+
+.players-to-choose {
+  width: 17.375rem;
+  height: 24rem;
+  border-right: 0.25rem solid;
+  float: left;
+}
+
+.chosen-order {
+  float: left;
+}
+
+.next-turn-order {
+  display: none;
+}
+
+.finalize {
+  display: none;
+}
+
+.finalize-player-list {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+/* .column {
+  float: left;
+  display: none;
+} */
+
+/* TEST: TURN BELOW STYLE ON AND ABOVE OFF FOR PRESET BOARD AND PLAYERS */
+
+.column {
+  float: left;
+}
+
+.one {
+  background-image: url("images/board.png");
+  background-size: cover;
+  width: 35rem;
+  height: 35rem;
+  border: 0.3rem solid blue;
+  position: relative;
+  text-align: center;
+}
+
+.token {
+  width: 1.25rem;
+  position: absolute;
+}
+
+.token-player-column {
+  width: 2.5rem;
+}
+
+.corner-space {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-space {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 75%;
+}
+
+.left-space {
+  position: absolute;
+  right: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.top-space {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  height: 75%;
+}
+
+.right-space {
+  position: absolute;
+  left: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.go {
+  position: absolute;
+  top: 30.38rem;
+  left: 30.32rem;
+  height: 4.64rem;
+  /* 132px */
+  width: 4.67rem;
+  /* 133px */
+}
+
+.mediterranean-ave {
+  position: absolute;
+  top: 30.38rem;
+  left: 27.47rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.community-chest1 {
+  position: absolute;
+  top: 30.38rem;
+  left: 24.64rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.baltic-ave {
+  position: absolute;
+  top: 30.38rem;
+  left: 21.77rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.income-tax {
+  position: absolute;
+  top: 30.38rem;
+  left: 18.92rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.reading-railroad {
+  position: absolute;
+  top: 30.38rem;
+  left: 16.07rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.oriental-ave {
+  position: absolute;
+  top: 30.38rem;
+  left: 13.22rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.chance1 {
+  position: absolute;
+  top: 30.38rem;
+  left: 10.37rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.vermont-ave {
+  position: absolute;
+  top: 30.38rem;
+  left: 7.52rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.connecticut-ave {
+  position: absolute;
+  top: 30.38rem;
+  left: 4.67rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.jail {
+  position: absolute;
+  top: 30.38rem;
+  left: 0;
+  height: 4.64rem;
+  /* 132px */
+  width: 4.67rem;
+  /* 133px */
+}
+
+.st-charles-place {
+  position: absolute;
+  top: 27.52rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.electric-company {
+  position: absolute;
+  top: 24.66rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.states-ave {
+  position: absolute;
+  top: 21.80rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.virginia-ave {
+  position: absolute;
+  top: 18.94rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.pennsylvania-railroad {
+  position: absolute;
+  top: 16.08rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.st-james-place {
+  position: absolute;
+  top: 13.22rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.community-chest2 {
+  position: absolute;
+  top: 10.36rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.tennessee-ave {
+  position: absolute;
+  top: 7.50rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.new-york-ave {
+  position: absolute;
+  top: 4.64rem;
+  left: 0;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.free-parking {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.64rem;
+  /* 132px */
+  width: 4.67rem;
+  /* 133px */
+}
+
+.kentucky-ave {
+  position: absolute;
+  top: 0;
+  left: 4.67rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.chance2 {
+  position: absolute;
+  top: 0;
+  left: 7.52rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.indiana-ave {
+  position: absolute;
+  top: 0;
+  left: 10.37rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.illinois-ave {
+  position: absolute;
+  top: 0;
+  left: 13.22rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.bo-railroad {
+  position: absolute;
+  top: 0;
+  left: 16.07rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.atlantic-ave {
+  position: absolute;
+  top: 0;
+  left: 18.92rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.ventnor-ave {
+  position: absolute;
+  top: 0;
+  left: 21.77rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.water-works {
+  position: absolute;
+  top: 0;
+  left: 24.62rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.marvin-gardens {
+  position: absolute;
+  top: 0;
+  left: 27.47rem;
+  height: 4.64rem;
+  width: 2.85rem;
+}
+
+.go-to-jail {
+  position: absolute;
+  top: 0;
+  left: 30.32rem;
+  height: 4.64rem;
+  /* 132px */
+  width: 4.67rem;
+  /* 133px */
+}
+
+.pacific-ave {
+  position: absolute;
+  top: 4.64rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.north-carolina-ave {
+  position: absolute;
+  top: 7.50rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.community-chest3 {
+  position: absolute;
+  top: 10.36rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.pennsylvania-ave {
+  position: absolute;
+  top: 13.22rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.short-line {
+  position: absolute;
+  top: 16.08rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.chance3 {
+  position: absolute;
+  top: 18.94rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.park-place {
+  position: absolute;
+  top: 21.80rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.luxury-tax {
+  position: absolute;
+  top: 24.66rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.boardwalk {
+  position: absolute;
+  top: 27.52rem;
+  left: 30.32rem;
+  height: 2.86rem;
+  width: 4.67rem;
+}
+
+.board-button-blocker {
+  position: absolute;
+  top: 0;
+  color: transparent;
+  width: 35rem;
+  height: 35rem;
+  display: none;
+}
+
+.board-details {
+  background-color: pink;
+  background-size: cover;
+  border: solid;
+  margin: auto;
+  position: absolute;
+  top: 6rem;
+  left: 6.8125rem;
+  width: 21rem;
+  height: 22.25rem;
+  /* display: none; */
+}
+
+.dice1 {
+  margin-top: 22rem;
+  width: 5rem;
+}
+
+.dice2 {
+  margin-top: 22rem;
+  width: 5rem;
+}
+
+.roll {
+  display: inline;
+}
+
+.roll-riot {
+  display: none;
+}
+
+.roll-for-utility-card {
+  display: none;
+}
+
+.bribe {
+  display: none;
+}
+
+.end-turn {
+  display: none;
+}
+
+.btn-buy {
+  display: none;
+}
+
+.btn-rent {
+  display: none;
+}
+
+.btn-auction {
+  display: none;
+}
+
+.closer {
+  display: none;
+  text-align: center;
+}
+
+.chance-land {
+  background-color: #cae8e0;
+  text-align: center;
+}
+
+.chance-land-img {
+  height: 80%;
+  margin: auto;
+}
+
+.cc-land {
+  background-color: #cae8e0;
+  text-align: center;
+}
+
+.cc-land-img {
+  height: 80%;
+  margin: auto;
+}
+
+.income-tax-board {
+  background-color: #cae8e0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.income-tax-img {
+  height: 72%;
+}
+
+.luxury-tax-board {
+  background-color: #cae8e0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.luxury-tax-img {
+  height: 80%;
+}
+
+.go-board {
+  background-color: #cae8e0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.go-img {
+  height: 75%;
+}
+
+.jail-board {
+  background-image: url("images/jail.png");
+  background-color: #cae8e0;
+  background-size: cover;
+  font-size: 1rem;
+}
+
+.back-away {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.free-parking-board {
+  background-color: #cae8e0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.free-parking-img {
+  height: 55%;
+}
+
+.integral {
+  height: 25%;
+}
+
+.go-to-jail-board {
+  background-color: green;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.go-to-jail-doubles {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  height: 11rem;
+}
+
+.go-to-jail-img {
+  height: 70%;
+}
+
+.two {
+  background-color: #cae8e0;
+  width: 16rem;
+  height: 35rem;
+  border: 0.3rem solid;
+  position: relative;
+}
+
+.auction {
+  background-image: radial-gradient(white, green);
+  background-color: green;
+  text-align: center;
+  width: 46rem;
+  height: 35rem;
+  border: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.righto {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+.auction-player-1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.auction-player-2 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.auction-player-3 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.auction-player-4 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.auction-player-5 {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.auction-player-6 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.auction-player-7 {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+}
+
+.auction-player-8 {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+}
+
+.auction-property {
+  background-color: pink;
+  background-size: cover;
+  border: solid;
+  position: absolute;
+  top: 6rem;
+  left: 12.5rem;
+  width: 21rem;
+  height: 22rem;
+}
+
+.player-summary {
+  background-color: transparent;
+  width: 100%;
+  height: 9.375%;
+  border-bottom: solid;
+  /* position: relative; */
+}
+
+.player-name-cash {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.375rem;
+  display: inline-block;
+}
+
+.vertical-middle {
+  vertical-align: -0.625rem;
+  margin-top: 0.5rem;
+}
+
+.first {
+  display: none;
+}
+
+.second {
+  display: none;
+}
+
+.third {
+  display: none;
+}
+
+.fourth {
+  display: none;
+}
+
+.fifth {
+  display: none;
+}
+
+.sixth {
+  display: none;
+}
+
+.seventh {
+  display: none;
+}
+
+.eighth {
+  display: none;
+}
+
+.event-box {
+  background-color: #cae8e0;
+}
+
+.three {
+  background-color: #cae8e0;
+  width: 30rem;
+  height: 35rem;
+  border: 0.3rem solid;
+  position: relative;
+}
+
+.player-heading {
+  padding: 0.75rem 0.75rem;
+}
+
+.player-details {
+  background-color: pink;
+  background-size: cover;
+  border: solid;
+  position: absolute;
+  /* margin: auto; */
+  text-align: center;
+  top: 6rem;
+  left: 4.5rem;
+  width: 21rem;
+  height: 22rem;
+}
+
+.player-size {
+  width: 3rem;
+}
+
+.player-name {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cash-label {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.player-cash {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.properties {
+  margin: 0.25rem 0.125rem;
+  font-weight: bold;
+  display: inline-block;
+  border: solid 0.125rem;
+  border-radius: 0.5rem;
+}
+
+/* .background-purple {
+  background-color: #A349A4;
+}
+
+.background-light-blue {
+  background-color: #99D9EA;
+}
+
+.background-magenta {
+  background-color: #FF00FF;
+}
+
+.background-orange {
+  background-color: #FF8127;
+}
+
+.background-red {
+  background-color: #ED1C24;
+}
+
+.background-yellow {
+  background-color: #FFF200;
+}
+
+.background-green {
+  background-color: #00FF00;
+}
+
+.background-blue {
+  background-color: #00A2E8;
+} */
+
+.c3-hr {
+  margin: auto;
+  border-style: none;
+  border-top: 0.3rem dotted black;
+  width: 70%;
+}
+
+.properties-label {
+  margin: 1.1rem;
+}
+
+.titledeed-small {
+  width: 3rem;
+  border: solid 0.0625rem;
+}
+
+.chance-cc-small {
+  width: 3rem;
+}
+
+.titledeed {
+  background-size: cover;
+  text-align: center;
+}
+
+.purple {
+  background-image: url("images/titledeed-purple.png");
+  background-size: cover;
+}
+
+.light-blue {
+  background-image: url("images/titledeed-light-blue.png");
+  background-size: cover;
+}
+
+.magenta {
+  background-image: url("images/titledeed-magenta.png");
+  background-size: cover;
+}
+
+.orange {
+  background-image: url("images/titledeed-orange.png");
+  background-size: cover;
+}
+
+.red {
+  background-image: url("images/titledeed-red.png");
+  background-size: cover;
+}
+
+.yellow {
+  background-image: url("images/titledeed-yellow.png");
+  background-size: cover;
+}
+
+.green {
+  background-image: url("images/titledeed-green.png");
+  background-size: cover;
+}
+
+.blue {
+  background-image: url("images/titledeed-blue.png");
+
+}
+
+.railroad {
+  background-image: url("images/titledeed-railroad.png");
+  background-size: cover;
+}
+
+.property-heading {
+  margin-top: 0;
+}
+
+.property-name {
+  margin: 0;
+}
+
+.prop-details {
+  font-size: 0.85rem;
+}
+
+.prop-footer {
+  font-size: 0.65rem;
+  color: #4d4646;
+}
+
+.electric {
+  background-image: url("images/titledeed-electric.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.water {
+  background-image: url("images/titledeed-water.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.utility-rent {
+  text-align: left;
+  text-indent: 7%;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  line-height: 175%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.wide {
+  width: 80%;
+}
+
+.mortgage {
+  background-color: white;
+  text-align: center;
+}
+
+.chance {
+  background-color: orange;
+  height: 14rem;
+  font-size: 1.25rem;
+}
+
+.community-chest {
+  background-color: yellow;
+  height: 14rem;
+  font-size: 1.25rem;
+}
+
+.shown {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.reference {
+  display: none;
+  clear: left;
+}
+
+.empty {
+  clear: left;
+}
+
+.test {
+  display: block;
+  margin: 0;
+  top: auto;
+  position: static;
+}
