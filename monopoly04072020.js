@@ -12,9 +12,9 @@ let mediterraneanAvenue = {
   priceHouse: 50,
   mortgage: 30,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
+  inMonopoly: false,
   playerLanded: null,
   rent: [2, 10, 30, 90, 160, 250, 4],
   result: function() {
@@ -44,9 +44,9 @@ let balticAvenue = {
   priceHouse: 50,
   mortgage: 30,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
+  inMonopoly: false,
   playerLanded: null,
   rent: [4, 20, 60, 180, 320, 450, 8],
   result: function() {
@@ -75,7 +75,6 @@ let orientalAvenue = {
   priceHouse: 50,
   mortgage: 50,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -106,7 +105,6 @@ let vermontAvenue = {
   priceHouse: 50,
   mortgage: 50,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -137,7 +135,6 @@ let connecticutAvenue = {
   priceHouse: 50,
   mortgage: 60,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -168,7 +165,6 @@ let stCharlesPlace = {
   priceHouse: 100,
   mortgage: 70,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -199,7 +195,6 @@ let statesAvenue = {
   priceHouse: 100,
   mortgage: 70,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -230,7 +225,6 @@ let virginiaAvenue = {
   priceHouse: 100,
   mortgage: 80,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -261,7 +255,6 @@ let stJamesPlace = {
   priceHouse: 100,
   mortgage: 90,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -292,7 +285,6 @@ let tenneseeAvenue = {
   priceHouse: 100,
   mortgage: 90,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -323,7 +315,6 @@ let newYorkAvenue = {
   priceHouse: 100,
   mortgage: 100,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -354,7 +345,6 @@ let kentuckyAvenue = {
   priceHouse: 150,
   mortgage: 110,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -385,7 +375,6 @@ let indianaAvenue = {
   priceHouse: 150,
   mortgage: 110,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -416,7 +405,6 @@ let illinoisAvenue = {
   priceHouse: 150,
   mortgage: 120,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -447,7 +435,6 @@ let atlanticAvenue = {
   priceHouse: 150,
   mortgage: 130,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -478,7 +465,6 @@ let ventnorAvenue = {
   priceHouse: 150,
   mortgage: 130,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -509,7 +495,6 @@ let marvinGardens = {
   priceHouse: 150,
   mortgage: 140,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -540,7 +525,6 @@ let pacificAvenue = {
   priceHouse: 200,
   mortgage: 150,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -571,7 +555,6 @@ let northCarolinaAvenue = {
   priceHouse: 200,
   mortgage: 150,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -602,7 +585,6 @@ let pennsylvaniaAvenue = {
   priceHouse: 200,
   mortgage: 160,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -633,7 +615,6 @@ let parkPlace = {
   priceHouse: 200,
   mortgage: 175,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -664,7 +645,6 @@ let boardwalk = {
   priceHouse: 200,
   mortgage: 200,
   isMortgaged: false,
-  isMonopoly: false,
   housesHotel: 0,
   owner: null,
   playerLanded: null,
@@ -920,7 +900,6 @@ let goToJail = {
 };
 
 // OTHER SPACES
-
 let chance1 = {
   boardSpace: $("#chance1"),
   boardClass: "chance1",
@@ -1032,8 +1011,6 @@ let luxuryTax = {
     x = 4;
   },
 };
-
-// CHANCE AND COMMUNITY CHEST DECK
 
  let chanceDeck = [
   advanceToGoChance = {
@@ -1190,7 +1167,6 @@ let luxuryTax = {
       let player = gameStatus.currentPlayerTurn;
       jailFreeChance.owner = player;
       player.properties.push(jailFreeChance);
-      $(".three").empty();
       changePlayerColumn(player);
       endTurn();
     },
@@ -1319,6 +1295,8 @@ let luxuryTax = {
         for (let player of activePlayers) {
           if (player !== playerPaying) {
             pay(playerPaying, player, 50);
+            // moneyChange(playerPaying, -50);
+            // moneyChange(player, 50);
           }
           endTurn();
         }
@@ -1400,7 +1378,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       jailFreeCommunityChest.owner = player;
       communityChestDeck.splice(communityChestDeck.indexOf(jailFreeCommunityChest), 1);
-      $(".three").empty();
       changePlayerColumn(player);
       endTurn();
     },
@@ -1584,7 +1561,7 @@ let communityChestDeck = [
 
 let communityChestDeckDiscarded = [];
 
-// BOARD OBJECT ARRAYS
+// BOARD
 
 const board = [
   go,
@@ -1629,43 +1606,36 @@ const board = [
   boardwalk
 ];
 
-const properties = board.filter(function(space) {
-  return (space.type === "coloredProperty") || (space.type === "railroad") || (space.type === "utility");
-});
-
-const purple = properties.filter(function(property) {
-  return property.color === "purple";
-});
-
-const lightBlue = properties.filter(function(property) {
-  return property.color === "light-blue";
-});
-
-const magenta = properties.filter(function(property) {
-  return property.color === "magenta";
-});
-
-const orange = properties.filter(function(property) {
-  return property.color === "orange";
-});
-
-const red = properties.filter(function(property) {
-  return property.color === "red";
-});
-
-const yellow = properties.filter(function(property) {
-  return property.color === "yellow";
-});
-
-const green = properties.filter(function(property) {
-  return property.color === "green";
-});
-
-const blue = properties.filter(function(property) {
-  return property.color === "blue";
-});
-
-const colors = [purple, lightBlue, magenta, orange, red, yellow, green, blue];
+const properties = [
+  mediterraneanAvenue,
+  balticAvenue,
+  orientalAvenue,
+  vermontAvenue,
+  connecticutAvenue,
+  stCharlesPlace,
+  statesAvenue,
+  virginiaAvenue,
+  stJamesPlace,
+  tenneseeAvenue,
+  newYorkAvenue,
+  kentuckyAvenue,
+  indianaAvenue,
+  illinoisAvenue,
+  atlanticAvenue,
+  ventnorAvenue,
+  marvinGardens,
+  pacificAvenue,
+  northCarolinaAvenue,
+  pennsylvaniaAvenue,
+  parkPlace,
+  boardwalk,
+  readingRailroad,
+  pennsylvaniaRailroad,
+  bORailroad,
+  shortLine,
+  electricCompany,
+  waterWorks,
+];
 
 const propertyCategories = [
   ["purple", 2],
@@ -1683,8 +1653,6 @@ const propertyCategories = [
   ["cards", 2],
 ];
 
-const propertyCategoriesColor = propertyCategories.slice(0, 8);
-
 const jailFreeCards = [
   jailFreeChance,
   jailFreeCommunityChest
@@ -1693,6 +1661,36 @@ const jailFreeCards = [
 const boardClassArray = board.map(function(space) {
   return space.boardClass;
 });
+
+for (let property of properties) {
+  $(document).on("click", "." + property.boardClass, function() {
+    $(".board-details").empty();
+    property.boardClickResult();
+    $(".board-details > button").css("display", "none");
+    $(".board-details > .closer").css("display", "inline");
+  });
+}
+
+for (let property of properties) {
+  $(document).on("click", "." + property.boardClass + "-player", function() {
+    $(".player-details").empty();
+    property.playerClickResult();
+    $(".player-details > button").css("display", "none");
+    $(".player-details > .closer").css("display", "inline");
+    $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage)
+    $(".player-details > .btn-mortgage").css("display", "inline");
+    if (property.owner.money >= Math.round(1.1 * property.mortgage)) {
+      $(".player-details > .btn-lift-mortgage").css("display", "inline");
+    }
+  });
+}
+
+for (let card of jailFreeCards) {
+  $(document).on("click", "." + card.cardClass, function() {
+    $(".player-details").empty();
+    card.playerClickResult();
+  });
+}
 
 // TOKENS
 
@@ -1753,7 +1751,7 @@ const wheelbarrow = {
 
 // PLAYERS
 
-const player1 = {
+let player1 = {
   name: "player1",
   inGame: false,
   money: 1500,
@@ -1806,7 +1804,7 @@ const player1 = {
   numberOfTurnsInJail: 0,
 };
 
-const player2 = {
+let player2 = {
   name: "player2",
   inGame: false,
   money: 1500,
@@ -1860,7 +1858,7 @@ const player2 = {
   numberOfTurnsInJail: 0,
 };
 
-const player3 = {
+let player3 = {
   name: "player3",
   inGame: false,
   money: 1500,
@@ -1913,7 +1911,7 @@ const player3 = {
   numberOfTurnsInJail: 0,
 };
 
-const player4 = {
+let player4 = {
   name: "player4",
   inGame: false,
   money: 1500,
@@ -1966,7 +1964,7 @@ const player4 = {
   numberOfTurnsInJail: 0,
 };
 
-const player5 = {
+let player5 = {
   name: "player5",
   inGame: false,
   money: 1500,
@@ -2019,7 +2017,7 @@ const player5 = {
   numberOfTurnsInJail: 0,
 };
 
-const player6 = {
+let player6 = {
   name: "player6",
   inGame: false,
   money: 1500,
@@ -2072,7 +2070,7 @@ const player6 = {
   numberOfTurnsInJail: 0,
 };
 
-const player7 = {
+let player7 = {
   name: "player7",
   inGame: false,
   money: 1500,
@@ -2125,7 +2123,7 @@ const player7 = {
   numberOfTurnsInJail: 0,
 };
 
-const player8 = {
+let player8 = {
   name: "player8",
   inGame: false,
   money: 1500,
@@ -2180,29 +2178,17 @@ const player8 = {
 
 // GAME STATUS
 
-const gameStatus = {
+let gameStatus = {
   currentPlayerTurn: player1,
   freeParkingJackpotOn: false,
   passGoDouble: false,
   landOnGoDouble: false,
 };
 
-// INITIAL VARIABLES
-
 let numberOfPlayers = null;
 let activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
-let activePlayersOrdered = [];
 let multiplier = 1;
-let onPlayer = 1;
-let cardDrawn;
-let firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
 
-const tokensMatch = [
-  ["boot", "cannon", "car", "dog", "hat", "horse-and-rider", "iron", "sack-of-money", "ship", "thimble", "wheelbarrow"],
-  [boot, cannon, car, dog, hat, horseAndRider, iron, sackOfMoney, ship, thimble, wheelbarrow]
-];
-
-// FOODOO
 // function railroadCount(player) {
 //   let count = 0;
 //   console.log(player.properties);
@@ -2223,7 +2209,7 @@ const tokensMatch = [
 //   return count;
 // }
 
-// FUNCTIONS
+// CORE FUNCTIONS AND CORRESPONDING EVENTS
 
 function rollDice() {
   let player = gameStatus.currentPlayerTurn;
@@ -2241,10 +2227,186 @@ function rollDice() {
   return diceResult;
 }
 
+$(".roll").click(function() {
+  $(".roll").css("display", "none");
+  let diceResult = rollDice();
+  $('.dice1').attr("src", diceResult.dice1Image);
+  $('.dice2').attr("src", diceResult.dice2Image);
+  let player = gameStatus.currentPlayerTurn;
+  player.lastDiceResult = diceResult;
+  if (diceResult.doubles) {
+    player.numberOfDoubles++;
+  }
+  if (player.numberOfDoubles === 3) {
+    displayGoToJailDoubles();
+  }
+  else {
+    moveToken(diceResult, player);
+  }
+});
+
 function moneyChange(player, money) {
   player.money += money;
   $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
 }
+
+// SETUP FUNCTIONS AND EVENTS
+// FIRST WINDOW
+
+$("#set-number").click(function() {
+  numberOfPlayers = Number($("#number-of-players").val());
+  for (i = 1; i <= 8 - numberOfPlayers; i++) {
+    activePlayers.pop();
+  }
+  $(".number-of-players").css("display", "none");
+  $(".names-tokens").css("display", "block");
+  $(".number-of-players-eh").prepend(numberOfPlayers);
+});
+
+// SECOND WINDOW, FOR NAMES AND TOKENS
+
+let onPlayer = 1;
+
+$("#tokens").click(function() {
+  $(".token-selected").attr("src", "images/token-" + $("#tokens").val() + ".png");
+  $(".token-selected").attr("alt", $("#tokens :selected").text());
+  $("#set-name-token").removeClass("hidden");
+});
+
+const tokensMatch = [
+  ["boot", "cannon", "car", "dog", "hat", "horse-and-rider", "iron", "sack-of-money", "ship", "thimble", "wheelbarrow"],
+  [boot, cannon, car, dog, hat, horseAndRider, iron, sackOfMoney, ship, thimble, wheelbarrow]
+];
+
+$("#set-name-token").click(function() {
+  $(".player-list").append("<li class='player-listing'><strong>" + $("#name").val() + "</strong>   " + "<img class='active'></li>");
+  $(".active").addClass("token-small");
+  $(".active").attr("src", "images/token-" + $("#tokens").val() + ".png");
+  $(".active").attr("alt", $("#tokens :selected").text());
+  $(".active").removeClass("active");
+  $("#set-name-token").addClass("hidden");
+  for (let i = 0; i <= numberOfPlayers - 1; i++) {
+    if (onPlayer === activePlayers[i].playerNumber) {
+      let player = activePlayers[i];
+      player.name = $("#name").val();
+      let indexMatch = tokensMatch[0].indexOf($("#tokens").val());
+      player.token = tokensMatch[1][indexMatch];
+      $("#tokens > #" + player.token.class).remove();
+    }
+  }
+  $("#name").val("");
+  $(".token-selected").attr("src", "");
+  $(".token-selected").attr("alt", "");
+  onPlayer++;
+  if (onPlayer > numberOfPlayers) {
+    $(".name-token-select").css("display", "none");
+    $(".next-names-tokens").css("display", "inline");
+  }
+});
+
+$(".reset-names-tokens").click(function() {
+  onPlayer = 1;
+  activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
+  $(".player-list").empty();
+  $(".names-tokens").css("display", "none");
+  $(".name-token-select").css("display", "inline");
+  $(".next-names-tokens").css("display", "none");
+  $(".number-of-players").css("display", "block");
+  $(".number-of-players-eh").replaceWith("<h2 class='number-of-players-eh'> players, eh? Let's move on to names and tokens.</h2>");
+  $("#tokens").html('<option id="boot" value="boot">Boot</option>' +
+    '<option id="cannon" value="cannon">Cannon</option>' +
+    '<option id="car" value="car">Car</option>' +
+    '<option id="dog" value="dog">Dog</option>' +
+    '<option id="hat" value="hat">Hat</option>' +
+    '<option id="horse-and-rider" value="horse-and-rider">Horse and Rider</option>' +
+    '<option id="iron" value="iron">Iron</option>' +
+    '<option id="sack-of-money" value="sack-of-money">Sack of Money</option>' +
+    '<option id="ship" value="ship">Ship</option>' +
+    '<option id="thimble" value="thimble">Thimble</option>' +
+    '<option id="wheelbarrow" value="wheelbarrow">Wheelbarrow</option>');
+});
+
+$(".next-names-tokens").click(function() {
+  $(".names-tokens").css("display", "none");
+  $(".turn-order").css("display", "block");
+  onPlayer = 1;
+});
+
+// THIRD WINDOW, FOR DECIDING TURN ORDER...
+
+// $(".player-name").html(player1.name);
+
+// ...FOR DICE ROLL
+
+$("#dice-roll").click(function() {
+  $(".turn-order-decider").css("display", "none");
+  $(".dice-roll").css("display", "inline");
+});
+
+$("#roll-turn-order").click(function() {
+  let diceResult = rollDice();
+  $('.dice1-turn-order').attr("src", diceResult.dice1Image);
+  $('.dice2-turn-order').attr("src", diceResult.dice2Image);
+  for (let i = 0; i <= numberOfPlayers - 1; i++) {
+    if (onPlayer === activePlayers[i].playerNumber) {
+      let player = activePlayers[i];
+      player.diceResultTurnOrder = diceResult.total;
+      $(".player-list-dice-results").append(
+        "<li class='player-listing'><strong>" + player.name + "</strong> " +
+        "<img class='token-small' src=" + player.token.image + ">" +
+        "<img class='dice-small' src=" + diceResult.dice1Image + ">&nbsp" +
+        "<img class='dice-small' src=" + diceResult.dice2Image + "></li>"
+      );
+    }
+  }
+
+  onPlayer++;
+  if (onPlayer > numberOfPlayers) {
+    activePlayers.sort(function(a, b) {
+      if (b.diceResultTurnOrder - a.diceResultTurnOrder === 0) {
+        if (Math.round(Math.random()) === 0) {
+          return -1;
+        }
+        return 1;
+      }
+      return b.diceResultTurnOrder - a.diceResultTurnOrder;
+    });
+    $(".next-turn-order").css("display", "inline");
+  }
+});
+
+// ...FOR AUTO-RANDOM
+
+let activePlayersOrdered = [];
+
+$("#auto-random").click(function() {
+  $(".turn-order-decider").css("display", "none");
+  $(".auto-random").css("display", "block");
+  for (let i = 0; i <= numberOfPlayers - 1; i++) {
+    let randomIndex = Math.floor(Math.random() * activePlayers.length);
+    let randomPlayer = activePlayers[randomIndex];
+    activePlayersOrdered.push(randomPlayer);
+    activePlayers.splice(randomIndex, 1);
+  }
+
+  activePlayers = activePlayersOrdered;
+  $(".next-turn-order").css("display", "inline");
+});
+
+// ...FOR PLAYER DECIDE
+
+$("#player-decide").click(function() {
+  $(".turn-order-decider").css("display", "none");
+  $(".player-decide").css("display", "block");
+  for (let player of activePlayers) {
+    $(".players-to-choose > ul").append("<li onmouseover = 'colorChangeDarkerBlue(this)' onmouseout = 'colorBack(this)' onclick = 'moveToChosen(this)'>" +
+      "<strong>" + player.name + "</strong>" +
+      "<img class='token-small'" +
+      "src=" + player.token.image + " alt=" + player.token.class + "></li>");
+  }
+  onPlayer = 1;
+  activePlayersOrdered = [];
+});
 
 function colorChangeDarkerBlue(item) {
   item.style.backgroundColor = "#8ac6d1";
@@ -2257,24 +2419,83 @@ function colorBack(item) {
 function moveToChosen(playerChoice) {
   $(playerChoice).remove();
   $(".chosen-order > ul").append(playerChoice);
-
   for (let player of activePlayers) {
     if ($(playerChoice).html().includes(player.token.class)) {
       activePlayersOrdered.push(player);
       onPlayer++;
     }
   }
-
   if (onPlayer > numberOfPlayers) {
     activePlayers = activePlayersOrdered;
     $(".next-turn-order").css("display", "inline");
   }
 }
 
+// ...FOR RESET AND NEXT
+
+$(".reset-turn-order").click(function() {
+  $(".dice-roll").css("display", "none");
+  $(".auto-random").css("display", "none");
+  $(".player-decide").css("display", "none");
+  $(".turn-order-decider").css("display", "initial");
+  $(".player-list-dice-results").empty();
+  $(".players-to-choose > ul").empty();
+  $(".chosen-order").empty();
+  $(".finalized-player-list").empty();
+  onPlayer = 1;
+  activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8].splice(0, numberOfPlayers);
+  activePlayersOrdered = [];
+});
+
+$(".next-turn-order").click(function() {
+  $(".turn-order").css("display", "none");
+  $(".finalize").css("display", "block");
+  $(".complete").append("<strong>Here are all of the chosen players and their tokens, with turn order from top to bottom.</strong>");
+
+  for (let player of activePlayers) {
+    $(".finalized-player-list").append("<li class='player-listing finalize-listing'><strong>" + player.name + "</strong> <img class='token-small' src=" + player.token.image + "></li>");
+  }
+});
+
+// FOURTH WINDOW, FOR FINALIZING SETUP
+
+$(".play-game").click(function() {
+  $(".game-start").css("display", "none");
+  $(".column").css("display", "block");
+
+  firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+
+  for (let player of activePlayers) {
+    $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
+    $(".active").addClass(`token ${player.token.class}`);
+    $("." + player.token.class).css(player.tokenSpace);
+    player.onSpace = go;
+    $(".active").removeClass("active");
+    player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
+    $("." + player.playerOrder).css("display", "block");
+    $("." + player.playerOrder + " > p:first-child").html(player.name);
+    $("." + player.playerOrder + " > img").attr("src", player.token.image);
+    $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
+  }
+
+  for (let div of firstThroughEighth) {
+    $(document).on("click", "." + div, function() {
+      $(".three").empty();
+    });
+  }
+
+  gameStatus.currentPlayerTurn = activePlayers[0];
+});
+
+$(".start-over").click(function() {
+  location.reload();
+});
+
+
 // MOVING TOKENS AND SPACE LANDING
 
 function moveToken(diceResult, player, direction="forward") {
-  $(".page-button-blocker").removeClass("hidden");
+  // $(".roll").attr("display", "none");
   let arr = [];
   for (let i = 1; i <= diceResult.total; i++) {
     arr.push(i);
@@ -2285,10 +2506,6 @@ function moveToken(diceResult, player, direction="forward") {
       if (board.indexOf(player.onSpace) === 39) {
         player.onSpace = go;
         moneyChange(player, 200);
-        if ($(".three > .player-name").html() === player.name) {
-          $(".three").empty();
-          changePlayerColumn(player);
-        }
       }
       else {
         if (direction === "backward") {
@@ -2298,12 +2515,11 @@ function moveToken(diceResult, player, direction="forward") {
           player.onSpace = board[board.indexOf(player.onSpace) + 1];
         }
       }
-      $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
+      $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
       $(".active").addClass(`token ${player.token.class}`);
       $("." + player.token.class).css(player.tokenSpace);
       $(".active").removeClass("active");
       if (num === arr.length) {
-        $(".page-button-blocker").addClass("hidden");
         player.onSpace.playerLanded = player;
         player.onSpace.result();
       }
@@ -2331,7 +2547,7 @@ function landOn(space) {
     }
     else if (space.owner !== space.playerLanded && !space.isMortgaged) {
       let moneyOwed = space.rent[space.housesHotel];
-      if ((space.isMonopoly) && (space.housesHotel === 0)) {
+      if ((space.inMonopoly) && (space.housesHotel === 0)) {
         moneyOwed = space.rent[6];
       }
       $(".board-details > .btn-rent").css("display", "inline");
@@ -2462,6 +2678,114 @@ function endTurn() {
   }
 }
 
+$(".end-turn").click(function() {
+  $(".one > button").css("display", "none");
+  multiplier = 1;
+  let player = gameStatus.currentPlayerTurn;
+  player.numberOfDoubles = 0;
+  if (player.inJail) {
+    player.numberOfTurnsInJail++;
+  }
+  if (activePlayers.indexOf(player) === activePlayers.length - 1) {
+    gameStatus.currentPlayerTurn = activePlayers[0];
+  }
+  else {
+    gameStatus.currentPlayerTurn = activePlayers[activePlayers.indexOf(gameStatus.currentPlayerTurn) + 1];
+  }
+  let nextPlayer = gameStatus.currentPlayerTurn;
+  if (nextPlayer.inJail) {
+    $(".roll-riot").css("display", "inline");
+    $(".bribe").css("display", "inline");
+    for (card of jailFreeCards) {
+      if (card.owner === nextPlayer) {
+        $(".use-" + card.cardClass).css("display", "inline");
+      }
+    }
+  }
+  else {
+    $(".roll").css("display", "inline");
+  }
+});
+
+// IF THE PLAYER IS IN JAIL
+
+$(".roll-riot").click(function() {
+  $(".roll-riot").css("display", "none");
+  $(".bribe").css("display", "none");
+  let diceResult = rollDice();
+  $('.dice1').attr("src", diceResult.dice1Image);
+  $('.dice2').attr("src", diceResult.dice2Image);
+  let player = gameStatus.currentPlayerTurn;
+  player.lastDiceResult = diceResult;
+  if (diceResult.doubles) {
+    player.numberOfDoubles++;
+    player.inJail = false;
+    moveToken(diceResult, player);
+  }
+  else if (player.numberOfTurnsInJail === 3) {
+    $(".bribe").css("display", "inline");
+  }
+  else {
+    endTurn();
+  }
+});
+
+$(".bribe").click(function() {
+  $(".roll-riot").css("display", "none");
+  $(".bribe").css("display", "none");
+  let player = gameStatus.currentPlayerTurn;
+  pay(player, freeParking.jackpot, 50);
+  // moneyChange(player, -50);
+  player.inJail = false;
+  $("." + player.token.class).css(player.justVisitingSpace);
+  endTurn();
+});
+
+$(document).on("click", ".go-to-jail-btn", function() {
+  let player = gameStatus.currentPlayerTurn;
+  moveTokenDirectlyTo(jail, player);
+  $("." + player.token.class).remove();
+  $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
+  $(".active").addClass(`token ${player.token.class}`);
+  $("." + player.token.class).css(player.inJailSpace);
+  $(".active").removeClass("active");
+  player.inJail = true;
+  player.lastDiceResult.doubles = false;
+  player.numberOfTurnsInJail = 0;
+  $("#board-details").empty();
+  $("#board-details").removeClass();
+  $("#board-details").addClass("board-details hidden");
+  $(".board-button-blocker").css("display", "none");
+  endTurn();
+});
+
+// FOODOO
+$(document).on("click", ".use-jail-free-chance", function() {
+  jailFreeChance.owner = null;
+  chanceDeckDiscarded.push(jailFreeChance);
+  $(".roll-riot").css("display", "none");
+  $(".bribe").css("display", "none");
+  let player = gameStatus.currentPlayerTurn;
+  player.inJail = false;
+  $("." + player.token.class).css(player.justVisitingSpace);
+  $(".use-jail-free-chance").css("display", "none");
+  $(".use-jail-free-community-chest").css("display", "none");
+  endTurn();
+});
+
+$(document).on("click", ".use-jail-free-community-chest", function() {
+  jailFreeCommunityChest.owner = null;
+  communityChestDeckDiscarded.push(jailFreeCommunityChest);
+  $(".roll-riot").css("display", "none");
+  $(".bribe").css("display", "none");
+  let player = gameStatus.currentPlayerTurn;
+  player.inJail = false;
+  $("." + player.token.class).css(player.justVisitingSpace);
+  $(".use-jail-free-chance").css("display", "none");
+  $(".use-jail-free-community-chest").css("display", "none");
+  endTurn();
+});
+
 // DISPLAYING SPACES
 
 function displayProperty(property, location, column) {
@@ -2478,19 +2802,17 @@ function displayProperty(property, location, column) {
   $("." + column + "> ." + location + " > .prop-details > .mortgage-value").append("Mortgage Value $" + property.mortgage);
   $("." + column + "> ." + location + " > .prop-details > .house-price").append("Houses cost $" + property.priceHouse + " each.");
   $("." + column + "> ." + location + " > .prop-details > .hotel-price").append("Hotels, $" + property.priceHouse + " plus 4 houses");
-
   for (let color of propertyCategories) {
     $("." + column + "> ." + location).removeClass(color[0]);
   }
-
   $("." + column + "> ." + location).addClass("titledeed " + property.color);
   $("." + column + "> ." + location + "> .btn-buy").append("Buy" + property.title + " - $" + property.price);
   let moneyOwed = property.rent[property.housesHotel];
-  if ((property.isMonopoly) && (property.housesHotel === 0)) {
+  if ((property.inMonopoly) && (property.housesHotel === 0)) {
     moneyOwed = property.rent[6];
   }
-  $("." + column + "> ." + location + " > .btn-rent").append("Rent - $" + moneyOwed);
-  $("." + column + "> ." + location + " > .closer").css("display", "none");
+  $("." + column + "> ." + location + "> .btn-rent").append("Rent - $" + moneyOwed);
+  $("." + column + "> ." + location + "> .closer").css("display", "none");
   $("." + column + "> ." + location).removeClass("hidden");
 }
 
@@ -2537,18 +2859,20 @@ function displayUtility(property, location, column) {
 }
 
 function displayMortgagedProperty(property) {
-  $(".three > .player-details").empty();
-  $(".three > .player-details").addClass("mortgaged");
-  $(".three > .player-details").append($(".reference > .mortgaged").html());
-  $(".three > .player-details > .property-name").append(property.title);
-  $(".three > .player-details > .mortgage-value").append("for $" + property.mortgage);
+  $(".player-details").empty();
+  $(".player-details").addClass("mortgaged");
+  $(".player-details").append($(".reference > .mortgaged").html());
+  $(".player-details > .property-name").append(property.title);
+  $(".player-details > .mortgage-value").append("for $" + property.mortgage);
   let moneyOwed = Math.round(1.1 * property.mortgage);
-  $(".three > .player-details > .btn-lift-mortgage").append("Lift mortgage - $" + moneyOwed);
-  $(".three > .player-details > .closer").css("display", "inline");
+  console.log(moneyOwed);
+  console.log(property.owner.money)
+  $(".player-details > .btn-lift-mortgage").append("Lift mortgage - $" + moneyOwed);
+  $(".player-details > .closer").css("display", "inline");
   if (property.owner.money >= moneyOwed) {
-    $(".three > .player-details > .btn-lift-mortgage").css("display", "inline");
+    $(".player-details > .btn-lift-mortgage").css("display", "inline");
   }
-  $(".three > .player-details").removeClass("hidden");
+  $(".player-details").removeClass("hidden");
 }
 
 function displayGo() {
@@ -2557,6 +2881,10 @@ function displayGo() {
   $(".one > .board-details").append($(".reference > .go-board").html());
   $(".one > .board-details > .closer").css("display", "inline");
   $(".one > .board-details").removeClass("hidden");
+}
+
+function displayJustVisiting() {
+
 }
 
 function displayFreeParking() {
@@ -2610,455 +2938,7 @@ function displayLuxuryTax() {
   $(".one > .board-details").removeClass("hidden");
 }
 
-// BUYING AND PAYING RENT
-
-function buyHouseNumberCheck(property) {
-  let player = property.owner;
-  let colorGroup = player.properties.filter(function(thisProperty) {
-    return thisProperty.color === property.color;
-  });
-  for (let thisProperty of colorGroup) {
-    if (property.housesHotel > thisProperty.housesHotel) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function sellHouseNumberCheck(property) {
-  let player = property.owner;
-  let colorGroup = player.properties.filter(function(thisProperty) {
-    return thisProperty.color === property.color;
-  });
-  for (let thisProperty of colorGroup) {
-    if (property.housesHotel < thisProperty.housesHotel) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function buy(property) {
-  $(".roll").css("display", "none");
-  $(".end-turn").css("display", "none");
-  $(".board-details > .btn-buy").empty();
-  $(".board-details > .btn-buy").append("Buy " + property.title + " - $" + property.price);
-  $(".board-details > .btn-buy").css("display", "inline");
-  $(".board-details > .btn-auction").css("display", "inline");
-}
-
-function giveProperty(property, player) {
-  player.properties.push(property);
-  property.owner = player;
-  checkForMonoply(player);
-  $(".three").empty();
-  changePlayerColumn(player);
-}
-
-function rent(money) {
-  $(".roll").css("display", "none");
-  $(".end-turn").css("display", "none");
-  $(".board-details > .btn-rent").empty();
-  $(".board-details > .btn-rent").append("Rent - $" + money);
-  $(".board-details > .btn-rent").css("display", "inline");
-}
-
-function checkForMonoply(player) {
-  for (let color of propertyCategoriesColor) {
-    let playerPropertiesColor = player.properties.filter(function(nextProperty) {
-      return nextProperty.color === color[0];
-    });
-    if (playerPropertiesColor.length === color[1] && playerPropertiesColor.length > 0) {
-      for (let playerProperty of playerPropertiesColor) {
-        playerProperty.isMonopoly = true;
-      }
-    }
-  }
-}
-
-function pay(fromPlayer, toPlayer, money) {
-  moneyChange(fromPlayer, -money);
-  moneyChange(toPlayer, money);
-  for (let player of activePlayers) {
-    if ($(".three > .player-name").html() === player.name) {
-      $(".three").empty();
-      changePlayerColumn(player);
-      break;
-    }
-  }
-
-}
-// OTHER FUNCTIONS
-
-function freeParkingJackpotCheck(money) {
-  if (gameStatus.freeParkingJackpotOn) {
-    changeMoney(money, freeParking.jackpot);
-  }
-}
-
-function changePlayerColumn(player) {
-  $(".three").append($(".reference > .column-three-reference").html());
-  $(".three > .player-heading > .player-name").append(player.name);
-  $(".three > .player-heading > .vertical-middle").attr("src", player.token.image);
-  $(".three > .player-heading > .vertical-middle").attr("alt", player.token.class);
-  $(".three > .player-heading > .player-cash").append("$" + player.money);
-  for (let color of propertyCategories) {
-    for (let i = 1; i <= color[1]; i++) {
-      for (let property of player.properties) {
-        if (property.title === $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).attr("title")) {
-          $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).removeClass("hidden");
-        }
-      }
-    }
-  }
-}
-
-// BUTTON CLICK EVENTS
-
-// FIRST STRTING WINDOW: SELECTING THE NUMBER OF PLAYERS
-
-$("#set-number").click(function() {
-  numberOfPlayers = Number($("#number-of-players").val());
-  for (i = 1; i <= 8 - numberOfPlayers; i++) {
-    activePlayers.pop();
-  }
-  $(".number-of-players").css("display", "none");
-  $(".names-tokens").css("display", "block");
-  $(".number-of-players-eh").prepend(numberOfPlayers);
-});
-
-// SECOND STARTING WINDOW: SETTING NAMES AND TOKENS
-
-$("#tokens").click(function() {
-  $(".token-selected").attr("src", "images/token-" + $("#tokens").val() + ".png");
-  $(".token-selected").attr("alt", $("#tokens :selected").text());
-  $("#set-name-token").removeClass("hidden");
-});
-
-$("#set-name-token").click(function() {
-  $(".player-list").append("<li class='player-listing'><strong>" + $("#name").val() + "</strong>   " + "<img class='active'></li>");
-  $(".active").addClass("token-small");
-  $(".active").attr("src", "images/token-" + $("#tokens").val() + ".png");
-  $(".active").attr("alt", $("#tokens :selected").text());
-  $(".active").removeClass("active");
-  $("#set-name-token").addClass("hidden");
-  for (let i = 0; i <= numberOfPlayers - 1; i++) {
-    if (onPlayer === activePlayers[i].playerNumber) {
-      let player = activePlayers[i];
-      player.name = $("#name").val();
-      let indexMatch = tokensMatch[0].indexOf($("#tokens").val());
-      player.token = tokensMatch[1][indexMatch];
-      $("#tokens > #" + player.token.class).remove();
-    }
-  }
-  $("#name").val("");
-  $(".token-selected").attr("src", "");
-  $(".token-selected").attr("alt", "");
-  onPlayer++;
-  if (onPlayer > numberOfPlayers) {
-    $(".name-token-select").css("display", "none");
-    $(".next-names-tokens").css("display", "inline");
-  }
-});
-
-$(".reset-names-tokens").click(function() {
-  onPlayer = 1;
-  activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
-  $(".player-list").empty();
-  $(".names-tokens").css("display", "none");
-  $(".name-token-select").css("display", "inline");
-  $(".next-names-tokens").css("display", "none");
-  $(".number-of-players").css("display", "block");
-  $(".number-of-players-eh").replaceWith("<h2 class='number-of-players-eh'> players, eh? Let's move on to names and tokens.</h2>");
-  $("#tokens").html('<option id="boot" value="boot">Boot</option>' +
-    '<option id="cannon" value="cannon">Cannon</option>' +
-    '<option id="car" value="car">Car</option>' +
-    '<option id="dog" value="dog">Dog</option>' +
-    '<option id="hat" value="hat">Hat</option>' +
-    '<option id="horse-and-rider" value="horse-and-rider">Horse and Rider</option>' +
-    '<option id="iron" value="iron">Iron</option>' +
-    '<option id="sack-of-money" value="sack-of-money">Sack of Money</option>' +
-    '<option id="ship" value="ship">Ship</option>' +
-    '<option id="thimble" value="thimble">Thimble</option>' +
-    '<option id="wheelbarrow" value="wheelbarrow">Wheelbarrow</option>');
-});
-
-$(".next-names-tokens").click(function() {
-  $(".names-tokens").css("display", "none");
-  $(".turn-order").css("display", "block");
-  onPlayer = 1;
-});
-
-// THIRD STARTING WINDOW: SETTING THE TURN ORDER...
-
-// ...BY DICE ROLL
-
-$("#dice-roll").click(function() {
-  $(".turn-order-decider").css("display", "none");
-  $(".dice-roll").css("display", "inline");
-});
-
-$("#roll-turn-order").click(function() {
-  let diceResult = rollDice();
-  $('.dice1-turn-order').attr("src", diceResult.dice1Image);
-  $('.dice2-turn-order').attr("src", diceResult.dice2Image);
-
-  for (let i = 0; i <= numberOfPlayers - 1; i++) {
-    if (onPlayer === activePlayers[i].playerNumber) {
-      let player = activePlayers[i];
-      player.diceResultTurnOrder = diceResult.total;
-      $(".player-list-dice-results").append(
-        "<li class='player-listing'><strong>" + player.name + "</strong> " +
-        "<img class='token-small' src=" + player.token.image + ">" +
-        "<img class='dice-small' src=" + diceResult.dice1Image + ">&nbsp" +
-        "<img class='dice-small' src=" + diceResult.dice2Image + "></li>"
-      );
-    }
-  }
-
-  onPlayer++;
-  if (onPlayer > numberOfPlayers) {
-    activePlayers.sort(function(a, b) {
-      if (b.diceResultTurnOrder - a.diceResultTurnOrder === 0) {
-        if (Math.round(Math.random()) === 0) {
-          return -1;
-        }
-        return 1;
-      }
-      return b.diceResultTurnOrder - a.diceResultTurnOrder;
-    });
-    $(".next-turn-order").css("display", "inline");
-  }
-});
-
-// ...BY RANDOM ORDER
-
-$("#auto-random").click(function() {
-  $(".turn-order-decider").css("display", "none");
-  $(".auto-random").css("display", "block");
-
-  for (let i = 0; i <= numberOfPlayers - 1; i++) {
-    let randomIndex = Math.floor(Math.random() * activePlayers.length);
-    let randomPlayer = activePlayers[randomIndex];
-    activePlayersOrdered.push(randomPlayer);
-    activePlayers.splice(randomIndex, 1);
-  }
-
-  activePlayers = activePlayersOrdered;
-  $(".next-turn-order").css("display", "inline");
-});
-
-// ...BY PLAYER DECISION
-
-$("#player-decide").click(function() {
-  $(".turn-order-decider").css("display", "none");
-  $(".player-decide").css("display", "block");
-
-  for (let player of activePlayers) {
-    $(".players-to-choose > ul").append("<li onmouseover = 'colorChangeDarkerBlue(this)' onmouseout = 'colorBack(this)' onclick = 'moveToChosen(this)'>" +
-      "<strong>" + player.name + "</strong>" +
-      "<img class='token-small'" +
-      "src=" + player.token.image + " alt=" + player.token.class + "></li>");
-  }
-
-  onPlayer = 1;
-  activePlayersOrdered = [];
-});
-
-// ...FOR RESET AND NEXT BOX
-
-$(".reset-turn-order").click(function() {
-  $(".dice-roll").css("display", "none");
-  $(".auto-random").css("display", "none");
-  $(".player-decide").css("display", "none");
-  $(".turn-order-decider").css("display", "initial");
-  $(".player-list-dice-results").empty();
-  $(".players-to-choose > ul").empty();
-  $(".chosen-order").empty();
-  $(".finalized-player-list").empty();
-  onPlayer = 1;
-  activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8].splice(0, numberOfPlayers);
-  activePlayersOrdered = [];
-});
-
-$(".next-turn-order").click(function() {
-  $(".turn-order").css("display", "none");
-  $(".finalize").css("display", "block");
-  $(".complete").append("<strong>Here are all of the chosen players and their tokens, with turn order from top to bottom.</strong>");
-
-  for (let player of activePlayers) {
-    $(".finalized-player-list").append("<li class='player-listing finalize-listing'><strong>" + player.name + "</strong> <img class='token-small' src=" + player.token.image + "></li>");
-  }
-});
-
-// FOURTH BOX: FINALIZING SETUP
-
-$(".play-game").click(function() {
-  $(".game-start").css("display", "none");
-  $(".column").css("display", "block");
-
-  for (let player of activePlayers) {
-    $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
-    $(".active").addClass(`token ${player.token.class}`);
-    $("." + player.token.class).css(player.tokenSpace);
-    player.onSpace = go;
-    $(".active").removeClass("active");
-    player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
-    $("." + player.playerOrder).css("display", "block");
-    $("." + player.playerOrder + " > p:first-child").html(player.name);
-    $("." + player.playerOrder + " > img").attr("src", player.token.image);
-    $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
-  }
-
-  firstThroughEighth.forEach(function(div) {
-    $(document).on("click", "." + div, function() {
-      $(".three").empty();
-      let playerIndex = firstThroughEighth.indexOf(div);
-      let player = activePlayers[playerIndex];
-      changePlayerColumn(player);
-    });
-  });
-
-  // for (let div of firstThroughEighth) {
-  //   $(document).on("click", "." + div, function() {
-  //     $(".three").empty();
-  //   });
-  // }
-
-  gameStatus.currentPlayerTurn = activePlayers[0];
-});
-
-// TO RESET STARTUP
-
-$(".start-over").click(function() {
-  location.reload();
-});
-
-// FOR THE MAIN GAME
-
-$(".roll").click(function() {
-  $(".roll").css("display", "none");
-  let diceResult = rollDice();
-  $('.dice1').attr("src", diceResult.dice1Image);
-  $('.dice2').attr("src", diceResult.dice2Image);
-  let player = gameStatus.currentPlayerTurn;
-  player.lastDiceResult = diceResult;
-  if (diceResult.doubles) {
-    player.numberOfDoubles++;
-  }
-  if (player.numberOfDoubles === 3) {
-    displayGoToJailDoubles();
-  }
-  else {
-    moveToken(diceResult, player);
-  }
-});
-
-$(".end-turn").click(function() {
-  $(".one > button").css("display", "none");
-  multiplier = 1;
-  let player = gameStatus.currentPlayerTurn;
-  player.numberOfDoubles = 0;
-  if (player.inJail) {
-    player.numberOfTurnsInJail++;
-  }
-  if (activePlayers.indexOf(player) === activePlayers.length - 1) {
-    gameStatus.currentPlayerTurn = activePlayers[0];
-  }
-  else {
-    gameStatus.currentPlayerTurn = activePlayers[activePlayers.indexOf(gameStatus.currentPlayerTurn) + 1];
-  }
-  let nextPlayer = gameStatus.currentPlayerTurn;
-  if (nextPlayer.inJail) {
-    $(".roll-riot").css("display", "inline");
-    $(".bribe").css("display", "inline");
-    for (let card of jailFreeCards) {
-      if (card.owner === nextPlayer) {
-        $(".use-" + card.cardClass).css("display", "inline");
-      }
-    }
-  }
-  else {
-    $(".roll").css("display", "inline");
-  }
-});
-
-// PLAYER IN JAIL
-
-$(".roll-riot").click(function() {
-  $(".roll-riot").css("display", "none");
-  $(".bribe").css("display", "none");
-  let diceResult = rollDice();
-  $('.dice1').attr("src", diceResult.dice1Image);
-  $('.dice2').attr("src", diceResult.dice2Image);
-  let player = gameStatus.currentPlayerTurn;
-  player.lastDiceResult = diceResult;
-  if (diceResult.doubles) {
-    player.numberOfDoubles++;
-    player.inJail = false;
-    moveToken(diceResult, player);
-  }
-  else if (player.numberOfTurnsInJail === 3) {
-    $(".bribe").css("display", "inline");
-  }
-  else {
-    endTurn();
-  }
-});
-
-$(".bribe").click(function() {
-  $(".roll-riot").css("display", "none");
-  $(".bribe").css("display", "none");
-  let player = gameStatus.currentPlayerTurn;
-  pay(player, freeParking.jackpot, 50);
-  player.inJail = false;
-  $("." + player.token.class).css(player.justVisitingSpace);
-  endTurn();
-});
-
-$(document).on("click", ".go-to-jail-btn", function() {
-  let player = gameStatus.currentPlayerTurn;
-  moveTokenDirectlyTo(jail, player);
-  $("." + player.token.class).remove();
-  $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
-  $(".active").addClass(`token ${player.token.class}`);
-  $("." + player.token.class).css(player.inJailSpace);
-  $(".active").removeClass("active");
-  player.inJail = true;
-  player.lastDiceResult.doubles = false;
-  player.numberOfTurnsInJail = 0;
-  $("#board-details").empty();
-  $("#board-details").removeClass();
-  $("#board-details").addClass("board-details hidden");
-  $(".board-button-blocker").css("display", "none");
-  endTurn();
-});
-
-$(document).on("click", ".use-jail-free-chance", function() {
-  jailFreeChance.owner = null;
-  chanceDeckDiscarded.push(jailFreeChance);
-  $(".roll-riot").css("display", "none");
-  $(".bribe").css("display", "none");
-  let player = gameStatus.currentPlayerTurn;
-  player.inJail = false;
-  $("." + player.token.class).css(player.justVisitingSpace);
-  $(".use-jail-free-chance").css("display", "none");
-  $(".use-jail-free-community-chest").css("display", "none");
-  endTurn();
-});
-
-$(document).on("click", ".use-jail-free-community-chest", function() {
-  jailFreeCommunityChest.owner = null;
-  communityChestDeckDiscarded.push(jailFreeCommunityChest);
-  $(".roll-riot").css("display", "none");
-  $(".bribe").css("display", "none");
-  let player = gameStatus.currentPlayerTurn;
-  player.inJail = false;
-  $("." + player.token.class).css(player.justVisitingSpace);
-  $(".use-jail-free-chance").css("display", "none");
-  $(".use-jail-free-community-chest").css("display", "none");
-  endTurn();
-});
+let cardDrawn;
 
 $(document).on("click", ".board-details > .take-a-chance", function() {
   if (chanceDeck.length === 0) {
@@ -3096,6 +2976,7 @@ $(document).on("click", ".board-details > .pay-10-percent", function() {
   let player = gameStatus.currentPlayerTurn;
   let moneyOwed = Math.round(0.1 * player.totalNetWorth());
   pay(player, freeParking.jackpot, moneyOwed);
+  // moneyChange(player, -moneyOwed);
   endTurn();
 });
 
@@ -3143,7 +3024,7 @@ $(document).on("click", ".player-details > .closer", function() {
 
 $(document).on("click", ".btn-mortgage", function() {
   let property;
-  for (let propertyCheck of properties) {
+  for (propertyCheck of properties) {
     if (propertyCheck.title === $(".player-details > .property-name").html()) {
       property = propertyCheck;
     }
@@ -3159,7 +3040,7 @@ $(document).on("click", ".btn-mortgage", function() {
 
 $(document).on("click", ".btn-lift-mortgage", function() {
   let property;
-  for (let propertyCheck of properties) {
+  for (propertyCheck of properties) {
     if (propertyCheck.title === $(".player-details > .property-name").html()) {
       property = propertyCheck;
     }
@@ -3178,156 +3059,32 @@ $(document).on("click", ".btn-lift-mortgage", function() {
     displayRailroad(property, "player-details", "three");
   }
   else if (property.type === "utility") {
-    displayUtility(property, "player-detils", "three");
+    displayUtility(property, "player-deatils", "three");
   }
   $(".player-details > button").css("display", "none");
   $(".player-details > .closer").css("display", "inline");
   $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
   $(".player-details > .btn-mortgage").css("display", "inline");
-  $(".player-details > .btn-buy-house").append("Buy house - $" + property.priceHouse);
-  $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
-  $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
-  $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
-  if ((player.money >= property.priceHouse) && (property.isMonopoly)) {
-    $(".player-details > .btn-buy-house").css("display", "inline");
-  }
 });
 
-for (let property of properties) {
-  $(document).on("click", "." + property.boardClass, function() {
-    $(".board-details").empty();
-    property.boardClickResult();
-    $(".board-details > button").css("display", "none");
-    $(".board-details > .closer").css("display", "inline");
-  });
+// BUYING AND PAYING RENT
+
+function buy(property) {
+  $(".roll").css("display", "none");
+  $(".end-turn").css("display", "none");
+  $(".board-details > .btn-buy").empty();
+  $(".board-details > .btn-buy").append("Buy " + property.title + " - $" + property.price);
+  $(".board-details > .btn-buy").css("display", "inline");
+  $(".board-details > .btn-auction").css("display", "inline");
 }
-
-for (let property of properties) {
-  $(document).on("click", "." + property.boardClass + "-player", function() {
-    $(".player-details").empty();
-    property.playerClickResult();
-    $(".player-details > button").css("display", "none");
-    $(".player-details > .closer").css("display", "inline");
-    $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
-    if (property.housesHotel === 0) {
-      $(".player-details > .btn-mortgage").css("display", "inline");
-      if (property.owner.money >= Math.round(1.1 * property.mortgage)) {
-        $(".player-details > .btn-lift-mortgage").css("display", "inline");
-      }
-    }
-    $(".player-details > .btn-buy-house").append("Buy house - $" + property.priceHouse);
-    $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
-    $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
-    $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
-    if ((property.isMonopoly) && (!property.isMortgaged) && (property.owner.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
-      if (property.housesHotel < 4) {
-        $(".player-details > .btn-buy-house").css("display", "inline");
-      }
-      else if (property.housesHotel === 4) {
-        $(".player-details > .btn-buy-hotel").css("display", "inline");
-      }
-    }
-    if ((property.housesHotel > 0) && (property.housesHotel < 5) && (sellHouseNumberCheck(property))) {
-      $(".player-details > .btn-sell-house").css("display", "inline");
-    }
-    else if (property.housesHotel === 5) {
-      $(".player-details > .btn-sell-hotel").css("display", "inline");
-    }
-  });
-}
-
-for (let card of jailFreeCards) {
-  $(document).on("click", "." + card.cardClass, function() {
-    $(".player-details").empty();
-    card.playerClickResult();
-  });
-}
-
-$(document).on("click", ".btn-buy-house", function() {
-  let property;
-  for (let propertyCheck of properties) {
-    if (propertyCheck.title === $(".player-details > .property-name").html()) {
-      property = propertyCheck;
-    }
-  }
-  let player = property.owner;
-  pay(player, freeParking.jackpot, property.priceHouse);
-  property.housesHotel++;
-  if (player.money < property.priceHouse || !buyHouseNumberCheck(property)) {
-    $(".player-details > .btn-buy-house").css("display", "none");
-  }
-  if (property.housesHotel > 0) {
-    $(".player-details > .btn-sell-house").css("display", "inline");
-    $(".player-details > .btn-mortgage").css("display", "none");
-  }
-  if ((property.housesHotel === 4) && (player.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
-    $(".player-details > .btn-buy-house").css("display", "none");
-    $(".player-details > .btn-buy-hotel").css("display", "inline");
-  }
-});
-
-$(document).on("click", ".btn-buy-hotel", function() {
-  let property;
-  for (let propertyCheck of properties) {
-    if (propertyCheck.title === $(".player-details > .property-name").html()) {
-      property = propertyCheck;
-    }
-  }
-  let player = property.owner;
-  pay(player, freeParking.jackpot, property.priceHouse);
-  property.housesHotel++;
-  $(".player-details > .btn-buy-hotel").css("display", "none");
-  $(".player-details > .btn-sell-house").css("display", "none");
-  $(".player-details > .btn-sell-hotel").css("display", "inline");
-});
-
-$(document).on("click", ".btn-sell-hotel", function() {
-  let property;
-  for (let propertyCheck of properties) {
-    if (propertyCheck.title === $(".player-details > .property-name").html()) {
-      property = propertyCheck;
-    }
-  }
-  let player = property.owner;
-  moneyChange(player, 0.5 * property.priceHouse);
-  property.housesHotel--;
-  $(".player-details > .btn-sell-hotel").css("display", "none");
-  $(".player-details > .btn-buy-hotel").css("display", "inline");
-  if (sellHouseNumberCheck(property)) {
-    $(".player-details > .btn-sell-house").css("display", "inline");
-  }
-});
-
-$(document).on("click", ".btn-sell-house", function() {
-  let property;
-  for (let propertyCheck of properties) {
-    if (propertyCheck.title === $(".player-details > .property-name").html()) {
-      property = propertyCheck;
-    }
-  }
-  let player = property.owner;
-  moneyChange(player, 0.5 * property.priceHouse);
-  property.housesHotel--;
-  if (property.housesHotel === 0) {
-    $(".player-details > .btn-sell-house").css("display", "none");
-    $(".player-details > .btn-mortgage").css("display", "inline");
-  }
-  if (player.money >= property.priceHouse) {
-    $(".player-details > .btn-buy-house").css("display", "inline");
-  }
-  if (!sellHouseNumberCheck(property)) {
-    $(".player-details > .btn-sell-house").css("display", "none");
-  }
-  $(".player-details > .btn-buy-hotel").css("display", "none");
-});
 
 $(document).on("click", ".btn-buy", function() {
   let player = gameStatus.currentPlayerTurn;
   let property = player.onSpace;
   pay(player, freeParking.jackpot, property.price);
+  // moneyChange(player, -property.price);
   player.properties.push(property);
   property.owner = player;
-  checkForMonoply(player);
   $(".btn-buy").css("display", "none");
   $(".btn-auction").css("display", "none");
   $(".closer").css("display", "inline");
@@ -3346,6 +3103,24 @@ $(document).on("click", ".btn-auction", function() {
   endTurn();
 });
 
+// function setRent(property) {
+//   if (property.type === "coloredProperty") {
+//     property.rent = property.rentArray[property.housesHotel];
+//     if ((property.inMonopoly) && (property.housesHotel === 0)) {
+//       property.rent = property.rentArray[2];
+//     }
+//   }
+//   else if (property.type === "railroad") {
+//     property.rent = property.rentArray[property.owner.numberOfRailroads() - 1];
+//   }
+//   else if (property.type === "utility") {
+//     let multiplier;
+//     if (playerReceiving.numberOfUtilities() === 1) {multiplier = 4;}
+//     else {multiplier = 10;}
+//     property.rent = playerPaying.lastDiceResult.total*multiplier;
+//   }
+// }
+
 $(".roll-for-utility-card").click(function() {
   $(".roll").css("display", "none");
   $(".roll-for-utility-card").css("display", "none");
@@ -3359,6 +3134,14 @@ $(".roll-for-utility-card").click(function() {
   rent(moneyOwed);
 });
 
+function rent(money) {
+  $(".roll").css("display", "none");
+  $(".end-turn").css("display", "none");
+  $(".board-details > .btn-rent").empty();
+  $(".board-details > .btn-rent").append("Rent - $" + money);
+  $(".board-details > .btn-rent").css("display", "inline");
+}
+
 $(document).on("click", ".btn-rent", function() {
   let playerPaying = gameStatus.currentPlayerTurn;
   let property = playerPaying.onSpace;
@@ -3366,7 +3149,7 @@ $(document).on("click", ".btn-rent", function() {
   let moneyOwed;
   if (property.type === "coloredProperty") {
     moneyOwed = property.rent[property.housesHotel];
-    if ((property.isMonopoly) && (property.housesHotel === 0)) {
+    if ((property.inMonopoly) && (property.housesHotel === 0)) {
       moneyOwed = property.rent[6];
     }
   }
@@ -3386,10 +3169,25 @@ $(document).on("click", ".btn-rent", function() {
   }
   multiplier = 1;
   pay(playerPaying, playerReceiving, moneyOwed);
+  // moneyChange(playerPaying, -moneyOwed);
+  // moneyChange(playerReceiving, moneyOwed);
   $(".board-details > .btn-rent").css("display", "none");
   $(".board-details > .closer").css("display", "inline");
   endTurn();
 });
+
+function pay(fromPlayer, toPlayer, money) {
+  moneyChange(fromPlayer, -money);
+  moneyChange(toPlayer, money);
+}
+
+// OTHER FUNCTIONS
+
+function freeParkingJackpotCheck(money) {
+  if (gameStatus.freeParkingJackpotOn) {
+    changeMoney(money, freeParking.jackpot);
+  }
+}
 
 // TEST LOGIC
 
@@ -3420,6 +3218,25 @@ firstThroughEighth.forEach(function(div) {
 });
 
 gameStatus.currentPlayerTurn = activePlayers[0];
+
+function changePlayerColumn(player) {
+  $(".three").append($(".reference > .column-three-reference").html());
+  $(".three > .player-heading > .player-name").append(player.name);
+  $(".three > .player-heading > .vertical-middle").attr("src", player.token.image);
+  $(".three > .player-heading > .vertical-middle").attr("alt", player.token.class);
+  $(".three > .player-heading > .player-cash").append("$" + player.money);
+  for (let color of propertyCategories) {
+    for (let i = 1; i <= color[1]; i++) {
+      for (let property of player.properties) {
+        if (property.title === $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).attr("title")) {
+          $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).removeClass("hidden");
+        }
+      }
+    }
+  }
+}
+
+// let propertyTest = pacificAvenue;
 
 $(".display-test-board").click(function() {
   displayProperty(balticAvenue, "board-details", "one");

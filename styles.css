@@ -8,7 +8,7 @@ table {
 }
 
 h1, h2, h3, h4, h5, h6, p, hr {
-  margin: 2px;
+  margin: 0.125rem;
 }
 
 .game-start {
@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
 
 .dice-roll {
   display: none;
-  /* width: 15rem; */
 }
 
 .to-roll-dice {
@@ -197,9 +196,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   top: 30.38rem;
   left: 30.32rem;
   height: 4.64rem;
-  /* 132px */
   width: 4.67rem;
-  /* 133px */
 }
 
 .mediterranean-ave {
@@ -279,9 +276,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   top: 30.38rem;
   left: 0;
   height: 4.64rem;
-  /* 132px */
   width: 4.67rem;
-  /* 133px */
 }
 
 .st-charles-place {
@@ -361,9 +356,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   top: 0;
   left: 0;
   height: 4.64rem;
-  /* 132px */
   width: 4.67rem;
-  /* 133px */
 }
 
 .kentucky-ave {
@@ -443,9 +436,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   top: 0;
   left: 30.32rem;
   height: 4.64rem;
-  /* 132px */
   width: 4.67rem;
-  /* 133px */
 }
 
 .pacific-ave {
@@ -539,7 +530,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
   left: 6.8125rem;
   width: 21rem;
   height: 22.25rem;
-  /* display: none; */
 }
 
 .dice1 {
@@ -572,6 +562,14 @@ h1, h2, h3, h4, h5, h6, p, hr {
   display: none;
 }
 
+.use-jail-free-chance {
+  display: none;
+}
+
+.use-jail-free-community-chest {
+  display: none;
+}
+
 .btn-buy {
   display: none;
 }
@@ -581,6 +579,30 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .btn-auction {
+  display: none;
+}
+
+.btn-mortgage {
+  display: none;
+}
+
+.btn-lift-mortgage {
+  display: none;
+}
+
+.btn-buy-house {
+  display: none;
+}
+
+.btn-buy-hotel {
+  display: none;
+}
+
+.btn-sell-house {
+  display: none;
+}
+
+.btn-sell-hotel {
   display: none;
 }
 
@@ -774,7 +796,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 100%;
   height: 9.375%;
   border-bottom: solid;
-  /* position: relative; */
 }
 
 .player-name-cash {
@@ -838,16 +859,16 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .player-details {
-  background-color: pink;
-  background-size: cover;
+  background-color: white;
+  background-size: 21rem;
+  background-repeat: no-repeat;
   border: solid;
   position: absolute;
-  /* margin: auto; */
   text-align: center;
   top: 6rem;
   left: 4.5rem;
   width: 21rem;
-  height: 22rem;
+  height: 26rem;
 }
 
 .player-size {
@@ -932,49 +953,47 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 3rem;
 }
 
+.page-button-blocker {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .titledeed {
-  background-size: cover;
   text-align: center;
 }
 
 .purple {
   background-image: url("images/titledeed-purple.png");
-  background-size: cover;
+
 }
 
 .light-blue {
   background-image: url("images/titledeed-light-blue.png");
-  background-size: cover;
 }
 
 .magenta {
   background-image: url("images/titledeed-magenta.png");
-  background-size: cover;
 }
 
 .orange {
   background-image: url("images/titledeed-orange.png");
-  background-size: cover;
 }
 
 .red {
   background-image: url("images/titledeed-red.png");
-  background-size: cover;
 }
 
 .yellow {
   background-image: url("images/titledeed-yellow.png");
-  background-size: cover;
 }
 
 .green {
   background-image: url("images/titledeed-green.png");
-  background-size: cover;
 }
 
 .blue {
   background-image: url("images/titledeed-blue.png");
-
 }
 
 .railroad {
@@ -1031,7 +1050,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 80%;
 }
 
-.mortgage {
+.mortgaged {
   background-color: white;
   text-align: center;
 }

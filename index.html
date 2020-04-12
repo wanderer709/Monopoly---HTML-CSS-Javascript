@@ -86,8 +86,8 @@
       </div>
     </div>
     <div class="auto-random">
-      <ul class="random-list">
-      </ul>
+      <!-- <ul class="random-list">
+      </ul> -->
       <h4>The turn order will be determined randomly.</h4>
     </div>
     <div class="player-decide">
@@ -256,6 +256,9 @@
     <button class="roll-for-utility-card">Roll Dice</button>
     <button class="bribe">Bribe $50</button>
     <button class="end-turn">End Turn</button>
+    <br>
+    <button class="use-jail-free-chance">Get out of Jail Free (Chance)</button>
+    <button class="use-jail-free-community-chest">Get out of Jail Free (Community Chest)</button>
 
     <div class="board-button-blocker"></div>
 
@@ -306,109 +309,9 @@
     </div>
   </div>
 
-  <div class="column three">
-    <div class="player-heading">
-      <!-- <table>
-        <tr>
-          <td class="player-name">CP</td>
-          <td><img class="vertical-middle token-small" src="images/token-boot.png" alt=""></td>
-        </tr>
-        <tr>
-          <td class="cash-label">Cash on hand:</td>
-          <td class="player-cash">$1500</td>
-        </tr>
-      </table> -->
-      <p class="player-name">CP</p>
-      <img class="vertical-middle token-small" src="images/token-boot.png" alt="">
-      <br><br>
-      <p class="cash-label">Cash on hand:</p>
-      <p class="player-cash">$1500</p>
-    </div>
-    <hr class="c3-hr">
-    <h2 class="properties-label">Properties:</h2>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-purple.png" alt="purple" class="titledeed-small" title="Mediterranean Avenue"></td>
-        <td><img src="images/titledeed-purple.png" alt="purple" class="titledeed-small" title="Baltic Avenue"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-light-blue.png" alt="light-blue" class="titledeed-small" title="Oriental Avenue"></td>
-        <td><img src="images/titledeed-light-blue.png" alt="light-blue" class="titledeed-small" title="Vermont Avenue"></td>
-        <td><img src="images/titledeed-light-blue.png" alt="light-blue" class="titledeed-small" title="Connecticut Avenue"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small" title="St. Charles Place"></td>
-        <td><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small" title="State Avenue"></td>
-        <td><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small" title="Virginia Avenue"></td>
-      </tr>
-    </table>
-    <br>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-orange.png" alt="orange" class="titledeed-small" title="St. James Place"></td>
-        <td><img src="images/titledeed-orange.png" alt="orange" class="titledeed-small" title="Tennessee Avenue"></td>
-        <td><img src="images/titledeed-orange.png" alt="orange" class="titledeed-small" title="New York Avenue"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-red.png" alt="red" class="titledeed-small" title="Kentucky Avenue"></td>
-        <td><img src="images/titledeed-red.png" alt="red" class="titledeed-small" title="Indiana Avenue"></td>
-        <td><img src="images/titledeed-red.png" alt="red" class="titledeed-small" title="Illinois Avenue"></td>
-      </tr>
-    </table>
-    <br>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-yellow.png" alt="yellow" class="titledeed-small" title="Atlantic Avenue"></td>
-        <td><img src="images/titledeed-yellow.png" alt="yellow" class="titledeed-small" title="Ventnor Avenue"></td>
-        <td><img src="images/titledeed-yellow.png" alt="yellow" class="titledeed-small" title="Marvin Gardens"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-green.png" alt="green" class="titledeed-small" title="Pacific Avenue"></td>
-        <td><img src="images/titledeed-green.png" alt="green" class="titledeed-small" title="North Carolina Avenue"></td>
-        <td><img src="images/titledeed-green.png" alt="green" class="titledeed-small" title="Pennsylvania Avenue"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-blue.png" alt="blue" class="titledeed-small" title="Park Place"></td>
-        <td><img src="images/titledeed-blue.png" alt="blue" class="titledeed-small" title="Boardwalk"></td>
-      </tr>
-    </table>
-    <br>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small" title="Reading Railroad"></td>
-        <td><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small" title="Pennsylvania Railroad"></td>
-        <td><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small" title="B&O Railroad"></td>
-        <td><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small" title="Short Line"></td>
-      </tr>
-    </table>
-    <table class="properties">
-      <tr>
-        <td><img src="images/titledeed-electric.png" alt="electric" class="titledeed-small" title="Electric Company"></td>
-        <td><img src="images/titledeed-water.png" alt="water" class="titledeed-small" title="Water Works"></td>
-      </tr>
-    </table>
-    <br>
-    <table>
-      <tr>
-        <td><strong>Get-out-of-jail-free Cards</strong></td>
-        <td><img src="images/chance.png" alt="chance" class="chance-cc-small" title="?"></td>
-        <td><img src="images/community-chest.png" alt="chance" class="chance-cc-small" title="Community Chest"></td>
-      </tr>
-    </table>
-    <br>
-    <div class="player-details hidden">
-    </div>
-  </div>
+  <div class="column three"></div>
+
+  <div class="page-button-blocker hidden"></div>
 
   <div class="reference">
     <div class="titledeed">
@@ -453,7 +356,13 @@
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
-      <!-- <button class='rent hidden'></button> -->
+      <button class="btn-mortgage"></button>
+      <br>
+      <button class="btn-buy-house"></button>
+      <button class="btn-buy-hotel"></button>
+      <br>
+      <button class="btn-sell-house"></button>
+      <button class="btn-sell-hotel"></button>
     </div>
 
     <div class="railroad">
@@ -490,6 +399,7 @@
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
+      <button class="btn-mortgage"></button>
     </div>
 
     <div class="utility">
@@ -513,23 +423,35 @@
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
+      <button class="btn-mortgage"></button>
     </div>
 
-    <div class="board-details go-board">
+    <div class="mortgaged">
+      <br><br><br><br><br>
+      <h1 class="property-name"></h1>
+      <br><br><br>
+      <h2>Mortgaged</h2>
+      <h2 class="mortgage-value"></h2>
+      <br><br>
+      <button class="closer">Click here to close.</button>
+      <button class="btn-lift-mortgage"></button>
+    </div>
+
+    <div class="go-board">
       <p>Back here already? Well, here's $200 that has been sentenced to be burnt at the stake.</p>
       <img src="images/go.png" alt="GO" class="go-img">
       <br>
       <button class="closer">Click here to close.</button>
     </div>
 
-    <div class="board-details go-to-jail-board">
+    <div class="go-to-jail-board">
       <p><strong>The developer caught you squishing this adorable, benevolent, and defenseless spider!</strong></p>
       <img src="images/go-to-jail.png" alt="Adorable, benevolent, defenseless...shame." class="go-to-jail-img">
       <p><strong>Go to jail! Now!</strong></p>
       <button class="go-to-jail-btn">Go to jail, where the ratio of legs to multicellular organisms is greater than two.</button>
     </div>
 
-    <div class="board-details go-to-jail-doubles">
+    <div class="go-to-jail-doubles">
       <p><strong>Congratulations! The probablilty of rolling doubles three times in one turn is 216 to 1, but you have beaten the odds!</strong></p>
       <br>
       <p><strong>Go directly to jail to collect your prize!</strong></p>
@@ -537,7 +459,7 @@
       <button class="go-to-jail-btn">Prize?! What do I win?! Take me directly to jail now! Gimme, gimme, gimme!</button>
     </div>
 
-    <div class="board-details free-parking-board">
+    <div class="free-parking-board">
       <p>Welcome to Free Parking. Now evaluate this integral.</p>
       <img src="images/integral.png" alt="Evaluate this integral." class="integral">
       <br>
@@ -546,7 +468,7 @@
       <button class="closer">Click here to close.</button>
     </div>
 
-    <div class="board-details chance-land">
+    <div class="chance-land">
       <img src="images/chance-land.png" alt="?" class="chance-land-img">
       <br>
       <br>
@@ -554,14 +476,14 @@
       <button class="take-a-chance">Take a chance, stupid.</button>
     </div>
 
-    <div class="board-details cc-land">
+    <div class="cc-land">
       <img src="images/chest-closed.png" alt="Community Chest" class=cc-land-img>
       <br>
       <p>Rob the community blind! Open their chest now!</p>
       <button class="open-chest">Open the chest, stupid.</button>
     </div>
 
-    <div class="board-details chance">
+    <div class="chance">
       <h4 class=card-heading>Chance</h4>
       <br>
       <p class="chance-text"></p>
@@ -569,7 +491,7 @@
       <button class="btn-chance-result closer"></button>
     </div>
 
-    <div class="board-details community-chest">
+    <div class="community-chest">
       <h4 class=card-heading>Comunnity Chest</h4>
       <br>
       <p class="community-chest-text"></p>
@@ -577,7 +499,7 @@
       <button class="btn-cc-result closer"></button>
     </div>
 
-    <div class="board-details income-tax-board">
+    <div class="income-tax-board">
       <img src="images/income-tax.png" alt="Income Tax" class="income-tax-img">
       <p>They're on to you! <strong>Pay a 10% or $200 Income Tax</strong> and cover your tracks now!</p>
       <br>
@@ -585,7 +507,7 @@
       <button class="pay-200 closer">Pay $200.</button>
     </div>
 
-    <div class="board-details luxury-tax-board">
+    <div class="luxury-tax-board">
       <img src="images/luxury-tax.png" alt="Luxury Tax" class="luxury-tax-img">
       <p>You have so much money and shiny things, so you must now pay a <strong>$75 Luxury Tax.</strong> You poor thing.</p>
       <button class="pay-luxury closer">Pay $75 Luxury Tax.</button>
@@ -617,7 +539,7 @@
       <table class="properties color-magenta">
         <tr>
           <td class="td1"><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small number-1 hidden st-charles-place-player" title="St. Charles Place"></td>
-          <td class="td2"><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small number-2 hidden states-ave-player" title="State Avenue"></td>
+          <td class="td2"><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small number-2 hidden states-ave-player" title="States Avenue"></td>
           <td class="td3"><img src="images/titledeed-magenta.png" alt="magenta" class="titledeed-small number-3 hidden virginia-ave-player" title="Virginia Avenue"></td>
         </tr>
       </table>
@@ -676,13 +598,12 @@
       <table class="color-cards">
         <tr>
           <td><strong>Get-out-of-jail-free Cards:</strong></td>
-          <td class="td1"><img src="images/chance.png" alt="chance" class="chance-cc-small number-1 hidden jail-free-chance" title="?"></td>
+          <td class="td1"><img src="images/chance.png" alt="chance" class="chance-cc-small number-1 hidden jail-free-chance" title="Chance"></td>
           <td class="td2"><img src="images/community-chest.png" alt="community-chest" class="chance-cc-small number-2 hidden jail-free-community-chest" title="Community Chest"></td>
         </tr>
       </table>
       <br>
-      <div class="player-details hidden" id="player-details">
-      </div>
+      <div class="player-details hidden" id="player-details"></div>
     </div>
   </div>
 
@@ -690,23 +611,11 @@
     <p>Alpha testing starts here.</p>
   </div>
 
-  <div class="buttons-test">
+  <!-- <div class="buttons-test">
     <button class="display-test-board">Display Baltic Avenue (Board Details)</button>
     <button class="display-test-player">Display Kentucky Avenue (Player Details)</button>
     <button class="display-chance">Display Sample Chance</button>
-  </div>
-
-  <div class="player-details mortgage test">
-    <br><br><br><br><br>
-    <h1 class="property-name">Property Name</h1>
-    <br><br><br>
-    <h2>Mortgaged</h2>
-    <h2>for $2500</h2>
-    <br><br>
-    <div class="closer">
-      <button class="closer">Click here to close.</button>
-    </div>
-  </div>
+  </div> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="monopoly.js"></script>

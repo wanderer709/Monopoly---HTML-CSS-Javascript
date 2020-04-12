@@ -2195,7 +2195,7 @@ let activePlayersOrdered = [];
 let multiplier = 1;
 let onPlayer = 1;
 let cardDrawn;
-let firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+const firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
 
 const tokensMatch = [
   ["boot", "cannon", "car", "dog", "hat", "horse-and-rider", "iron", "sack-of-money", "ship", "thimble", "wheelbarrow"],
@@ -3188,7 +3188,7 @@ $(document).on("click", ".btn-lift-mortgage", function() {
   $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
   $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
   $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
-  if ((player.money >= property.priceHouse) && (property.isMonopoly)) {
+  if (player.money >= property.priceHouse) {
     $(".player-details > .btn-buy-house").css("display", "inline");
   }
 });
@@ -3391,42 +3391,42 @@ $(document).on("click", ".btn-rent", function() {
   endTurn();
 });
 
-// TEST LOGIC
-
-activePlayers = [player4, player2, player3, player1, player6, player5];
-
-firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
-
-for (let player of activePlayers) {
-  $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
-  $(".active").addClass(`token ${player.token.class}`);
-  $("." + player.token.class).css(player.tokenSpace);
-  player.onSpace = go;
-  $(".active").removeClass("active");
-  player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
-  $("." + player.playerOrder).css("display", "block");
-  $("." + player.playerOrder + " > p:first-child").html(player.name);
-  $("." + player.playerOrder + " > img").attr("src", player.token.image);
-  $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
-}
-
-firstThroughEighth.forEach(function(div) {
-  $(document).on("click", "." + div, function() {
-    $(".three").empty();
-    let playerIndex = firstThroughEighth.indexOf(div);
-    let player = activePlayers[playerIndex];
-    changePlayerColumn(player);
-  });
-});
-
-gameStatus.currentPlayerTurn = activePlayers[0];
-
-$(".display-test-board").click(function() {
-  displayProperty(balticAvenue, "board-details", "one");
-  $(".board-details > .closer").css("display", "inline");
-});
-
-$(".display-test-player").click(function() {
-  displayProperty(kentuckyAvenue, "player-details", "three");
-  $(".player-details > .closer").css("display", "inline");
-});
+// // TEST LOGIC
+//
+// activePlayers = [player4, player2, player3, player1, player6, player5];
+//
+// firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+//
+// for (let player of activePlayers) {
+//   $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
+//   $(".active").addClass(`token ${player.token.class}`);
+//   $("." + player.token.class).css(player.tokenSpace);
+//   player.onSpace = go;
+//   $(".active").removeClass("active");
+//   player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
+//   $("." + player.playerOrder).css("display", "block");
+//   $("." + player.playerOrder + " > p:first-child").html(player.name);
+//   $("." + player.playerOrder + " > img").attr("src", player.token.image);
+//   $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
+// }
+//
+// firstThroughEighth.forEach(function(div) {
+//   $(document).on("click", "." + div, function() {
+//     $(".three").empty();
+//     let playerIndex = firstThroughEighth.indexOf(div);
+//     let player = activePlayers[playerIndex];
+//     changePlayerColumn(player);
+//   });
+// });
+//
+// gameStatus.currentPlayerTurn = activePlayers[0];
+//
+// $(".display-test-board").click(function() {
+//   displayProperty(balticAvenue, "board-details", "one");
+//   $(".board-details > .closer").css("display", "inline");
+// });
+//
+// $(".display-test-player").click(function() {
+//   displayProperty(kentuckyAvenue, "player-details", "three");
+//   $(".player-details > .closer").css("display", "inline");
+// });
