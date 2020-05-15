@@ -1,73 +1,10 @@
 /*jshint esversion: 6 */
 
-// TOKENS
-
-const boot = {
-  class: "boot",
-  image: "images/token-boot.png"
-};
-
-const car = {
-  class: "car",
-  image: "images/token-car.png"
-};
-
-const cannon = {
-  class: "cannon",
-  image: "images/token-cannon.png"
-};
-
-const dog = {
-  class: "dog",
-  image: "images/token-dog.png"
-};
-
-const hat = {
-  class: "hat",
-  image: "images/token-hat.png"
-};
-
-const horseAndRider = {
-  class: "horse-and-rider",
-  image: "images/token-horse-and-rider.png"
-};
-
-const iron = {
-  class: "iron",
-  image: "images/token-iron.png"
-};
-
-const sackOfMoney = {
-  class: "sack-of-money",
-  image: "images/token-sack-of-money.png"
-};
-
-const ship = {
-  class: "ship",
-  image: "images/token-ship.png"
-};
-
-const thimble = {
-  class: "thimble",
-  image: "images/token-thimble.png"
-};
-
-const wheelbarrow = {
-  class: "wheelbarrow",
-  image: "images/token-wheelbarrow.png"
-};
-
-const noToken = {
-  class: "no-token",
-};
-
 // COLORED PROPERTIES
 
 let mediterraneanAvenue = {
   boardSpace: $("#mediterranean-ave"),
   boardClass: "mediterranean-ave",
-  boardIndex: 1,
-  boardSide: "bottom",
   title: "Mediterranean Avenue",
   type: "coloredProperty",
   color: "purple",
@@ -89,7 +26,8 @@ let mediterraneanAvenue = {
   playerClickResult: function() {
     if (mediterraneanAvenue.isMortgaged) {
       displayMortgagedProperty(mediterraneanAvenue);
-    } else {
+    }
+    else {
       displayProperty(mediterraneanAvenue, "player-details", "three");
     }
   },
@@ -99,7 +37,6 @@ let balticAvenue = {
   boardSpace: $("#baltic-ave"),
   boardClass: "baltic-ave",
   boardIndex: 3,
-  boardSide: "bottom",
   title: "Baltic Avenue",
   type: "coloredProperty",
   color: "purple",
@@ -121,7 +58,8 @@ let balticAvenue = {
   playerClickResult: function() {
     if (balticAvenue.isMortgaged) {
       displayMortgagedProperty(balticAvenue);
-    } else {
+    }
+    else {
       displayProperty(balticAvenue, "player-details", "three");
     }
   },
@@ -130,7 +68,6 @@ let balticAvenue = {
 let orientalAvenue = {
   boardSpace: $("#oriental-ave"),
   boardClass: "oriental-ave",
-  boardSide: "bottom",
   title: "Oriental Avenue",
   type: "coloredProperty",
   color: "light-blue",
@@ -152,7 +89,8 @@ let orientalAvenue = {
   playerClickResult: function() {
     if (orientalAvenue.isMortgaged) {
       displayMortgagedProperty(orientalAvenue);
-    } else {
+    }
+    else {
       displayProperty(orientalAvenue, "player-details", "three");
     }
   },
@@ -161,7 +99,6 @@ let orientalAvenue = {
 let vermontAvenue = {
   boardSpace: $("#vermont-ave"),
   boardClass: "vermont-ave",
-  boardSide: "bottom",
   title: "Vermont Avenue",
   type: "coloredProperty",
   color: "light-blue",
@@ -183,7 +120,8 @@ let vermontAvenue = {
   playerClickResult: function() {
     if (vermontAvenue.isMortgaged) {
       displayMortgagedProperty(vermontAvenue);
-    } else {
+    }
+    else {
       displayProperty(vermontAvenue, "player-details", "three");
     }
   },
@@ -192,7 +130,6 @@ let vermontAvenue = {
 let connecticutAvenue = {
   boardSpace: $("#connecticut-ave"),
   boardClass: "connecticut-ave",
-  boardSide: "bottom",
   title: "Connecticut Avenue",
   type: "coloredProperty",
   color: "light-blue",
@@ -214,7 +151,8 @@ let connecticutAvenue = {
   playerClickResult: function() {
     if (connecticutAvenue.isMortgaged) {
       displayMortgagedProperty(connecticutAvenue);
-    } else {
+    }
+    else {
       displayProperty(connecticutAvenue, "player-details", "three");
     }
   },
@@ -223,7 +161,6 @@ let connecticutAvenue = {
 let stCharlesPlace = {
   boardSpace: $("#st-charles-place"),
   boardClass: "st-charles-place",
-  boardSide: "left",
   title: "St. Charles Place",
   type: "coloredProperty",
   color: "magenta",
@@ -245,7 +182,8 @@ let stCharlesPlace = {
   playerClickResult: function() {
     if (stCharlesPlace.isMortgaged) {
       displayMortgagedProperty(stCharlesPlace);
-    } else {
+    }
+    else {
       displayProperty(stCharlesPlace, "player-details", "three");
     }
   },
@@ -254,7 +192,6 @@ let stCharlesPlace = {
 let statesAvenue = {
   boardSpace: $("#states-ave"),
   boardClass: "states-ave",
-  boardSide: "left",
   title: "States Avenue",
   type: "coloredProperty",
   color: "magenta",
@@ -276,7 +213,8 @@ let statesAvenue = {
   playerClickResult: function() {
     if (statesAvenue.isMortgaged) {
       displayMortgagedProperty(statesAvenue);
-    } else {
+    }
+    else {
       displayProperty(statesAvenue, "player-details", "three");
     }
   },
@@ -285,7 +223,6 @@ let statesAvenue = {
 let virginiaAvenue = {
   boardSpace: $("#virginia-ave"),
   boardClass: "virginia-ave",
-  boardSide: "left",
   title: "Virginia Avenue",
   type: "coloredProperty",
   color: "magenta",
@@ -307,7 +244,8 @@ let virginiaAvenue = {
   playerClickResult: function() {
     if (virginiaAvenue.isMortgaged) {
       displayMortgagedProperty(virginiaAvenue);
-    } else {
+    }
+    else {
       displayProperty(virginiaAvenue, "player-details", "three");
     }
   },
@@ -316,7 +254,6 @@ let virginiaAvenue = {
 let stJamesPlace = {
   boardSpace: $("#st-james-place"),
   boardClass: "st-james-place",
-  boardSide: "left",
   title: "St. James Place",
   type: "coloredProperty",
   color: "orange",
@@ -338,7 +275,8 @@ let stJamesPlace = {
   playerClickResult: function() {
     if (stJamesPlace.isMortgaged) {
       displayMortgagedProperty(stJamesPlace);
-    } else {
+    }
+    else {
       displayProperty(stJamesPlace, "player-details", "three");
     }
   },
@@ -347,7 +285,6 @@ let stJamesPlace = {
 let tenneseeAvenue = {
   boardSpace: $("#tennessee-ave"),
   boardClass: "tennessee-ave",
-  boardSide: "left",
   title: "Tennessee Avenue",
   type: "coloredProperty",
   color: "orange",
@@ -369,7 +306,8 @@ let tenneseeAvenue = {
   playerClickResult: function() {
     if (tenneseeAvenue.isMortgaged) {
       displayMortgagedProperty(tenneseeAvenue);
-    } else {
+    }
+    else {
       displayProperty(tenneseeAvenue, "player-details", "three");
     }
   },
@@ -378,7 +316,6 @@ let tenneseeAvenue = {
 let newYorkAvenue = {
   boardSpace: $("#new-york-ave"),
   boardClass: "new-york-ave",
-  boardSide: "left",
   title: "New York Avenue",
   type: "coloredProperty",
   color: "orange",
@@ -400,7 +337,8 @@ let newYorkAvenue = {
   playerClickResult: function() {
     if (newYorkAvenue.isMortgaged) {
       displayMortgagedProperty(newYorkAvenue);
-    } else {
+    }
+    else {
       displayProperty(newYorkAvenue, "player-details", "three");
     }
   },
@@ -409,7 +347,6 @@ let newYorkAvenue = {
 let kentuckyAvenue = {
   boardSpace: $("#kentucky-ave"),
   boardClass: "kentucky-ave",
-  boardSide: "top",
   title: "Kentucky Avenue",
   type: "coloredProperty",
   color: "red",
@@ -431,7 +368,8 @@ let kentuckyAvenue = {
   playerClickResult: function() {
     if (kentuckyAvenue.isMortgaged) {
       displayMortgagedProperty(kentuckyAvenue);
-    } else {
+    }
+    else {
       displayProperty(kentuckyAvenue, "player-details", "three");
     }
   },
@@ -440,7 +378,6 @@ let kentuckyAvenue = {
 let indianaAvenue = {
   boardSpace: $("#indiana-ave"),
   boardClass: "indiana-ave",
-  boardSide: "top",
   title: "Indiana Avenue",
   type: "coloredProperty",
   color: "red",
@@ -462,7 +399,8 @@ let indianaAvenue = {
   playerClickResult: function() {
     if (mediterraneanAvenue.isMortgaged) {
       displayMortgagedProperty(mediterraneanAvenue);
-    } else {
+    }
+    else {
       displayProperty(indianaAvenue, "player-details", "three");
     }
   },
@@ -471,7 +409,6 @@ let indianaAvenue = {
 let illinoisAvenue = {
   boardSpace: $("#illinois-ave"),
   boardClass: "illinois-ave",
-  boardSide: "top",
   title: "Illinois Avenue",
   type: "coloredProperty",
   color: "red",
@@ -493,7 +430,8 @@ let illinoisAvenue = {
   playerClickResult: function() {
     if (illinoisAvenue.isMortgaged) {
       displayMortgagedProperty(illinoisAvenue);
-    } else {
+    }
+    else {
       displayProperty(illinoisAvenue, "player-details", "three");
     }
   },
@@ -502,7 +440,6 @@ let illinoisAvenue = {
 let atlanticAvenue = {
   boardSpace: $("#atlantic-ave"),
   boardClass: "atlantic-ave",
-  boardSide: "top",
   title: "Atlantic Avenue",
   type: "coloredProperty",
   color: "yellow",
@@ -524,7 +461,8 @@ let atlanticAvenue = {
   playerClickResult: function() {
     if (atlanticAvenue.isMortgaged) {
       displayMortgagedProperty(atlanticAvenue);
-    } else {
+    }
+    else {
       displayProperty(atlanticAvenue, "player-details", "three");
     }
   },
@@ -533,7 +471,6 @@ let atlanticAvenue = {
 let ventnorAvenue = {
   boardSpace: $("#ventnor-ave"),
   boardClass: "ventnor-ave",
-  boardSide: "top",
   title: "Ventnor Avenue",
   type: "coloredProperty",
   color: "yellow",
@@ -555,7 +492,8 @@ let ventnorAvenue = {
   playerClickResult: function() {
     if (ventnorAvenue.isMortgaged) {
       displayMortgagedProperty(ventnorAvenue);
-    } else {
+    }
+    else {
       displayProperty(ventnorAvenue, "player-details", "three");
     }
   },
@@ -564,7 +502,6 @@ let ventnorAvenue = {
 let marvinGardens = {
   boardSpace: $("#marvin-gardens"),
   boardClass: "marvin-gardens",
-  boardSide: "top",
   title: "Marvin Gardens",
   type: "coloredProperty",
   color: "yellow",
@@ -586,7 +523,8 @@ let marvinGardens = {
   playerClickResult: function() {
     if (marvinGardens.isMortgaged) {
       displayMortgagedProperty(marvinGardens);
-    } else {
+    }
+    else {
       displayProperty(marvinGardens, "player-details", "three");
     }
   },
@@ -595,7 +533,6 @@ let marvinGardens = {
 let pacificAvenue = {
   boardSpace: $("#pacific-ave"),
   boardClass: "pacific-ave",
-  boardSide: "right",
   title: "Pacific Avenue",
   type: "coloredProperty",
   color: "green",
@@ -617,7 +554,8 @@ let pacificAvenue = {
   playerClickResult: function() {
     if (pacificAvenue.isMortgaged) {
       displayMortgagedProperty(pacificAvenue);
-    } else {
+    }
+    else {
       displayProperty(pacificAvenue, "player-details", "three");
     }
   },
@@ -626,7 +564,6 @@ let pacificAvenue = {
 let northCarolinaAvenue = {
   boardSpace: $("#north-carolina-ave"),
   boardClass: "north-carolina-ave",
-  boardSide: "right",
   title: "North Carolina Avenue",
   type: "coloredProperty",
   color: "green",
@@ -648,7 +585,8 @@ let northCarolinaAvenue = {
   playerClickResult: function() {
     if (northCarolinaAvenue.isMortgaged) {
       displayMortgagedProperty(northCarolinaAvenue);
-    } else {
+    }
+    else {
       displayProperty(northCarolinaAvenue, "player-details", "three");
     }
   },
@@ -657,7 +595,6 @@ let northCarolinaAvenue = {
 let pennsylvaniaAvenue = {
   boardSpace: $("#pennsylvania-ave"),
   boardClass: "pennsylvania-ave",
-  boardSide: "right",
   title: "Pennsylvania Avenue",
   type: "coloredProperty",
   color: "green",
@@ -679,7 +616,8 @@ let pennsylvaniaAvenue = {
   playerClickResult: function() {
     if (pennsylvaniaAvenue.isMortgaged) {
       displayMortgagedProperty(pennsylvaniaAvenue);
-    } else {
+    }
+    else {
       displayProperty(pennsylvaniaAvenue, "player-details", "three");
     }
   },
@@ -688,7 +626,6 @@ let pennsylvaniaAvenue = {
 let parkPlace = {
   boardSpace: $("#park-place"),
   boardClass: "park-place",
-  boardSide: "right",
   title: "Park Place",
   type: "coloredProperty",
   color: "blue",
@@ -710,7 +647,8 @@ let parkPlace = {
   playerClickResult: function() {
     if (parkPlace.isMortgaged) {
       displayMortgagedProperty(parkPlace);
-    } else {
+    }
+    else {
       displayProperty(parkPlace, "player-details", "three");
     }
   },
@@ -719,7 +657,6 @@ let parkPlace = {
 let boardwalk = {
   boardSpace: $("#boardwalk"),
   boardClass: "boardwalk",
-  boardSide: "right",
   title: "Boardwalk",
   type: "coloredProperty",
   color: "blue",
@@ -741,7 +678,8 @@ let boardwalk = {
   playerClickResult: function() {
     if (boardwalk.isMortgaged) {
       displayMortgagedProperty(boardwalk);
-    } else {
+    }
+    else {
       displayProperty(boardwalk, "player-details", "three");
     }
   },
@@ -770,7 +708,8 @@ let readingRailroad = {
   playerClickResult: function() {
     if (readingRailroad.isMortgaged) {
       displayMortgagedProperty(readingRailroad);
-    } else {
+    }
+    else {
       displayRailroad(readingRailroad, "player-details", "three");
     }
   },
@@ -797,7 +736,8 @@ let pennsylvaniaRailroad = {
   playerClickResult: function() {
     if (pennsylvaniaRailroad.isMortgaged) {
       displayMortgagedProperty(pennsylvaniaRailroad);
-    } else {
+    }
+    else {
       displayRailroad(pennsylvaniaRailroad, "player-details", "three");
     }
   },
@@ -824,7 +764,8 @@ let bORailroad = {
   playerClickResult: function() {
     if (bORailroad.isMortgaged) {
       displayMortgagedProperty(bORailroad);
-    } else {
+    }
+    else {
       displayRailroad(bORailroad, "player-details", "three");
     }
   },
@@ -851,7 +792,8 @@ let shortLine = {
   playerClickResult: function() {
     if (shortLine.isMortgaged) {
       displayMortgagedProperty(shortLine);
-    } else {
+    }
+    else {
       displayRailroad(shortLine, "player-details", "three");
     }
   },
@@ -880,7 +822,8 @@ let electricCompany = {
   playerClickResult: function() {
     if (electricCompany.isMortgaged) {
       displayMortgagedProperty(electricCompany);
-    } else {
+    }
+    else {
       displayUtility(electricCompany, "player-details", "three");
     }
   },
@@ -907,7 +850,8 @@ let waterWorks = {
   playerClickResult: function() {
     if (waterWorks.isMortgaged) {
       displayMortgagedProperty(waterWorks);
-    } else {
+    }
+    else {
       displayUtility(waterWorks, "player-details", "three");
     }
   },
@@ -950,7 +894,6 @@ let freeParking = {
   title: "Free Parking",
   type: "freeParking",
   jackpot: {
-    token: noToken,
     money: 0,
   },
   playerLanded: null,
@@ -1092,7 +1035,7 @@ let luxuryTax = {
 
 // CHANCE AND COMMUNITY CHEST DECK
 
-let chanceDeck = [
+ let chanceDeck = [
   advanceToGoChance = {
     text: "Advance to Go.",
     buttonText: "Okay",
@@ -1105,7 +1048,6 @@ let chanceDeck = [
         total: numberToAdvance,
       };
       moveToken(toGo, player);
-      return true;
     }
   },
   advanceToIllinoisAve = {
@@ -1118,14 +1060,14 @@ let chanceDeck = [
       let numberToAdvance;
       if (board.indexOf(player.onSpace) > 24) {
         numberToAdvance = 28;
-      } else {
+      }
+      else {
         numberToAdvance = 24 - board.indexOf(player.onSpace);
       }
       let toIllinoisAvenue = {
         total: numberToAdvance,
       };
       moveToken(toIllinoisAvenue, player);
-      return true;
     }
   },
   advanceToUtiliy = {
@@ -1138,9 +1080,11 @@ let chanceDeck = [
       let numberToAdvance;
       if (player.onSpace === chance1) {
         numberToAdvance = 5;
-      } else if (player.onSpace === chance2) {
+      }
+      else if (player.onSpace === chance2) {
         numberToAdvance = 6;
-      } else if (player.onSpace === chance3) {
+      }
+      else if (player.onSpace === chance3) {
         numberToAdvance = 16;
       }
       multiplier = 10;
@@ -1148,7 +1092,6 @@ let chanceDeck = [
         total: numberToAdvance,
       };
       moveToken(toUtility, player);
-      return true;
     }
   },
   advanceToStCharles = {
@@ -1161,16 +1104,17 @@ let chanceDeck = [
       let numberToAdvance;
       if (board.indexOf(player.onSpace) > 30) {
         numberToAdvance = 15;
-      } else if (board.indexOf(player.onSpace) > 20) {
+      }
+      else if (board.indexOf(player.onSpace) > 20) {
         numberToAdvance = 29;
-      } else {
+      }
+      else {
         numberToAdvance = 4;
       }
       let toStCharlesPlace = {
         total: numberToAdvance,
       };
       moveToken(toStCharlesPlace, player);
-      return true;
     }
   },
   advanceToRailroad = {
@@ -1183,9 +1127,11 @@ let chanceDeck = [
       let numberToAdvance;
       if (player.onSpace === chance1) {
         numberToAdvance = 8;
-      } else if (player.onSpace === chance2) {
+      }
+      else if (player.onSpace === chance2) {
         numberToAdvance = 3;
-      } else {
+      }
+      else {
         numberToAdvance = 9;
       }
       let toRailroad = {
@@ -1193,7 +1139,6 @@ let chanceDeck = [
       };
       multiplier = 2;
       moveToken(toRailroad, player);
-      return true;
     }
   },
   advanceToRailroadTwo = {
@@ -1206,9 +1151,11 @@ let chanceDeck = [
       let numberToAdvance;
       if (player.onSpace === chance1) {
         numberToAdvance = 8;
-      } else if (player.onSpace === chance2) {
+      }
+      else if (player.onSpace === chance2) {
         numberToAdvance = 3;
-      } else {
+      }
+      else {
         numberToAdvance = 9;
       }
       let toRailroad = {
@@ -1216,7 +1163,6 @@ let chanceDeck = [
       };
       multiplier = 2;
       moveToken(toRailroad, player);
-      return true;
     }
   },
   alaskaPFD = {
@@ -1228,14 +1174,12 @@ let chanceDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 50);
       endTurn();
-      return true;
     }
   },
   jailFreeChance = {
     text: 'The government has decided that your business ventures are "too big to fail" and is prepared to issue a pardon. You may use this pardon to get out of jail free. This card may be kept until needed or traded/sold.',
     buttonText: 'Okay',
     title: "?",
-    type: "card",
     isMortgaged: false,
     price: 0,
     cardClass: "jail-free-chance",
@@ -1249,14 +1193,12 @@ let chanceDeck = [
       $(".three").empty();
       changePlayerColumn(player);
       endTurn();
-      return true;
     },
     playerClickResult: function() {
       $(".three > .player-details").addClass("chance");
       $(".three > .player-details").append($(".reference > .chance").html());
       $(".three > .player-details > .chance-text").append(jailFreeChance.text);
       $(".three > .player-details > .btn-chance-result").append("Click here to close.");
-      $(".three > .player-details > .btn-chance-result").addClass("closer");
       $(".three > .player-details > .btn-chance-result").css("display", "inline");
       $(".three > .player-details > .btn-chance-result").removeClass("btn-chance-result");
       $(".three > .player-details").removeClass("hidden");
@@ -1273,129 +1215,115 @@ let chanceDeck = [
         total: 3,
       };
       moveToken(moveBackThree, player, "backward");
-      return true;
     }
   },
-  goToJailChance = {
-    text: "What in the blazes is wrong with you?! While making a friendly vist to Alaska, you shove a moose out of a flightseeing aircraft. You are no doubt aware that this is illegal, so go to jail. Go directly to jail. Do not pass Go. Do not collect $200.",
-    buttonText: "Okay, officer. BTW, was it okay for me to wake that bear to take a selfie with it?",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(goToJailChance), 1);
-      chanceDeckDiscarded.push(goToJailChance);
-      let player = gameStatus.currentPlayerTurn;
-      moveTokenDirectlyTo(jail, player);
-      $("." + player.token.class).remove();
-      $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
-      $(".active").addClass(`token ${player.token.class}`);
-      $("." + player.token.class).css(player.inJailSpace);
-      $(".active").removeClass("active");
-      player.inJail = true;
-      player.lastDiceResult.doubles = false;
-      player.numberOfTurnsInJail = 0;
-      $("#board-details").empty();
-      $("#board-details").removeClass();
-      $("#board-details").addClass("board-details hidden");
-      endTurn();
-      return true;
-    }
-  },
-  propertyRepair = {
-    text: "Make general repairs on all your property: for each house, pay $25; for each hotel, pay $100.",
-    buttonText: "Okay",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(propertyRepair), 1);
-      chanceDeckDiscarded.push(propertyRepair);
-      let player = gameStatus.currentPlayerTurn;
-      let coloredProperties = player.properties.filter(property => property.type === "coloredProperty");
-      let moneyOwed = 0;
-      for (let property of player.properties) {
-        if (property.housesHotel === 5) {
-          moneyOwed += 200;
-        } else {
-          moneyOwed += 25 * property.housesHotel;
-        }
-      }
-      let moneyCheck = pay(player, freeParking.jackpot, moneyOwed);
-      if (moneyCheck) {
+    goToJailChance = {
+      text: "What in the blazes is wrong with you?! While making a friendly vist to Alaska, you shove a moose out of a flightseeing aircraft. You are no doubt aware that this is illegal, so got to jail. Go directly to jail. Do not pass Go. Do not collect $200.",
+      buttonText: "Okay, officer. BTW, was it okay for me to wake that bear to take a selfie with it?",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(goToJailChance), 1);
+        chanceDeckDiscarded.push(goToJailChance);
+        let player = gameStatus.currentPlayerTurn;
+        moveTokenDirectlyTo(jail, player);
+        $("." + player.token.class).remove();
+        $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
+        $(".active").addClass(`token ${player.token.class}`);
+        $("." + player.token.class).css(player.inJailSpace);
+        $(".active").removeClass("active");
+        player.inJail = true;
+        player.lastDiceResult.doubles = false;
+        player.numberOfTurnsInJail = 0;
+        $("#board-details").empty();
+        $("#board-details").removeClass();
+        $("#board-details").addClass("board-details hidden");
         endTurn();
-        return true;
       }
-    }
-  },
-  poorTax = {
-    text: "You are poor. You must pay a $15 Poor Tax because you are poor.",
-    buttonText: "Okay",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(poorTax), 1);
-      chanceDeckDiscarded.push(poorTax);
-      let player = gameStatus.currentPlayerTurn;
-      let moneyCheck = pay(player, freeParking.jackpot, 15);
-      if (moneyCheck) {
-        endTurn();
-        return true;
-      } else {
-        return false;
-      }
-    }
-  },
-  advanceToReading = {
-    text: "Read a book on the Reading Railroad. Advance to Reading Railroad. If you pass Go, collect $200.",
-    buttonText: "Okay",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(advanceToReading), 1);
-      chanceDeckDiscarded.push(advanceToReading);
-      let player = gameStatus.currentPlayerTurn;
-      let numberToAdvance;
-      if (player.onSpace === chance1) {
-        numberToAdvance = 38;
-      } else if (player.onSpace === chance2) {
-        numberToAdvance = 23;
-      } else if (player.onSpace === chance3) {
-        numberToAdvance = 9;
-      }
-      let toReadingRailroad = {
-        total: numberToAdvance,
-      };
-      moveToken(toReadingRailroad, player);
-      return true;
-    }
-  },
-  advanceToBoardwalk = {
-    text: "Take a walk on the boardwalk. Advance token to Boardwalk.",
-    buttonText: "Okay",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(advanceToBoardwalk), 1);
-      chanceDeckDiscarded.push(advanceToBoardwalk);
-      let player = gameStatus.currentPlayerTurn;
-      let numberToAdvance = 39 - board.indexOf(player.onSpace);
-      let toBoardwalk = {
-        total: numberToAdvance,
-      };
-      moveToken(toBoardwalk, player);
-      return true;
     },
-  },
-  payFiftyToAll = {
-    text: "Pay each player $50.",
-    buttonText: "Okay",
-    result: function() {
-      chanceDeck.splice(chanceDeck.indexOf(payFiftyToAll), 1);
-      chanceDeckDiscarded.push(payFiftyToAll);
-      let playerPaying = gameStatus.currentPlayerTurn;
-      let moneyCheck = pay(playerPaying, freeParking.jackpot, 50 * (activePlayers.length - 1));
-      if (moneyCheck) {
-        for (let player of activePlayers) {
-          if (player !== playerPaying) {
-            pay(freeParking.jackpot, player, 50);
+    propertyRepair = {
+      text: "Make general repairs on all your property: for each house, pay $25; for each hotel, pay $100.",
+      buttonText: "Okay",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(propertyRepair), 1);
+        chanceDeckDiscarded.push(propertyRepair);
+        let player = gameStatus.currentPlayerTurn;
+        let coloredProperties = player.properties.filter(property => property.type === "coloredProperty");
+        let moneyOwed = 0;
+        for (let property of player.properties) {
+          if (property.housesHotel === 5) {
+            moneyOwed += 200;
+          }
+          else {
+            moneyOwed += 25 * property.housesHotel;
           }
         }
+        pay(player, freeParking.jackpot, moneyOwed);
         endTurn();
-        return true;
-      } else {
-        return false;
       }
-    }
-  },
+    },
+    poorTax = {
+      text: "You are poor. You must pay a $15 Poor Tax because you are poor.",
+      buttonText: "Okay",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(poorTax), 1);
+        chanceDeckDiscarded.push(poorTax);
+        let player = gameStatus.currentPlayerTurn;
+        pay(player, freeParking.jackpot, 15);
+        // moneyChange(player, -15);
+        endTurn();
+      }
+    },
+    advanceToReading = {
+      text: "Read a book on the Reading Railroad. Advance to Reading Railroad. If you pass Go, collect $200.",
+      buttonText: "Okay",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(advanceToReading), 1);
+        chanceDeckDiscarded.push(advanceToReading);
+        let player = gameStatus.currentPlayerTurn;
+        let numberToAdvance;
+        if (player.onSpace === chance1) {
+          numberToAdvance = 38;
+        }
+        else if (player.onSpace === chance2) {
+          numberToAdvance = 23;
+        }
+        else if (player.onSpace === chance3) {
+          numberToAdvance = 9;
+        }
+        let toReadingRailroad = {
+          total: numberToAdvance,
+        };
+        moveToken(toReadingRailroad, player);
+      }
+    },
+    advanceToBoardwalk = {
+      text: "Take a walk on the boardwalk. Advance token to Boardwalk.",
+      buttonText: "Okay",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(advanceToBoardwalk), 1);
+        chanceDeckDiscarded.push(advanceToBoardwalk);
+        let player = gameStatus.currentPlayerTurn;
+        let numberToAdvance = 39 - board.indexOf(player.onSpace);
+        let toBoardwalk = {
+          total: numberToAdvance,
+        };
+        moveToken(toBoardwalk, player);
+      },
+    },
+    payFiftyToAll = {
+      text: "Pay each player $50.",
+      buttonText: "Okay",
+      result: function() {
+        chanceDeck.splice(chanceDeck.indexOf(payFiftyToAll), 1);
+        chanceDeckDiscarded.push(payFiftyToAll);
+        let playerPaying = gameStatus.currentPlayerTurn;
+        for (let player of activePlayers) {
+          if (player !== playerPaying) {
+            pay(playerPaying, player, 50);
+          }
+          endTurn();
+        }
+      }
+    },
   walletFound = {
     text: "You find a lost wallet on the street with $150 cash. You chose not to search for its owner or turn it into the police, proving to the other players that you do not have a soul.",
     buttonText: "Okay",
@@ -1405,7 +1333,6 @@ let chanceDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 150);
       endTurn();
-      return true;
     }
   },
 ];
@@ -1425,7 +1352,6 @@ let communityChestDeck = [
         total: numberToAdvance,
       };
       moveToken(toGo, player);
-      return true;
     }
   },
   bankError = {
@@ -1437,7 +1363,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 200);
       endTurn();
-      return true;
     }
   },
   doctorsFee = {
@@ -1447,13 +1372,9 @@ let communityChestDeck = [
       communityChestDeck.splice(communityChestDeck.indexOf(doctorsFee), 1);
       communityChestDeckDiscarded.push(doctorsFee);
       let player = gameStatus.currentPlayerTurn;
-      let moneyCheck = pay(player, freeParking.jackpot, 50);
-      if (moneyCheck) {
-        endTurn();
-        return true;
-      } else {
-        return false;
-      }
+      pay(player, freeParking.jackpot, 50);
+      // moneyChange(player, -50);
+      endTurn();
     }
   },
   stockSale = {
@@ -1465,14 +1386,12 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 50);
       endTurn();
-      return true;
     }
   },
   jailFreeCommunityChest = {
     text: "Get out of Jail free.",
     buttonText: "Okay",
     title: "Community Chest",
-    type: "card",
     isMortgaged: false,
     price: 0,
     owner: null,
@@ -1484,14 +1403,12 @@ let communityChestDeck = [
       $(".three").empty();
       changePlayerColumn(player);
       endTurn();
-      return true;
     },
     playerClickResult: function() {
       $(".three > .player-details").addClass("community-chest");
       $(".three > .player-details").append($(".reference > .community-chest").html());
       $(".three > .player-details > .community-chest-text").append(jailFreeCommunityChest.text);
       $(".three > .player-details > .btn-cc-result").append("Click here to close.");
-      $(".three > .player-details > .btn-chance-result").addClass("closer");
       $(".three > .player-details > .btn-cc-result").css("display", "inline");
       $(".three > .player-details > .btn-cc-result").removeClass("btn-cc-result");
       $(".three > .player-details").removeClass("hidden");
@@ -1517,7 +1434,6 @@ let communityChestDeck = [
       $("#board-details").removeClass();
       $("#board-details").addClass("board-details hidden");
       endTurn();
-      return true;
     }
   },
   spiderSaved = {
@@ -1527,24 +1443,12 @@ let communityChestDeck = [
       communityChestDeck.splice(communityChestDeck.indexOf(spiderSaved), 1);
       communityChestDeckDiscarded.push(spiderSaved);
       let playerReceiving = gameStatus.currentPlayerTurn;
-      if (yetToPay.length === 0) {
-        yetToPay = activePlayers.slice();
-        let index = yetToPay.indexOf(playerReceiving);
-        yetToPay.splice(index, 1);
-      }
-      let moneyCheck;
-      for (let player of yetToPay) {
-        moneyCheck = pay(player, playerReceiving, 50);
-        if (moneyCheck) {
-          yetToPay.splice(0, 1);
-        } else {
-          return false;
+      for (let player of activePlayers) {
+        if (player !== playerReceiving) {
+          pay(player, playerReceiving, 50);
         }
       }
-      if (yetToPay.length === 0) {
-        endTurn();
-        return true;
-      }
+      endTurn();
     }
   },
   holidayCash = {
@@ -1556,7 +1460,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 100);
       endTurn();
-      return true;
     }
   },
   incomeTaxRefund = {
@@ -1568,7 +1471,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 20);
       endTurn();
-      return true;
     }
   },
   happyBirthday = {
@@ -1578,26 +1480,14 @@ let communityChestDeck = [
       communityChestDeck.splice(communityChestDeck.indexOf(happyBirthday), 1);
       communityChestDeckDiscarded.push(happyBirthday);
       let playerReceiving = gameStatus.currentPlayerTurn;
-      if (yetToPay.length === 0) {
-        yetToPay = activePlayers.slice();
-        let index = yetToPay.indexOf(playerReceiving);
-        yetToPay.splice(playerIndex, 1);
-      }
-      // let moneyForPlayerReceiving = 10 * yetToPay.length;
-      let moneyCheck;
-      for (let player of yetToPay) {
-        moneyCheck = pay(player, playerReceiving, 50);
-        if (moneyCheck) {
-          //          let playerIndex = yetToPay.indexOf(player);
-          yetToPay.splice(0, 1);
-        } else {
-          return false;
+      for (let player of activePlayers) {
+        if (player !== playerReceiving) {
+          pay(player, playerReceiving, 10);
+          // moneyChange(player, -10);
+          // moneyChange(playerReceiving, 10);
         }
       }
-      if (yetToPay.length === 0) {
-        endTurn();
-        return true;
-      }
+      endTurn();
     }
   },
   lifeInsurance = {
@@ -1609,7 +1499,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 100);
       endTurn();
-      return true;
     }
   },
   healthInsurance = {
@@ -1619,13 +1508,9 @@ let communityChestDeck = [
       communityChestDeck.splice(communityChestDeck.indexOf(healthInsurance), 1);
       communityChestDeckDiscarded.push(healthInsurance);
       let player = gameStatus.currentPlayerTurn;
-      let moneyCheck = pay(player, freeParking.jackpot, 50);
-      if (moneyCheck) {
-        endTurn();
-        return true;
-      } else {
-        return false;
-      }
+      pay(player, freeParking.jackpot, 50);
+      // moneyChange(player, -50);
+      endTurn();
     }
   },
   schoolFee = {
@@ -1635,13 +1520,9 @@ let communityChestDeck = [
       communityChestDeck.splice(communityChestDeck.indexOf(schoolFee), 1);
       communityChestDeckDiscarded.push(schoolFee);
       let player = gameStatus.currentPlayerTurn;
-      let moneyCheck = pay(player, freeParking.jackpot, 50);
-      if (moneyCheck) {
-        endTurn();
-        return true;
-      } else {
-        return false;
-      }
+      pay(player, freeParking.jackpot, 50);
+      // moneyChange(player, -50);
+      endTurn();
     }
   },
   constultancyFee = {
@@ -1653,7 +1534,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 25);
       endTurn();
-      return true;
     }
   },
   streetRepairs = {
@@ -1668,15 +1548,14 @@ let communityChestDeck = [
       for (let property of coleredProperties) {
         if (property.housesHotel === 5) {
           moneyOwed += 275;
-        } else {
+        }
+        else {
           moneyOwed += 40 * property.housesHotel;
         }
       }
-      let moneyCheck = pay(player, freeParking.jackpot, moneyOwed);
-      if (moneyCheck) {
-        endTurn();
-        return true;
-      }
+      pay(player, freeParking.jackpot, moneyOwed);
+      // moneyChange(player, -moneyOwed);
+      endTurn();
     }
   },
   beautyContest = {
@@ -1688,11 +1567,10 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 10);
       endTurn();
-      return true;
     }
   },
   youInherit = {
-    text: "At long last, your billionaire uncle has passed! However, you get hardly a passing mention in his will, and only inherit $100. You cannont help but sulk into your pillow at this lousy inheritance.",
+    text: "At long last, your billionaire uncle has passed! However, you get hardly a passing mention in his bill, and only inherit $100. You cannont help but sulk into your pillow at this lousy inheritance.",
     buttonText: "Okay",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(youInherit), 1);
@@ -1700,7 +1578,6 @@ let communityChestDeck = [
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 100);
       endTurn();
-      return true;
     }
   },
 ];
@@ -1817,6 +1694,63 @@ const boardClassArray = board.map(function(space) {
   return space.boardClass;
 });
 
+// TOKENS
+
+const boot = {
+  class: "boot",
+  image: "images/token-boot.png"
+};
+
+const car = {
+  class: "car",
+  image: "images/token-car.png"
+};
+
+const cannon = {
+  class: "cannon",
+  image: "images/token-cannon.png"
+};
+
+const dog = {
+  class: "dog",
+  image: "images/token-dog.png"
+};
+
+const hat = {
+  class: "hat",
+  image: "images/token-hat.png"
+};
+
+const horseAndRider = {
+  class: "horse-and-rider",
+  image: "images/token-horse-and-rider.png"
+};
+
+const iron = {
+  class: "iron",
+  image: "images/token-iron.png"
+};
+
+const sackOfMoney = {
+  class: "sack-of-money",
+  image: "images/token-sack-of-money.png"
+};
+
+const ship = {
+  class: "ship",
+  image: "images/token-ship.png"
+};
+
+const thimble = {
+  class: "thimble",
+  image: "images/token-thimble.png"
+};
+
+const wheelbarrow = {
+  class: "wheelbarrow",
+  image: "images/token-wheelbarrow.png"
+};
+
 // PLAYERS
 
 const player1 = {
@@ -1839,7 +1773,6 @@ const player1 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player1.properties.length - 1; i++) {
@@ -1894,7 +1827,6 @@ const player2 = {
 
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player2.properties.length - 1; i++) {
@@ -1948,7 +1880,6 @@ const player3 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player3.properties.length - 1; i++) {
@@ -2002,7 +1933,6 @@ const player4 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player4.properties.length - 1; i++) {
@@ -2056,7 +1986,6 @@ const player5 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player5.properties.length - 1; i++) {
@@ -2110,7 +2039,6 @@ const player6 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player6.properties.length - 1; i++) {
@@ -2164,7 +2092,6 @@ const player7 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player7.properties.length - 1; i++) {
@@ -2218,7 +2145,6 @@ const player8 = {
   onSpace: null,
   properties: [],
   monopolies: [],
-  inDebtTo: null,
   numberOfRailroads: function() {
     let count = 0;
     for (let i = 0; i <= player8.properties.length - 1; i++) {
@@ -2265,18 +2191,37 @@ const gameStatus = {
 
 let numberOfPlayers = null;
 let activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
-let initialPlayers = [];
 let activePlayersOrdered = [];
 let multiplier = 1;
 let onPlayer = 1;
 let cardDrawn;
 let firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
-let yetToPay = [];
 
 const tokensMatch = [
   ["boot", "cannon", "car", "dog", "hat", "horse-and-rider", "iron", "sack-of-money", "ship", "thimble", "wheelbarrow"],
   [boot, cannon, car, dog, hat, horseAndRider, iron, sackOfMoney, ship, thimble, wheelbarrow]
 ];
+
+// FOODOO
+// function railroadCount(player) {
+//   let count = 0;
+//   console.log(player.properties);
+//   for (let i = 0; i <= player.properties.length - 1; i++)
+//     if (player.properties[i].type === "railroad") {
+//       count++;
+//     }
+//   console.log(count);
+//   return count;
+// }
+//
+// function utilityCount(player) {
+//   let count = 0;
+//   for (let i = 0; i <= properties.length - 1; i++)
+//     if (properties[i].type === "utility") {
+//       count++;
+//     }
+//   return count;
+// }
 
 // FUNCTIONS
 
@@ -2299,47 +2244,14 @@ function rollDice() {
 function moneyChange(player, money) {
   player.money += money;
   $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
-  if ($(".three > .player-heading > .token-small").attr("alt") === player.token.class) {
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
-  }
 }
 
-function colorChangePlusHighlight(string) {
-  $("." + string).css("background-color", "#8ac6d1");
-  $(".two > ." + string).css("background-color", "#8ac6d1");
-  for (let player of initialPlayers) {
-    if (player.playerOrder === string) {
-      $("." + player.token.class).css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
-      player.properties.forEach(function(property) {
-        if (property.boardClass) {
-          $(".one > ." + property.boardClass).css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
-        }
-      });
-    }
-  }
+function colorChangeDarkerBlue(item) {
+  item.style.backgroundColor = "#8ac6d1";
 }
 
-function colorChangePlayerDecide(object) {
-  object.style.backgroundColor = "#8ac6d1";
-}
-
-function colorBack(string) {
-  $("." + string).css("background-color", "initial");
-  for (let player of initialPlayers) {
-    if (player.playerOrder === string) {
-      $("." + player.token.class).css("box-shadow", "none");
-      player.properties.forEach(function(property) {
-        if (property.boardClass) {
-          $(".one > ." + property.boardClass).css("box-shadow", "none");
-        }
-      });
-    }
-  }
-}
-
-function colorBackPlayerDecide(object) {
-  object.style.backgroundColor = "initial";
+function colorBack(item) {
+  item.style.backgroundColor = "initial";
 }
 
 function moveToChosen(playerChoice) {
@@ -2355,14 +2267,13 @@ function moveToChosen(playerChoice) {
 
   if (onPlayer > numberOfPlayers) {
     activePlayers = activePlayersOrdered;
-    initialPlayers = activePlayersOrdered;
     $(".next-turn-order").css("display", "inline");
   }
 }
 
 // MOVING TOKENS AND SPACE LANDING
 
-function moveToken(diceResult, player, direction = "forward") {
+function moveToken(diceResult, player, direction="forward") {
   $(".page-button-blocker").removeClass("hidden");
   let arr = [];
   for (let i = 1; i <= diceResult.total; i++) {
@@ -2378,10 +2289,12 @@ function moveToken(diceResult, player, direction = "forward") {
           $(".three").empty();
           changePlayerColumn(player);
         }
-      } else {
+      }
+      else {
         if (direction === "backward") {
           player.onSpace = board[board.indexOf(player.onSpace) - 1];
-        } else {
+        }
+        else {
           player.onSpace = board[board.indexOf(player.onSpace) + 1];
         }
       }
@@ -2394,8 +2307,7 @@ function moveToken(diceResult, player, direction = "forward") {
         player.onSpace.playerLanded = player;
         player.onSpace.result();
       }
-    }, 50 * num);
-    // 333 * num
+    }, 333 * num);
   });
 }
 
@@ -2415,63 +2327,74 @@ function landOn(space) {
     if (space.owner === null) {
       $(".board-details > .btn-buy").css("display", "inline");
       $(".board-details > .btn-auction").css("display", "inline");
-      $(".board-details > .btn-decline").css("display", "inline");
       buy(space);
-    } else if (space.owner !== space.playerLanded && !space.isMortgaged) {
+    }
+    else if (space.owner !== space.playerLanded && !space.isMortgaged) {
       let moneyOwed = space.rent[space.housesHotel];
       if ((space.isMonopoly) && (space.housesHotel === 0)) {
         moneyOwed = space.rent[6];
       }
       $(".board-details > .btn-rent").css("display", "inline");
       rent(moneyOwed);
-    } else {
+    }
+    else {
       $(".closer").css("display", "inline");
       endTurn();
     }
-  } else if (space.type === "railroad") {
+  }
+  else if (space.type === "railroad") {
     displayRailroad(space, "board-details", "one");
     $(".board-button-blocker").css("display", "block");
     if (space.owner === null) {
       buy(space);
-    } else if (space.owner !== space.playerLanded && !space.isMortgaged) {
+    }
+    else if (space.owner !== space.playerLanded && !space.isMortgaged) {
       let moneyOwed = space.rent[space.owner.numberOfRailroads() - 1] * multiplier;
       rent(moneyOwed);
-    } else {
+    }
+    else {
       $(".closer").css("display", "inline");
       endTurn();
     }
-  } else if (space.type === "utility") {
+  }
+  else if (space.type === "utility") {
     let player = gameStatus.currentPlayerTurn;
     if (space.owner === null) {
       displayUtility(space, "board-details", "one");
       $(".board-button-blocker").css("display", "block");
       buy(space);
-    } else if (space.owner !== space.playerLanded && !space.isMortgaged) {
+    }
+    else if (space.owner !== space.playerLanded && !space.isMortgaged) {
       if (multiplier === 1) {
         displayUtility(space, "board-details", "one");
         $(".board-button-blocker").css("display", "block");
         player.utilityDice = player.lastDiceResult;
         if (space.owner.numberOfUtilities() === 1) {
           multiplier = 4;
-        } else if (space.owner.numberOfUtilities() === 2) {
+        }
+        else if (space.owner.numberOfUtilities() === 2) {
           multiplier = 10;
         }
         let moneyOwed = player.utilityDice.total * multiplier;
         rent(moneyOwed);
-      } else {
+      }
+      else {
         $(".roll-for-utility-card").css("display", "inline");
       }
-    } else {
+    }
+    else {
       displayUtility(space, "board-details", "one");
       $(".board-button-blocker").css("display", "block");
       $(".closer").css("display", "inline");
       endTurn();
     }
-  } else if (space.type === "go") {
+  }
+  else if (space.type === "go") {
     displayGo();
     $(".board-button-blocker").css("display", "block");
     endTurn();
-  } else if (space.type === "jail") {
+  }
+  else if (space.type === "jail") {
     let player = gameStatus.currentPlayerTurn;
     $("." + player.token.class).remove();
     $(player.onSpace.boardSpace).append("<img src=" + player.token.image + " alt='boot' class='token active'>");
@@ -2479,7 +2402,8 @@ function landOn(space) {
     $("." + player.token.class).css(player.justVisitingSpace);
     $(".active").removeClass("active");
     endTurn();
-  } else if (space.type === "freeParking") {
+  }
+  else if (space.type === "freeParking") {
     let player = gameStatus.currentPlayerTurn;
     displayFreeParking();
     $(".board-button-blocker").css("display", "block");
@@ -2488,32 +2412,35 @@ function landOn(space) {
       freeParking.jackpot.money = 0;
     }
     endTurn();
-  } else if (space.type === "goToJail") {
+  }
+  else if (space.type === "goToJail") {
     $(".board-details").empty();
     displayGoToJail();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
-  } else if (space.type === "chance") {
+  }
+  else if (space.type === "chance") {
     $(".board-details").empty();
     displayChance();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
-  } else if (space.type === "communityChest") {
+  }
+  else if (space.type === "communityChest") {
     $(".board-details").empty();
     displayCommunityChest();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
-  } else if (space.type === "incomeTax") {
+  }
+  else if (space.type === "incomeTax") {
     $(".board-details").empty();
     displayIncomeTax();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
-  } else if (space.type === "luxuryTax") {
+  }
+  else if (space.type === "luxuryTax") {
     $(".board-details").empty();
     displayLuxuryTax();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
-  } else {
+  }
+  else {
+    console.log("not a valid space");
+    console.log(space);
     endTurn();
   }
 }
@@ -2524,10 +2451,12 @@ function endTurn() {
   if (gameStatus.currentPlayerTurn.inJail) {
     $(".roll").css("display", "none");
     $(".end-turn").css("display", "inline");
-  } else if (!gameStatus.currentPlayerTurn.lastDiceResult.doubles) {
+  }
+  else if (!gameStatus.currentPlayerTurn.lastDiceResult.doubles) {
     $(".roll").css("display", "none");
     $(".end-turn").css("display", "inline");
-  } else {
+  }
+  else {
     $(".roll").css("display", "inline");
     $(".end-turn").css("display", "none");
   }
@@ -2545,17 +2474,7 @@ function displayProperty(property, location, column) {
   $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-2-house > .right").append("$" + property.rent[2]);
   $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-3-house > .right").append("$" + property.rent[3]);
   $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-4-house > .right").append("$" + property.rent[4]);
-
-  for (let i = 1; i <= property.housesHotel; i++) {
-    $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-" + i + "-house > .left").append("&nbsp;&nbsp;&nbsp; <img src='images/house.png' alt='house' class='house-hotel-property'>");
-  }
-
   $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-hotel > .rent-hotel").append("$" + property.rent[5]);
-
-  if (property.housesHotel === 5) {
-    $("." + column + "> ." + location + " > .prop-details > .rents > tbody > .rent-hotel > .hotel-pic").append("&nbsp;&nbsp; <img src='images/hotel.png' alt='house' class='house-hotel-property'> &nbsp;&nbsp;");
-  }
-
   $("." + column + "> ." + location + " > .prop-details > .mortgage-value").append("Mortgage Value $" + property.mortgage);
   $("." + column + "> ." + location + " > .prop-details > .house-price").append("Houses cost $" + property.priceHouse + " each.");
   $("." + column + "> ." + location + " > .prop-details > .hotel-price").append("Hotels, $" + property.priceHouse + " plus 4 houses");
@@ -2585,7 +2504,7 @@ function displayRailroad(property, location, column) {
   $("." + column + "> ." + location).addClass("titledeed railroad");
   $("." + column + "> ." + location + "> .btn-buy").append("Buy" + property.title + " - $" + property.price);
   if (property.owner !== null) {
-    let moneyOwed = property.rent[property.owner.numberOfRailroads() - 1] * railroadMultiplier;
+    let moneyOwed = property.rent[property.owner.numberOfRailroads() - 1] * multiplier;
     $("." + column + "> ." + location + "> .btn-rent").append("Rent $" + moneyOwed);
   }
   $("." + column + "> ." + location + "> .closer").css("display", "none");
@@ -2602,15 +2521,15 @@ function displayUtility(property, location, column) {
   $("." + column + "> ." + location).addClass("titledeed " + property.utilityClass);
   $("." + column + "> ." + location + "> .btn-buy").append("Buy" + property.title + " - $" + property.price);
   if (property.owner !== null) {
-    let displayMultiplier = multiplier;
-    if (displayMultiplier === 1) {
+    if (multiplier === 1) {
       if (property.owner.numberOfUtilities() === 1) {
-        displayMultiplier = 4;
-      } else if (property.owner.numberOfUtilities() === 2) {
-        displayMultiplier = 10;
+        multiplier = 4;
+      }
+      else if (property.owner.numberOfUtilities() === 2) {
+        multiplier = 10;
       }
     }
-    let moneyOwed = gameStatus.currentPlayerTurn.lastDiceResult.total * displayMultiplier;
+    let moneyOwed = gameStatus.currentPlayerTurn.lastDiceResult.total * multiplier;
     $("." + column + "> ." + location + "> .btn-rent").append("Rent $" + moneyOwed);
   }
   $("." + column + "> ." + location + "> .closer").css("display", "none");
@@ -2691,54 +2610,6 @@ function displayLuxuryTax() {
   $(".one > .board-details").removeClass("hidden");
 }
 
-function displayAuctionBox() {
-  let biddingPlayer = gameStatus.currentPlayerTurn;
-  // let biddingPlayer = player;
-  let property = biddingPlayer.onSpace;
-  $("#board-details").empty()
-  $("#board-details").removeClass();
-  $("#board-details").addClass("board-details auction");
-  // $("." + property.boardClass).css("box-shadow", "0 0 0.25rem 0.25rem green");
-  $(".one > .auction").append($(".reference > .auction").html());
-  console.log(property);
-  console.log(biddingPlayer);
-  let propertyType
-  if (property.type === "coloredProperty") {
-    propertyType = property.color;
-  }
-  else if (property.type === "railroad") {
-    propertyType = property.type;
-  }
-  else if (property.type === "utility") {
-    propertyType = property.utilityClass;
-  }
-  console.log(propertyType);
-
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("src", "images/titledeed-" + propertyType + ".png");
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("alt", property.title);
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("title", property.title);
-  $(".one > .auction > .auction-property > .auction-property-title").append("<strong>" + property.title + "</strong> up for grabs!");
-  $(".one > .auction > .auction-property > .auction-property-price").append("Base Price: <strong>$" + property.price + "</strong>");
-  // FOODOO
-  $(".one > .auction > .bidding-player").append(biddingPlayer.name);
-  $(".one > .auction > .bidding-player-token").attr("src", biddingPlayer.token.image);
-  $(".one > .auction > .bidding-player-token").attr("alt", biddingPlayer.token.class);
-  //
-
-  $(".exit-auction").css("display", "inline");
-  // auction(biddingPlayer, property);
-}
-
-$(".exit-auction").click(function() {
-  $("#board-details").empty()
-  $("#board-details").removeClass();
-  $("#board-details").addClass("board-details hidden");
-  $(".exit-auction").css("display", "none");
-  $(".board-button-blocker").addClass("hidden");
-  $(".player-button-blocker").addClass("hidden");
-  endTurn();
-});
-
 // BUYING AND PAYING RENT
 
 function buyHouseNumberCheck(property) {
@@ -2774,7 +2645,6 @@ function buy(property) {
   $(".board-details > .btn-buy").append("Buy " + property.title + " - $" + property.price);
   $(".board-details > .btn-buy").css("display", "inline");
   $(".board-details > .btn-auction").css("display", "inline");
-  $(".board-details > .btn-decline").css("display", "inline");
 }
 
 function giveProperty(property, player) {
@@ -2807,124 +2677,17 @@ function checkForMonoply(player) {
 }
 
 function pay(fromPlayer, toPlayer, money) {
-  let moneyCheck = moneyCheckFunction(fromPlayer, money);
-  if (moneyCheck) {
-    moneyChange(fromPlayer, -money);
-    moneyChange(toPlayer, money);
-    fromPlayer.inDebtTo = null;
-  } else {
-    fromPlayer.inDebtTo = toPlayer;
+  moneyChange(fromPlayer, -money);
+  moneyChange(toPlayer, money);
+  for (let player of activePlayers) {
+    if ($(".three > .player-name").html() === player.name) {
+      $(".three").empty();
+      changePlayerColumn(player);
+      break;
+    }
   }
-  return moneyCheck;
-}
 
-function moneyCheckFunction(player, moneyOwed) {
-  if (player.money < moneyOwed) {
-    changePlayerColumn(player);
-    $(".three").css("background-color", "FireBrick");
-    setTimeout(function() {
-      $(".three").css("background-color", "#cae8e0");
-    }, 333);
-    $(".three > .btn-bankrupt").css("display", "inline");
-    return false;
-  } else {
-    return true;
-  }
 }
-
-function bankrupt(playerPaying, playerReceiving) {
-  playerPaying.properties.forEach(function(property) {
-    if (property.type !== "card") {
-      if (property.type === "coloredProperty") {
-        property.housesHotel = 0;
-      }
-      if (!property.isMortgaged) {
-        if (playerReceiving !== freeParking.jackpot) {
-          property.isMortgaged = true;
-          moneyChange(playerPaying, property.mortgage);
-        }
-      }
-    }
-  });
-  let propertiesToTransfer = playerPaying.properties.slice();
-  playerPaying.properties = [];
-  propertiesToTransfer.forEach(function(property) {
-    if (playerReceiving !== freeParking.jackpot) {
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").addClass("hidden");
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").empty();
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${playerReceiving.token.image}` +
-        " alt=" + `${playerReceiving.token.class}` +
-        " class='token-tiny'>");
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged").removeClass("hidden");
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").empty();
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${playerReceiving.token.image}` +
-        " alt=" + `${playerReceiving.token.class}` +
-        " class='token-tiny'>");
-      property.owner = playerReceiving;
-      playerReceiving.properties.push(property);
-    } else {
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").addClass("hidden");
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").empty();
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged").addClass("hidden");
-      $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").empty();
-      property.owner = null;
-    }
-    $(".one > ." + property.boardClass + " > .house").empty();
-    $(".one > ." + property.boardClass + " > .house").removeClass("hidden");
-    $(".one > ." + property.boardClass + " > .hotel").empty();
-    $(".one > ." + property.boardClass + " > .hotel").addClass("hidden");
-  });
-  $(".three > .btn-bankrupt").css("display", "none");
-  pay(playerPaying, playerReceiving, playerPaying.money);
-  let activePlayersChangingTo = [];
-  for (player of activePlayers) {
-    if (player !== playerPaying) {
-      activePlayersChangingTo.push(player);
-    }
-  }
-  let playerPayingIndex = activePlayers.indexOf(playerPaying);
-  let playerTurnIndex = activePlayers.indexOf(gameStatus.currentPlayerTurn);
-  activePlayers.splice(playerPayingIndex, 1);
-  changePlayerColumn(playerPaying);
-  $("." + playerPaying.token.class).css("display", "none");
-  $(".two > ." + playerPaying.playerOrder + " > .player-name-cash").css("text-decoration", "line-through");
-  $(".two > ." + playerPaying.playerOrder + " > .player-name-cash").css("background-color", "FireBrick");
-  $(".two > ." + playerPaying.playerOrder + " > .token-small").css("background-color", "FireBrick");
-  if (yetToPay.includes(playerPaying)) {
-    let yetToPayIndex = yetToPay.indexOf(playerPaying);
-    yetToPay.splice(yetToPayIndex, 1);
-  }
-  if (yetToPay.length === 0) {
-    let nextPlayer;
-    let nextPlayerIndex;
-    if (activePlayers.includes(gameStatus.currentPlayerTurn)) {
-      nextPlayerIndex = activePlayers.indexOf(gameStatus.currentPlayerTurn) + 1;
-      if (nextPlayerIndex === activePlayers.length) {
-        nextPlayer = activePlayers[0];
-      } else {
-        nextPlayer = activePlayers[nextPlayerIndex];
-      }
-    } else {
-      if (playerTurnIndex >= activePlayers.length - 1) {
-        nextPlayer = activePlayers[0];
-      } else {
-        nextPlayer = activePlayers[playerTurnIndex];
-      }
-    }
-    gameStatus.currentPlayerTurn = nextPlayer;
-    $("#board-details").empty();
-    $("#board-details").removeClass();
-    $("#board-details").addClass("board-details hidden");
-    $(".board-button-blocker").css("display", "none");
-    for (player of activePlayers) {
-      $(".two > ." + player.playerOrder + " > .token-small").css("box-shadow", "none");
-    }
-    $(".two > ." + nextPlayer.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
-    $(".roll").css("display", "none");
-    $(".continue").css("display", "inline");
-  }
-}
-
 // OTHER FUNCTIONS
 
 function freeParkingJackpotCheck(money) {
@@ -2934,33 +2697,19 @@ function freeParkingJackpotCheck(money) {
 }
 
 function changePlayerColumn(player) {
-  $(".three").empty();
-  if (activePlayers.includes(player)) {
-    $(".three").css("background-color", "#cae8e0");
-    $(".three").append($(".reference > .column-three-reference").html());
-    $(".three > .player-heading > .player-name").append(player.name);
-    $(".three > .player-heading > .vertical-middle").attr("src", player.token.image);
-    $(".three > .player-heading > .vertical-middle").attr("alt", player.token.class);
-    $(".three > .player-heading > .player-cash").empty();
-    $(".three > .player-heading > .player-cash").append("$" + player.money);
-    for (let color of propertyCategories) {
-      for (let i = 1; i <= color[1]; i++) {
-        for (let property of player.properties) {
-          if (property.title === $(".three > .color-" + color[0] + " > tbody > tr > .td" + i + " > .number-" + i).attr("title")) {
-            $(".three > .color-" + color[0] + " > tbody > tr > .td" + i + " > .number-" + i).removeClass("hidden");
-          }
+  $(".three").append($(".reference > .column-three-reference").html());
+  $(".three > .player-heading > .player-name").append(player.name);
+  $(".three > .player-heading > .vertical-middle").attr("src", player.token.image);
+  $(".three > .player-heading > .vertical-middle").attr("alt", player.token.class);
+  $(".three > .player-heading > .player-cash").append("$" + player.money);
+  for (let color of propertyCategories) {
+    for (let i = 1; i <= color[1]; i++) {
+      for (let property of player.properties) {
+        if (property.title === $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).attr("title")) {
+          $(".three > .color-" + color[0] + " > tbody > tr > .td" + i +  " > .number-" + i).removeClass("hidden");
         }
       }
     }
-    for (let card of jailFreeCards) {
-      if (card.owner === player) {
-        $(".three > .color-cards > tbody > tr > .td" + jailFreeCards.indexOf(card) + " > .chance-cc-small").removeClass("hidden");
-      }
-    }
-  } else {
-    $(".three").append($(".reference > .column-three-bankrupt").html());
-    $(".three > h1").append(player.name + " has declared bankruptcy.");
-    $(".three").css("background-color", "FireBrick");
   }
 }
 
@@ -2972,7 +2721,6 @@ $("#set-number").click(function() {
   numberOfPlayers = Number($("#number-of-players").val());
   for (i = 1; i <= 8 - numberOfPlayers; i++) {
     activePlayers.pop();
-    initialPlayers.pop();
   }
   $(".number-of-players").css("display", "none");
   $(".names-tokens").css("display", "block");
@@ -3016,7 +2764,6 @@ $("#set-name-token").click(function() {
 $(".reset-names-tokens").click(function() {
   onPlayer = 1;
   activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
-  initialPlayers = [player1, player2, player3, player4, player5, player6, player7, player8];
   $(".player-list").empty();
   $(".names-tokens").css("display", "none");
   $(".name-token-select").css("display", "inline");
@@ -3080,7 +2827,6 @@ $("#roll-turn-order").click(function() {
       }
       return b.diceResultTurnOrder - a.diceResultTurnOrder;
     });
-    initialPlayers = activePlayers.slice();
     $(".next-turn-order").css("display", "inline");
   }
 });
@@ -3099,7 +2845,6 @@ $("#auto-random").click(function() {
   }
 
   activePlayers = activePlayersOrdered;
-  initialPlayers = activePlayers.slice();
   $(".next-turn-order").css("display", "inline");
 });
 
@@ -3110,7 +2855,7 @@ $("#player-decide").click(function() {
   $(".player-decide").css("display", "block");
 
   for (let player of activePlayers) {
-    $(".players-to-choose > ul").append("<li onmouseover = 'colorChangePlayerDecide(this)' onmouseout = 'colorBackPlayerDecide(this)' onclick = 'moveToChosen(this)'>" +
+    $(".players-to-choose > ul").append("<li onmouseover = 'colorChangeDarkerBlue(this)' onmouseout = 'colorBack(this)' onclick = 'moveToChosen(this)'>" +
       "<strong>" + player.name + "</strong>" +
       "<img class='token-small'" +
       "src=" + player.token.image + " alt=" + player.token.class + "></li>");
@@ -3133,7 +2878,6 @@ $(".reset-turn-order").click(function() {
   $(".finalized-player-list").empty();
   onPlayer = 1;
   activePlayers = [player1, player2, player3, player4, player5, player6, player7, player8].splice(0, numberOfPlayers);
-  initialPlayers = activePlayers.slice();
   activePlayersOrdered = [];
 });
 
@@ -3170,14 +2914,18 @@ $(".play-game").click(function() {
     $(document).on("click", "." + div, function() {
       $(".three").empty();
       let playerIndex = firstThroughEighth.indexOf(div);
-      let player = initialPlayers[playerIndex];
+      let player = activePlayers[playerIndex];
       changePlayerColumn(player);
     });
   });
 
-  let activePlayersBeforeBankruptcy = activePlayers.slice();
+  // for (let div of firstThroughEighth) {
+  //   $(document).on("click", "." + div, function() {
+  //     $(".three").empty();
+  //   });
+  // }
+
   gameStatus.currentPlayerTurn = activePlayers[0];
-  $(".two > ." + gameStatus.currentPlayerTurn.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
 });
 
 // TO RESET STARTUP
@@ -3200,7 +2948,8 @@ $(".roll").click(function() {
   }
   if (player.numberOfDoubles === 3) {
     displayGoToJailDoubles();
-  } else {
+  }
+  else {
     moveToken(diceResult, player);
   }
 });
@@ -3208,40 +2957,18 @@ $(".roll").click(function() {
 $(".end-turn").click(function() {
   $(".one > button").css("display", "none");
   multiplier = 1;
-  railroadMultiplier = 1;
   let player = gameStatus.currentPlayerTurn;
   player.numberOfDoubles = 0;
   if (player.inJail) {
     player.numberOfTurnsInJail++;
   }
-  let nextPlayer;
   if (activePlayers.indexOf(player) === activePlayers.length - 1) {
-    nextPlayer = activePlayers[0];
-  } else {
-    nextPlayer = activePlayers[activePlayers.indexOf(gameStatus.currentPlayerTurn) + 1];
+    gameStatus.currentPlayerTurn = activePlayers[0];
   }
-  let previousPlayer = player;
-  if (nextPlayer.inJail) {
-    $(".roll-riot").css("display", "inline");
-    $(".bribe").css("display", "inline");
-    for (let card of jailFreeCards) {
-      if (card.owner === nextPlayer) {
-        $(".use-" + card.cardClass).css("display", "inline");
-      }
-    }
-  } else {
-    $(".roll").css("display", "inline");
+  else {
+    gameStatus.currentPlayerTurn = activePlayers[activePlayers.indexOf(gameStatus.currentPlayerTurn) + 1];
   }
-  $(".two > ." + player.playerOrder + " > .token-small").css("box-shadow", "none");
-  $(".two > ." + nextPlayer.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
-  gameStatus.currentPlayerTurn = nextPlayer;
-});
-
-$(".continue").click(function() {
   let nextPlayer = gameStatus.currentPlayerTurn;
-  $(".one > button").css("display", "none");
-  multiplier = 1;
-  railroadMultiplier = 1;
   if (nextPlayer.inJail) {
     $(".roll-riot").css("display", "inline");
     $(".bribe").css("display", "inline");
@@ -3250,7 +2977,8 @@ $(".continue").click(function() {
         $(".use-" + card.cardClass).css("display", "inline");
       }
     }
-  } else {
+  }
+  else {
     $(".roll").css("display", "inline");
   }
 });
@@ -3269,9 +2997,11 @@ $(".roll-riot").click(function() {
     player.numberOfDoubles++;
     player.inJail = false;
     moveToken(diceResult, player);
-  } else if (player.numberOfTurnsInJail === 3) {
+  }
+  else if (player.numberOfTurnsInJail === 3) {
     $(".bribe").css("display", "inline");
-  } else {
+  }
+  else {
     endTurn();
   }
 });
@@ -3280,12 +3010,10 @@ $(".bribe").click(function() {
   $(".roll-riot").css("display", "none");
   $(".bribe").css("display", "none");
   let player = gameStatus.currentPlayerTurn;
-  let moneyCheck = pay(player, freeParking.jackpot, 50);
-  if (moneyCheck) {
-    player.inJail = false;
-    $("." + player.token.class).css(player.justVisitingSpace);
-    endTurn();
-  }
+  pay(player, freeParking.jackpot, 50);
+  player.inJail = false;
+  $("." + player.token.class).css(player.justVisitingSpace);
+  endTurn();
 });
 
 $(document).on("click", ".go-to-jail-btn", function() {
@@ -3303,7 +3031,6 @@ $(document).on("click", ".go-to-jail-btn", function() {
   $("#board-details").removeClass();
   $("#board-details").addClass("board-details hidden");
   $(".board-button-blocker").css("display", "none");
-  $(".player-button-blocker").css("display", "none");
   endTurn();
 });
 
@@ -3313,8 +3040,6 @@ $(document).on("click", ".use-jail-free-chance", function() {
   $(".roll-riot").css("display", "none");
   $(".bribe").css("display", "none");
   let player = gameStatus.currentPlayerTurn;
-  let cardIndex = player.properties.indexOf(jailFreeChance);
-  player.properties.splice(cardIndex, 1);
   player.inJail = false;
   $("." + player.token.class).css(player.justVisitingSpace);
   $(".use-jail-free-chance").css("display", "none");
@@ -3328,8 +3053,6 @@ $(document).on("click", ".use-jail-free-community-chest", function() {
   $(".roll-riot").css("display", "none");
   $(".bribe").css("display", "none");
   let player = gameStatus.currentPlayerTurn;
-  let cardIndex = player.properties.indexOf(jailFreeCommunityChest);
-  player.properties.splice(cardIndex, 1);
   player.inJail = false;
   $("." + player.token.class).css(player.justVisitingSpace);
   $(".use-jail-free-chance").css("display", "none");
@@ -3354,20 +3077,25 @@ $(document).on("click", ".board-details > .take-a-chance", function() {
 });
 
 $(document).on("click", ".board-details > .btn-chance-result", function() {
-  $(".player-button-blocker").css("display", "none");
-  let cardResultExecuted = cardDrawn.result();
-  if (cardResultExecuted) {
-    $("#board-details").empty();
-    $("#board-details").removeClass();
-    $("#board-details").addClass("board-details hidden");
-    $(".board-button-blocker").css("display", "none");
-  }
+  cardDrawn.result();
 });
 
+// $(document).on("click", ".board-details > .open-chest", function() {
+//   if (communityChestDeck.length === 0) {
+//     communityChestDeck = communityChestDeckDiscarded.slice(0);
+//     communityChestDeckDiscarded.splice(0, communityChestDeckDiscarded.length);
+//   }
+//   $(".one > .board-details > .cc-land-img").attr("src", "images/chest-open.png");
+//   $(".one > .board-details > .open-chest").empty();
+//   $(".one > .board-details > .open-chest").append("Look in the chest, stupid.");
+//   $(".one > .board-details > button").removeClass("open-chest");
+//   $(".one > .board-details > button").addClass("look-in-chest");
+// });
+
 $(document).on("click", ".board-details > .open-chest", function() {
-  if (communityChestDeck.length === 0) {
+  if (chanceDeck.length === 0) {
     communityChestDeck = communityChestDeckDiscarded.slice(0);
-    communityChestDeckDiscarded.splice(0, communityChestDeckDiscarded.length);
+    communityChesteDeckDiscarded.splice(0, communityChestDeckDiscarded.length);
   }
   cardIndex = Math.floor(Math.random() * communityChestDeck.length);
   cardDrawn = communityChestDeck[cardIndex];
@@ -3381,47 +3109,36 @@ $(document).on("click", ".board-details > .open-chest", function() {
 });
 
 $(document).on('click', ".board-details > .btn-cc-result", function() {
-  $(".player-button-blocker").css("display", "none");
-  let cardResultExecuted = cardDrawn.result();
-  if (cardResultExecuted) {
-    $("#board-details").empty();
-    $("#board-details").removeClass();
-    $("#board-details").addClass("board-details hidden");
-    $(".board-button-blocker").css("display", "none");
-  }
+  cardDrawn.result();
 });
 
 $(document).on("click", ".board-details > .pay-10-percent", function() {
   let player = gameStatus.currentPlayerTurn;
   let moneyOwed = Math.round(0.1 * player.totalNetWorth());
-  let moneyCheck = pay(player, freeParking.jackpot, moneyOwed);
-  if (moneyCheck) {
-    endTurn();
-  }
+  pay(player, freeParking.jackpot, moneyOwed);
+  endTurn();
 });
 
 $(document).on("click", ".board-details > .pay-200", function() {
   let player = gameStatus.currentPlayerTurn;
-  let moneyCheck = pay(player, freeParking.jackpot, 200);
-  if (moneyCheck) {
-    endTurn();
-  }
+  pay(player, freeParking.jackpot, 200);
+  endTurn();
 });
 
 $(document).on("click", ".board-details > .pay-luxury", function() {
   let player = gameStatus.currentPlayerTurn;
-  let moneyCheck = pay(player, freeParking.jackpot, 75);
-  if (moneyCheck) {
-    endTurn();
-  }
+  pay(player, freeParking.jackpot, 75);
+  endTurn();
 });
+
+// FODOO
+
 
 $(document).on('click', ".board-details > .closer", function() {
   $("#board-details").empty();
   $("#board-details").removeClass();
   $("#board-details").addClass("board-details hidden");
   $(".board-button-blocker").css("display", "none");
-  $(".player-button-blocker").css("display", "none");
 });
 
 $(document).on("click", ".player-details > .closer", function() {
@@ -3457,34 +3174,32 @@ $(document).on("click", ".btn-lift-mortgage", function() {
   }
   let player = property.owner;
   let moneyOwed = Math.round(1.1 * property.mortgage);
-  let moneyCheck = pay(player, freeParking.jackpot, moneyOwed);
-  if (moneyCheck) {
-    $("#player-details").empty();
-    $("#player-details").removeClass();
-    $("#player-details").addClass("player-details");
-    property.isMortgaged = false;
-    $("." + property.boardClass + "-mortgaged").addClass("hidden");
-    $("." + property.boardClass + "-owner").removeClass("hidden");
-    if (property.type === "coloredProperty") {
-      displayProperty(property, "player-details", "three");
-    } else if (property.type === "railroad") {
-      displayRailroad(property, "player-details", "three");
-    } else if (property.type === "utility") {
-      displayUtility(property, "player-details", "three");
-    }
-    $(".three > .player-cash").empty();
-    $(".three > .player-cash").append("$" + player.money);
-    $(".player-details > button").css("display", "none");
-    $(".player-details > .closer").css("display", "inline");
-    $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
-    $(".player-details > .btn-mortgage").css("display", "inline");
-    $(".player-details > .btn-buy-house").append("Buy house - $" + property.priceHouse);
-    $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
-    $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
-    $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
-    if ((player.money >= property.priceHouse) && (property.isMonopoly)) {
-      $(".player-details > .btn-buy-house").css("display", "inline");
-    }
+  pay(player, freeParking.jackpot, moneyOwed);
+  $("#player-details").empty();
+  $("#player-details").removeClass();
+  $("#player-details").addClass("player-details");
+  property.isMortgaged = false;
+  $("." + property.boardClass + "-mortgaged").addClass("hidden");
+  $("." + property.boardClass + "-owner").removeClass("hidden");
+  if (property.type === "coloredProperty") {
+    displayProperty(property, "player-details", "three");
+  }
+  else if (property.type === "railroad") {
+    displayRailroad(property, "player-details", "three");
+  }
+  else if (property.type === "utility") {
+    displayUtility(property, "player-detils", "three");
+  }
+  $(".player-details > button").css("display", "none");
+  $(".player-details > .closer").css("display", "inline");
+  $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
+  $(".player-details > .btn-mortgage").css("display", "inline");
+  $(".player-details > .btn-buy-house").append("Buy house - $" + property.priceHouse);
+  $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
+  $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
+  $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
+  if ((player.money >= property.priceHouse) && (property.isMonopoly)) {
+    $(".player-details > .btn-buy-house").css("display", "inline");
   }
 });
 
@@ -3517,13 +3232,15 @@ for (let property of properties) {
     if ((property.isMonopoly) && (!property.isMortgaged) && (property.owner.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
       if (property.housesHotel < 4) {
         $(".player-details > .btn-buy-house").css("display", "inline");
-      } else if (property.housesHotel === 4) {
+      }
+      else if (property.housesHotel === 4) {
         $(".player-details > .btn-buy-hotel").css("display", "inline");
       }
     }
     if ((property.housesHotel > 0) && (property.housesHotel < 5) && (sellHouseNumberCheck(property))) {
       $(".player-details > .btn-sell-house").css("display", "inline");
-    } else if (property.housesHotel === 5) {
+    }
+    else if (property.housesHotel === 5) {
       $(".player-details > .btn-sell-hotel").css("display", "inline");
     }
   });
@@ -3536,7 +3253,6 @@ for (let card of jailFreeCards) {
   });
 }
 
-
 $(document).on("click", ".btn-buy-house", function() {
   let property;
   for (let propertyCheck of properties) {
@@ -3545,62 +3261,20 @@ $(document).on("click", ".btn-buy-house", function() {
     }
   }
   let player = property.owner;
-  let moneyCheck = pay(player, freeParking.jackpot, property.priceHouse);
-  if (moneyCheck) {
-    property.housesHotel++;
-    $("." + property.boardClass + " > .house-" + property.boardSide + "-" + property.housesHotel).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-    if (player.money < property.priceHouse || !buyHouseNumberCheck(property)) {
-      $(".player-details > .btn-buy-house").css("display", "none");
-    }
-    if (property.housesHotel > 0) {
-      $(".player-details > .btn-sell-house").css("display", "inline");
-      $(".player-details > .btn-mortgage").css("display", "none");
-    }
-    if ((property.housesHotel === 4) && (player.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
-      $(".player-details > .btn-buy-house").css("display", "none");
-      $(".player-details > .btn-buy-hotel").css("display", "inline");
-    }
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
-    updateDetails(property);
+  pay(player, freeParking.jackpot, property.priceHouse);
+  property.housesHotel++;
+  if (player.money < property.priceHouse || !buyHouseNumberCheck(property)) {
+    $(".player-details > .btn-buy-house").css("display", "none");
+  }
+  if (property.housesHotel > 0) {
+    $(".player-details > .btn-sell-house").css("display", "inline");
+    $(".player-details > .btn-mortgage").css("display", "none");
+  }
+  if ((property.housesHotel === 4) && (player.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
+    $(".player-details > .btn-buy-house").css("display", "none");
+    $(".player-details > .btn-buy-hotel").css("display", "inline");
   }
 });
-
-function updateDetails(property) {
-  $(".three" > ".player-details").empty();
-  property.playerClickResult();
-  $(".player-details > button").css("display", "none");
-  $(".player-details > .closer").css("display", "inline");
-  $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
-  if (property.housesHotel === 0) {
-    $(".player-details > .btn-mortgage").css("display", "inline");
-    if (property.owner.money >= Math.round(1.1 * property.mortgage)) {
-      $(".player-details > .btn-lift-mortgage").css("display", "inline");
-    }
-  }
-  $(".player-details > .btn-buy-house").append("Buy house - $" + property.priceHouse);
-  $(".player-details > .btn-buy-hotel").append("Buy hotel - $" + property.priceHouse);
-  $(".player-details > .btn-sell-house").append("Sell house - $" + 0.5 * property.priceHouse);
-  $(".player-details > .btn-sell-hotel").append("Sell hotel - $" + 0.5 * property.priceHouse);
-  if ((property.isMonopoly) && (!property.isMortgaged) && (property.owner.money >= property.priceHouse) && (buyHouseNumberCheck(property))) {
-    if (property.housesHotel < 4) {
-      $(".player-details > .btn-buy-house").css("display", "inline");
-    } else if (property.housesHotel === 4) {
-      $(".player-details > .btn-buy-hotel").css("display", "inline");
-    }
-  }
-  if ((property.housesHotel > 0) && (property.housesHotel < 5) && (sellHouseNumberCheck(property))) {
-    $(".player-details > .btn-sell-house").css("display", "inline");
-  } else if (property.housesHotel === 5) {
-    $(".player-details > .btn-sell-hotel").css("display", "inline");
-  }
-  if (property.title === $(".board-details > .property-name").html()) {
-    $(".board-details").empty();
-    property.boardClickResult(property, "board-details", "one");
-    $(".board-details > button").css("display", "none");
-    $(".board-details > .closer").css("display", "inline");
-  }
-}
 
 $(document).on("click", ".btn-buy-hotel", function() {
   let property;
@@ -3610,19 +3284,11 @@ $(document).on("click", ".btn-buy-hotel", function() {
     }
   }
   let player = property.owner;
-  let moneyCheck = pay(player, freeParking.jackpot, property.priceHouse);
-  if (moneyCheck) {
-    property.housesHotel++;
-    $("." + property.boardClass + " > .hotel-" + property.boardSide).append("<img src='images/hotel.png' alt='hotel' class='house-hotel-board'>");
-    $("." + property.boardClass + " > .house").addClass("hidden");
-    $("." + property.boardClass + " > .hotel").removeClass("hidden");
-    $(".player-details > .btn-buy-hotel").css("display", "none");
-    $(".player-details > .btn-sell-house").css("display", "none");
-    $(".player-details > .btn-sell-hotel").css("display", "inline");
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
-    updateDetails(property);
-  }
+  pay(player, freeParking.jackpot, property.priceHouse);
+  property.housesHotel++;
+  $(".player-details > .btn-buy-hotel").css("display", "none");
+  $(".player-details > .btn-sell-house").css("display", "none");
+  $(".player-details > .btn-sell-hotel").css("display", "inline");
 });
 
 $(document).on("click", ".btn-sell-hotel", function() {
@@ -3634,18 +3300,12 @@ $(document).on("click", ".btn-sell-hotel", function() {
   }
   let player = property.owner;
   moneyChange(player, 0.5 * property.priceHouse);
-  $("." + property.boardClass + " > .hotel").addClass("hidden");
-  $("." + property.boardClass + " > .hotel-" + property.boardSide).empty();
   property.housesHotel--;
-  $("." + property.boardClass + " > .house").removeClass("hidden");
   $(".player-details > .btn-sell-hotel").css("display", "none");
   $(".player-details > .btn-buy-hotel").css("display", "inline");
   if (sellHouseNumberCheck(property)) {
     $(".player-details > .btn-sell-house").css("display", "inline");
   }
-  $(".player-heading > .player-cash").empty();
-  $(".player-heading > .player-cash").append("$" + player.money);
-  updateDetails(property);
 });
 
 $(document).on("click", ".btn-sell-house", function() {
@@ -3657,7 +3317,6 @@ $(document).on("click", ".btn-sell-house", function() {
   }
   let player = property.owner;
   moneyChange(player, 0.5 * property.priceHouse);
-  $("." + property.boardClass + " > .house-" + property.boardSide + "-" + property.housesHotel).empty();
   property.housesHotel--;
   if (property.housesHotel === 0) {
     $(".player-details > .btn-sell-house").css("display", "none");
@@ -3670,51 +3329,35 @@ $(document).on("click", ".btn-sell-house", function() {
     $(".player-details > .btn-sell-house").css("display", "none");
   }
   $(".player-details > .btn-buy-hotel").css("display", "none");
-  // $(".player-heading > .player-cash").empty();
-  // $(".player-heading > .player-cash").append("$" + player.money);
-  updateDetails(property);
 });
 
 $(document).on("click", ".btn-buy", function() {
   let player = gameStatus.currentPlayerTurn;
   let property = player.onSpace;
-  let moneyCheck = pay(player, freeParking.jackpot, property.price);
-  if (moneyCheck) {
-    player.properties.push(property);
-    property.owner = player;
-    checkForMonoply(player);
-    $(".btn-buy").css("display", "none");
-    $(".btn-auction").css("display", "none");
-    $(".btn-decline").css("display", "none");
-    $(".closer").css("display", "inline");
-    $(".btn-buy").empty();
-    $(".three").empty();
-    $("." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${player.token.image}` +
-      " alt=" + `${player.token.class}` +
-      " class='token-tiny'>");
-    $("." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${player.token.image}` +
-      " alt=" + `${player.token.class}` +
-      " class='token-tiny'>");
-    $("." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
-    changePlayerColumn(player);
-    updateDetails(property);
-    endTurn();
-  }
+  pay(player, freeParking.jackpot, property.price);
+  player.properties.push(property);
+  property.owner = player;
+  checkForMonoply(player);
+  $(".btn-buy").css("display", "none");
+  $(".btn-auction").css("display", "none");
+  $(".closer").css("display", "inline");
+  $(".btn-buy").empty();
+  $(".three").empty();
+  $("." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${player.token.image}` +
+    " alt=" + `${player.token.class}` +
+    " class='token-tiny'>");
+  $("." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${player.token.image}` +
+    " alt=" + `${player.token.class}` +
+    " class='token-tiny'>");
+  $("." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
+  changePlayerColumn(player);
+  endTurn();
 });
 
 $(document).on("click", ".btn-auction", function() {
-  // let player = gameStatus.currentPlayerTurn;
-  // let property = player.onSpace
-  displayAuctionBox();
-  // FOODOO
-  // $(".board-details").append($(".reference > .auction").html());
-});
-
-$(document).on("click", ".btn-decline", function() {
   let player = gameStatus.currentPlayerTurn;
   $(".btn-buy").css("display", "none");
   $(".btn-auction").css("display", "none");
-  $(".btn-decline").css("display", "none");
   $(".closer").css("display", "inline");
   $(".btn-buy").empty();
   endTurn();
@@ -3743,92 +3386,31 @@ $(document).on("click", ".btn-rent", function() {
     if ((property.isMonopoly) && (property.housesHotel === 0)) {
       moneyOwed = property.rent[6];
     }
-  } else if (property.type === "railroad") {
+  }
+  else if (property.type === "railroad") {
     moneyOwed = property.rent[property.owner.numberOfRailroads() - 1] * multiplier;
-  } else if (property.type === "utility") {
+  }
+  else if (property.type === "utility") {
     if (multiplier === 1) {
       if (space.owner.numberOfUtilities() === 1) {
         multiplier = 4;
-      } else if (space.owner.numberOfUtilities() === 2) {
+      }
+      else if (space.owner.numberOfUtilities() === 2) {
         multiplier = 10;
       }
     }
     moneyOwed = playerPaying.utilityDice.total * multiplier;
   }
   multiplier = 1;
-  let moneyCheck = pay(playerPaying, playerReceiving, moneyOwed);
-  if (moneyCheck) {
-    if ($(".three > .player-heading > .token-small").attr("alt") === playerReceiving.token.class) {
-      $(".three > .player-heading > .player-cash").empty();
-      $(".three > .player-heading > .player-cash").append("$" + playerReceiving.money);
-    } else if ($(".three > .player-heading > .token-small").attr("alt") === playerPaying.token.class) {
-      $(".three > .player-heading > .player-cash").empty();
-      $(".three > .player-heading > .player-cash").append("$" + playerPaying.money);
-    }
-    $(".board-details > .btn-rent").css("display", "none");
-    $(".board-details > .closer").css("display", "inline");
-    endTurn();
-  }
-});
-
-$(document).on("click", ".btn-bankrupt", function() {
-  let playerPaying;
-  for (let player of activePlayers) {
-    if ($(".three > .player-heading > .token-small").attr("alt") === player.token.class) {
-      playerPaying = player;
-    }
-  }
-  playerReceiving = playerPaying.inDebtTo;
-  bankrupt(playerPaying, playerReceiving);
+  pay(playerPaying, playerReceiving, moneyOwed);
+  $(".board-details > .btn-rent").css("display", "none");
+  $(".board-details > .closer").css("display", "inline");
+  endTurn();
 });
 
 // TEST LOGIC
 
 activePlayers = [player4, player2, player3, player1, player6, player5];
-initialPlayers = [player4, player2, player3, player1, player6, player5];
-
-// // TESTING BANKRUPTCY
-//
-// initialPlayers = [player1, player2];
-// activePlayers = [player1, player2];
-// let activePlayersBeforeBankruptcy = activePlayers.slice();
-// player1.money = 10;
-// player1.properties = [parkPlace, boardwalk, illinoisAvenue, indianaAvenue, pennsylvaniaRailroad, waterWorks, jailFreeCommunityChest];
-// parkPlace.housesHotel = 4;
-// boardwalk.housesHotel = 5;
-// indianaAvenue.isMortgaged = true;
-// player1.properties.forEach(function(property) {
-//   property.owner = player1;
-//   if (property.type !== "card" && property !== indianaAvenue) {
-//     $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
-//     $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src='images/token-" + player1.token.class + ".png' alt=" + player1.token.class + " class='token-tiny'>");
-//   }
-// });
-//
-// $(".one > .indiana-ave > .indiana-ave-mortgaged").removeClass("hidden");
-// $(".one > .indiana-ave > .indiana-ave-mortgaged > .token-goes-here").append("<img src='images/token-" + player1.token.class + ".png' alt=" + player1.token.class + " class='token-tiny'>");
-// for (let i = 1; i <= 4; i++) {
-//   $(".one > .park-place > .house-right-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-//   $(".one > .park-place > .house-right-" + i).addClass("hidden");
-// }
-// $(".one > .park-place > .hotel-right").append("<img src='images/hotel.png' alt='hotel' class='house-hotel-board'>");
-// $(".one > .park-place > .hotel-right").removeClass("hidden");
-// for (let i = 1; i <= 4; i++) {
-//   $(".one > .boardwalk > .house-right-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-// }
-//
-// player2.properties = [orientalAvenue, vermontAvenue, connecticutAvenue];
-// player2.properties.forEach(function(property) {
-//   property.owner = player2;
-//   property.housesHotel = 4;
-//   for (let i = 1; i <= 4; i++) {
-//     $(".one > ." + property.boardClass + " .house-bottom-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-//   }
-//   $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
-//   $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src='images/token-" + player2.token.class + ".png' alt=" + player2.token.class + " class='token-tiny'>");
-// });
-//
-// //
 
 firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
 
@@ -3849,14 +3431,12 @@ firstThroughEighth.forEach(function(div) {
   $(document).on("click", "." + div, function() {
     $(".three").empty();
     let playerIndex = firstThroughEighth.indexOf(div);
-    let player = initialPlayers[playerIndex];
+    let player = activePlayers[playerIndex];
     changePlayerColumn(player);
   });
 });
 
-
-gameStatus.currentPlayerTurn = activePlayers[5];
-$(".two > ." + gameStatus.currentPlayerTurn.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
+gameStatus.currentPlayerTurn = activePlayers[0];
 
 $(".display-test-board").click(function() {
   displayProperty(balticAvenue, "board-details", "one");
@@ -3867,13 +3447,3 @@ $(".display-test-player").click(function() {
   displayProperty(kentuckyAvenue, "player-details", "three");
   $(".player-details > .closer").css("display", "inline");
 });
-
-let names = activePlayers.map(function(player) {
-  return player.name;
-});
-
-// $(".one > .go").hover(function() {
-//   $(".one > .go").css("background-color", "#8ac6d1");
-// }, function() {
-//   $(".one > .go").css("background-color", "initial");
-// });

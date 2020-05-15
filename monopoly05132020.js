@@ -2692,52 +2692,13 @@ function displayLuxuryTax() {
 }
 
 function displayAuctionBox() {
-  let biddingPlayer = gameStatus.currentPlayerTurn;
-  // let biddingPlayer = player;
-  let property = biddingPlayer.onSpace;
+  let player = gameStatus.currentPlayerTurn;
+  let property = player.onSpace;
   $("#board-details").empty()
   $("#board-details").removeClass();
   $("#board-details").addClass("board-details auction");
-  // $("." + property.boardClass).css("box-shadow", "0 0 0.25rem 0.25rem green");
-  $(".one > .auction").append($(".reference > .auction").html());
-  console.log(property);
-  console.log(biddingPlayer);
-  let propertyType
-  if (property.type === "coloredProperty") {
-    propertyType = property.color;
-  }
-  else if (property.type === "railroad") {
-    propertyType = property.type;
-  }
-  else if (property.type === "utility") {
-    propertyType = property.utilityClass;
-  }
-  console.log(propertyType);
-
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("src", "images/titledeed-" + propertyType + ".png");
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("alt", property.title);
-  $(".one > .auction > .auction-property > .auction-property-deed").attr("title", property.title);
-  $(".one > .auction > .auction-property > .auction-property-title").append("<strong>" + property.title + "</strong> up for grabs!");
-  $(".one > .auction > .auction-property > .auction-property-price").append("Base Price: <strong>$" + property.price + "</strong>");
-  // FOODOO
-  $(".one > .auction > .bidding-player").append(biddingPlayer.name);
-  $(".one > .auction > .bidding-player-token").attr("src", biddingPlayer.token.image);
-  $(".one > .auction > .bidding-player-token").attr("alt", biddingPlayer.token.class);
-  //
-
-  $(".exit-auction").css("display", "inline");
-  // auction(biddingPlayer, property);
+  $("#board-details").append($(".reference > .auction").html());
 }
-
-$(".exit-auction").click(function() {
-  $("#board-details").empty()
-  $("#board-details").removeClass();
-  $("#board-details").addClass("board-details hidden");
-  $(".exit-auction").css("display", "none");
-  $(".board-button-blocker").addClass("hidden");
-  $(".player-button-blocker").addClass("hidden");
-  endTurn();
-});
 
 // BUYING AND PAYING RENT
 
