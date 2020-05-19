@@ -3435,8 +3435,7 @@ function moveToken(diceResult, player, direction = "forward") {
         player.onSpace.playerLanded = player;
         player.onSpace.result();
       }
-    }, 50 * num);
-    // 333 * num
+    }, 250 * num);
   });
 }
 
