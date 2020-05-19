@@ -4,6 +4,10 @@ body {
   font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: blue;
+}
+
 table {
   margin: 0 auto;
 }
@@ -2076,4 +2080,8 @@ h1, h2, h3, h4, h5, h6, p, hr {
   margin: 0;
   top: auto;
   position: static;
+}
+
+.bottom-writing {
+  color: #cae8e0;
 }
