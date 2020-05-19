@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Monopoly!</title>
   <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
 </head>
 
 <body>
@@ -47,6 +48,7 @@
       <img src="" alt="" class="token-selected">
       <br>
       <button class="hidden" id="set-name-token">Okay</button>
+      <p class="name-is-taken hidden">This name is taken!</p>
     </div>
     <div class="name-token-list">
       <ul class="player-list">
@@ -86,8 +88,6 @@
       </div>
     </div>
     <div class="auto-random">
-      <!-- <ul class="random-list">
-      </ul> -->
       <h4>The turn order will be determined randomly.</h4>
     </div>
     <div class="player-decide">
@@ -124,138 +124,417 @@
 
   <div class="column one">
 
-    <div class="go" title="GO - collect $200 salary as you pass, stupid.">
+    <div class="go" title="GO - collect $200 salary as you pass.">
       <div class="corner-space" id="go"></div>
     </div>
     <div class="mediterranean-ave" title="Mediterranean Avenue - Price $60">
       <div class="bottom-space" id="mediterranean-ave"></div>
+      <div class="mediterranean-ave-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="mediterranean-ave-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="house house-bottom-1"></div>
+      <div class="house house-bottom-2"></div>
+      <div class="house house-bottom-3"></div>
+      <div class="house house-bottom-4"></div>
+      <div class="hotel hotel-bottom hidden"></div>
     </div>
     <div class="community-chest1" title="Community Chest">
       <div class="bottom-space" id="community-chest1"></div>
     </div>
     <div class="baltic-ave" title="Baltic Avenue - Price $60">
       <div class="bottom-space" id="baltic-ave"></div>
+      <div class="baltic-ave-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="baltic-ave-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="house house-bottom-1"></div>
+      <div class="house house-bottom-2"></div>
+      <div class="house house-bottom-3"></div>
+      <div class="house house-bottom-4"></div>
+      <div class="hotel hotel-bottom hidden"></div>
     </div>
     <div class="income-tax" title="Income Tax - Pay 10% or $200">
       <div class="bottom-space" id="income-tax"></div>
     </div>
     <div class="reading-railroad" title="Reading Railroad - Price $200">
       <div class="bottom-space" id="reading-railroad"></div>
+      <div class="reading-railroad-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="reading-railroad-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
     </div>
     <div class="oriental-ave" title="Oriental Avenue - Price $100">
       <div class="bottom-space" id="oriental-ave"></div>
+      <div class="oriental-ave-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="oriental-ave-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="house house-bottom-1"></div>
+      <div class="house house-bottom-2"></div>
+      <div class="house house-bottom-3"></div>
+      <div class="house house-bottom-4"></div>
+      <div class="hotel hotel-bottom hidden"></div>
     </div>
     <div class="chance1" title="Chance">
       <div class="bottom-space" id="chance1"></div>
     </div>
     <div class="vermont-ave" title="Vermont Avenue - Price $100">
       <div class="bottom-space" id="vermont-ave"></div>
+      <div class="vermont-ave-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="vermont-ave-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="house house-bottom-1"></div>
+      <div class="house house-bottom-2"></div>
+      <div class="house house-bottom-3"></div>
+      <div class="house house-bottom-4"></div>
+      <div class="hotel hotel-bottom hidden"></div>
     </div>
     <div class="connecticut-ave" title="Connecticut Avenue - Price $120">
       <div class="bottom-space" id="connecticut-ave"></div>
+      <div class="connecticut-ave-owner hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="connecticut-ave-mortgaged hidden">
+        <div class="owner-token-bottom token-goes-here"></div>
+      </div>
+      <div class="house house-bottom-1"></div>
+      <div class="house house-bottom-2"></div>
+      <div class="house house-bottom-3"></div>
+      <div class="house house-bottom-4"></div>
+      <div class="hotel hotel-bottom hidden"></div>
     </div>
-    <div class="jail" title="This is jail, stupid.">
+    <div class="jail" title="Welcome to is jail.">
       <div class="corner-space" id="jail"></div>
     </div>
     <div class="st-charles-place" title="St. Charles Place - Price $140">
       <div class="left-space" id="st-charles-place"></div>
+      <div class="st-charles-place-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="st-charles-place-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
     <div class="electric-company" title="Electric Company - Price $150">
       <div class="left-space" id="electric-company"></div>
+      <div class="electric-company-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="electric-company-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
     </div>
     <div class="states-ave" title="States Avenue - Price $140">
       <div class="left-space" id="states-ave"></div>
+      <div class="states-ave-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="states-ave-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
     <div class="virginia-ave" title="Virginia Avenue - Price $160">
       <div class="left-space" id="virginia-ave"></div>
+      <div class="virginia-ave-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="virginia-ave-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
     <div class="pennsylvania-railroad" title="Pennsylvania Railroad - Price $200">
       <div class="left-space" id="pennsylvania-railroad"></div>
+      <div class="pennsylvania-railroad-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="pennsylvania-railroad-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
     </div>
     <div class="st-james-place" title="St. James Place - Price $180">
       <div class="left-space" id="st-james-place"></div>
+      <div class="st-james-place-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="st-james-place-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
     <div class="community-chest2" title="Community Chest">
       <div class="left-space" id="community-chest2"></div>
     </div>
     <div class="tennessee-ave" title="Tennessee Avenue - Price $180">
       <div class="left-space" id="tennessee-ave"></div>
+      <div class="tennessee-ave-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="tennessee-ave-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
     <div class="new-york-ave" title="New York Avenue - Price $200">
       <div class="left-space" id="new-york-ave"></div>
+      <div class="new-york-ave-owner hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="new-york-ave-mortgaged hidden">
+        <div class="owner-token-left token-goes-here"></div>
+      </div>
+      <div class="house house-left-1"></div>
+      <div class="house house-left-2"></div>
+      <div class="house house-left-3"></div>
+      <div class="house house-left-4"></div>
+      <div class="hotel hotel-left hidden"></div>
     </div>
-    <div class="free-parking" title="Free Parking, stupid">
+    <div class="free-parking" title="Free Parking.">
       <div class="corner-space" id="free-parking"></div>
     </div>
     <div class="kentucky-ave" title="Kentucy Avenue - Price $220">
       <div class="top-space" id="kentucky-ave"></div>
+      <div class="kentucky-ave-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="kentucky-ave-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
     <div class="chance2" title="Chance">
       <div class="top-space" id="chance2"></div>
     </div>
     <div class="indiana-ave" title="Indiana Avenue - Price $220">
       <div class="top-space" id="indiana-ave"></div>
+      <div class="indiana-ave-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="indiana-ave-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
     <div class="illinois-ave" title="Illinois Avenue - Price $240">
       <div class="top-space" id="illinois-ave"></div>
+      <div class="illinois-ave-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="illinois-ave-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
-    <div class="bo-railroad" title="B&0 Railroad - Price $200">
+    <div class="bo-railroad" title="B and 0 Railroad - Price $200">
       <div class="top-space" id="bo-railroad"></div>
+      <div class="bo-railroad-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="bo-railroad-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
     </div>
     <div class="atlantic-ave" title="Atlantic Avenue - Price $260">
       <div class="top-space" id="atlantic-ave"></div>
+      <div class="atlantic-ave-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="atlantic-ave-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
     <div class="ventnor-ave" title="Ventnor Avenue - Price $260">
       <div class="top-space" id="ventnor-ave"></div>
+      <div class="ventnor-ave-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="ventnor-ave-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
     <div class="water-works" title="Water Works - Price $150">
       <div class="top-space" id="water-works"></div>
+      <div class="water-works-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="water-works-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
     </div>
     <div class="marvin-gardens" title="Marvin Gardens - Price $280">
       <div class="top-space" id="marvin-gardens"></div>
+      <div class="marvin-gardens-owner hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="marvin-gardens-mortgaged hidden">
+        <div class="owner-token-top token-goes-here"></div>
+      </div>
+      <div class="house house-top-1"></div>
+      <div class="house house-top-2"></div>
+      <div class="house house-top-3"></div>
+      <div class="house house-top-4"></div>
+      <div class="hotel hotel-top hidden"></div>
     </div>
-    <div class="go-to-jail" title="Go To Jail, stupid.">
+    <div class="go-to-jail" title="Go To Jail.">
       <div class="corner-space" id="go-to-jail"></div>
     </div>
     <div class="pacific-ave" title="Pacific Avenue - Price $300">
       <div class="right-space" id="pacific-ave"></div>
+      <div class="pacific-ave-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="pacific-ave-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="house house-right-1"></div>
+      <div class="house house-right-2"></div>
+      <div class="house house-right-3"></div>
+      <div class="house house-right-4"></div>
+      <div class="hotel hotel-right hidden"></div>
     </div>
     <div class="north-carolina-ave" title="North Carolina Avenue - Price $300">
       <div class="right-space" id="north-carolina-ave"></div>
+      <div class="north-carolina-ave-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="north-carolina-ave-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="house house-right-1"></div>
+      <div class="house house-right-2"></div>
+      <div class="house house-right-3"></div>
+      <div class="house house-right-4"></div>
+      <div class="hotel hotel-right hidden"></div>
     </div>
     <div class="community-chest3" title="Community Chest">
       <div class="right-space" id="community-chest3"></div>
     </div>
     <div class="pennsylvania-ave" title="Pennsylvania Avenue - Price $320">
       <div class="right-space" id="pennsylvania-ave"></div>
+      <div class="pennsylvania-ave-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="pennsylvania-ave-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="house house-right-1"></div>
+      <div class="house house-right-2"></div>
+      <div class="house house-right-3"></div>
+      <div class="house house-right-4"></div>
+      <div class="hotel hotel-right hidden"></div>
     </div>
     <div class="short-line" title="Short Line - Price $200">
       <div class="right-space" id="short-line"></div>
+      <div class="short-line-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="short-line-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
     </div>
     <div class="chance3" title="Chance">
       <div class="right-space" id="chance3"></div>
     </div>
     <div class="park-place" title="Park Place - Price $350">
       <div class="right-space" id="park-place"></div>
+      <div class="park-place-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="park-place-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="house house-right-1"></div>
+      <div class="house house-right-2"></div>
+      <div class="house house-right-3"></div>
+      <div class="house house-right-4"></div>
+      <div class="hotel hotel-right hidden"></div>
     </div>
     <div class="luxury-tax" title="Luxury Tax">
       <div class="right-space" id="luxury-tax"></div>
     </div>
     <div class="boardwalk" title="Boardwalk - Price $400">
       <div class="right-space" id="boardwalk"></div>
+      <div class="boardwalk-owner hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="boardwalk-mortgaged hidden">
+        <div class="owner-token-right token-goes-here"></div>
+      </div>
+      <div class="house house-right-1"></div>
+      <div class="house house-right-2"></div>
+      <div class="house house-right-3"></div>
+      <div class="house house-right-4"></div>
+      <div class="hotel hotel-right hidden"></div>
     </div>
+
+    <div class="winner">&nbsp;</div>
 
     <img src="images/dice1.png" alt="dice" class="dice1">
     <img src="images/dice1.png" alt="dice" class="dice2">
     <br>
-    <!-- <button class="btn-buy"></button>
-    <button class="btn-rent"></button>
-    <button class="btn-auction">Auction</button> -->
     <button class="roll">Roll Dice</button>
-    <button class="roll-riot">Attempt to instigate a prison riot (Attempt to roll doubles)</button>
+    <button class="roll-riot">Attempt prison riot (Attempt to roll doubles)</button>
     <button class="roll-for-utility-card">Roll Dice</button>
     <button class="bribe">Bribe $50</button>
     <button class="end-turn">End Turn</button>
+    <button class="trade">Conduct Backroom Deal</button>
+    <button class="continue">Continue game</button>
     <br>
     <button class="use-jail-free-chance">Get out of Jail Free (Chance)</button>
     <button class="use-jail-free-community-chest">Get out of Jail Free (Community Chest)</button>
@@ -266,43 +545,44 @@
   </div>
 
   <div class="column two">
-
-    <div class="player-summary first">
+  <!-- onmouseover = 'colorChangeDarkerBlue(this)' onmouseout = 'colorBack(this)' -->
+    <div class="player-button-blocker"></div>
+    <div class="player-summary first" onmouseover = 'colorChangePlusHighlight("first")' onmouseout = 'colorBack("first")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary second">
+    <div class="player-summary second" onmouseover = 'colorChangePlusHighlight("second")' onmouseout = 'colorBack("second")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary third">
+    <div class="player-summary third" onmouseover = 'colorChangePlusHighlight("third")' onmouseout = 'colorBack("third")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary fourth">
+    <div class="player-summary fourth" onmouseover = 'colorChangePlusHighlight("fourth")' onmouseout = 'colorBack("fourth")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary fifth">
+    <div class="player-summary fifth" onmouseover = 'colorChangePlusHighlight("fifth")' onmouseout = 'colorBack("fifth")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary sixth">
+    <div class="player-summary sixth" onmouseover = 'colorChangePlusHighlight("sixth")' onmouseout = 'colorBack("sixth")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary seventh">
+    <div class="player-summary seventh" onmouseover = 'colorChangePlusHighlight("seventh")' onmouseout = 'colorBack("seventh")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
     </div>
-    <div class="player-summary eighth">
+    <div class="player-summary eighth" onmouseover = 'colorChangePlusHighlight("eighth")' onmouseout = 'colorBack("eighth")'>
       <p class="player-name-cash"></p>
       <img class="vertical-middle token-small" src="" alt="">
       <p class="player-name-cash right"></p>
@@ -310,6 +590,10 @@
   </div>
 
   <div class="column three"></div>
+
+  <div class="empty space"></div>
+
+  <div class="trading-box hidden"></div>
 
   <div class="page-button-blocker hidden"></div>
 
@@ -324,25 +608,25 @@
       <div class="prop-details">
         <table class="rents wide">
           <tr class="rent-1-house">
-            <td class="left">With 1 House</td>
+            <td class="left house-1-pic">With 1 House</td>
             <td class="right"></td>
           </tr>
           <tr class="rent-2-house">
-            <td class="left">With 2 Houses</td>
+            <td class="left house-2-pic">With 2 Houses</td>
             <td class="right"></td>
           </tr>
           <tr class="rent-3-house">
-            <td class="left">With 3 Houses</td>
+            <td class="left house-3-pic">With 3 Houses</td>
             <td class="right"></td>
           </tr>
           <tr class="rent-4-house">
-            <td class="left">With 4 Houses</td>
+            <td class="left house-4-pic">With 4 Houses</td>
             <td class="right"></td>
           </tr>
         </table>
         <table class="rents">
           <tr class="rent-hotel">
-            <td>With Hotel</td>
+            <td class="hotel-pic">With Hotel</td>
             <td class="rent-hotel"></td>
           </tr>
         </table>
@@ -353,9 +637,13 @@
       </div>
       <p class="prop-footer">If a player owns ALL of the lots on a given color group, the rent is <em>doubled</em> on unimproved lots within that group.</p>
       <button class="closer">Click here to close.</button>
+      <button class="btn-trade-closer">Close</button>
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
+      <button class="btn-decline">Decline</button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
       <button class="btn-mortgage"></button>
       <br>
       <button class="btn-buy-house"></button>
@@ -371,7 +659,7 @@
       <h2 class="property-name"></h2>
       <hr>
       <p>PRICE $200</p>
-      <table class="wide">
+      <table class="wide railroad-details">
         <tr>
           <td class="left">Rent</td>
           <td class="right">$25</td>
@@ -396,9 +684,13 @@
           </tr>
         </table>
       <button class="closer">Click here to close.</button>
+      <button class="btn-trade-closer">Close</button>
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
+      <button class="btn-decline">Decline</button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
       <button class="btn-mortgage"></button>
     </div>
 
@@ -420,9 +712,13 @@
         </tr>
       </table>
       <button class="closer">Click here to close.</button>
+      <button class="btn-trade-closer">Close</button>
       <button class="btn-buy"></button>
       <button class="btn-rent"></button>
       <button class="btn-auction">Auction</button>
+      <button class="btn-decline">Decline</button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
       <button class="btn-mortgage"></button>
     </div>
 
@@ -434,6 +730,9 @@
       <h2 class="mortgage-value"></h2>
       <br><br>
       <button class="closer">Click here to close.</button>
+      <button class="btn-trade-closer">Close</button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
       <button class="btn-lift-mortgage"></button>
     </div>
 
@@ -448,7 +747,7 @@
       <p><strong>The developer caught you squishing this adorable, benevolent, and defenseless spider!</strong></p>
       <img src="images/go-to-jail.png" alt="Adorable, benevolent, defenseless...shame." class="go-to-jail-img">
       <p><strong>Go to jail! Now!</strong></p>
-      <button class="go-to-jail-btn">Go to jail, where the ratio of legs to multicellular organisms is greater than two.</button>
+      <button class="go-to-jail-btn">Go to jail.</button>
     </div>
 
     <div class="go-to-jail-doubles">
@@ -463,8 +762,6 @@
       <p>Welcome to Free Parking. Now evaluate this integral.</p>
       <img src="images/integral.png" alt="Evaluate this integral." class="integral">
       <br>
-      <img src="images/free-parking.png" alt="Free Parking" class="free-parking-img">
-      <br>
       <button class="closer">Click here to close.</button>
     </div>
 
@@ -473,14 +770,14 @@
       <br>
       <br>
       <br>
-      <button class="take-a-chance">Take a chance, stupid.</button>
+      <button class="take-a-chance">Take a chance.</button>
     </div>
 
     <div class="cc-land">
       <img src="images/chest-closed.png" alt="Community Chest" class=cc-land-img>
       <br>
       <p>Rob the community blind! Open their chest now!</p>
-      <button class="open-chest">Open the chest, stupid.</button>
+      <button class="open-chest">Open the chest.</button>
     </div>
 
     <div class="chance">
@@ -488,38 +785,46 @@
       <br>
       <p class="chance-text"></p>
       <br>
-      <button class="btn-chance-result closer"></button>
+      <button class="btn-chance-result"></button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
     </div>
 
     <div class="community-chest">
-      <h4 class=card-heading>Comunnity Chest</h4>
+      <h4 class=card-heading>Community Chest</h4>
       <br>
       <p class="community-chest-text"></p>
       <br>
-      <button class="btn-cc-result closer"></button>
+      <button class="btn-cc-result"></button>
+      <button class="btn-add">Add</button>
+      <button class="btn-return">Return</button>
     </div>
 
     <div class="income-tax-board">
       <img src="images/income-tax.png" alt="Income Tax" class="income-tax-img">
       <p>They're on to you! <strong>Pay a 10% or $200 Income Tax</strong> and cover your tracks now!</p>
       <br>
-      <button class="pay-10-percent closer">Pay 10%.</button>
-      <button class="pay-200 closer">Pay $200.</button>
+      <button class="pay-10-percent">Pay 10%.</button>
+      <button class="pay-200">Pay $200.</button>
     </div>
 
     <div class="luxury-tax-board">
       <img src="images/luxury-tax.png" alt="Luxury Tax" class="luxury-tax-img">
       <p>You have so much money and shiny things, so you must now pay a <strong>$75 Luxury Tax.</strong> You poor thing.</p>
-      <button class="pay-luxury closer">Pay $75 Luxury Tax.</button>
+      <button class="pay-luxury">Pay $75 Luxury Tax.</button>
     </div>
 
     <div class="column-three-reference">
+      <div class="player-button-blocker"></div>
       <div class="player-heading">
         <h2 class="player-name"></h2>
         <img src="" alt="" class="vertical-middle token-small">
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p> &emsp;</p>
         <h2 class="cash-label">Cash on hand:</h2>
         <h2 class="player-cash"></h2>
+        <button class="btn-add-cash">Add Cash</button>
+        <input class="amount" type="text">
+        <p class="whole-number hidden">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;WHOLE NUMBER!</p>
       </div>
       <hr class="c3-hr">
       <h2 class="properties-label">Properties:</h2>
@@ -584,7 +889,7 @@
         <tr>
           <td class="td1"><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small number-1 hidden reading-railroad-player" title="Reading Railroad"></td>
           <td class="td2"><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small number-2 hidden pennsylvania-railroad-player" title="Pennsylvania Railroad"></td>
-          <td class="td3"><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small number-3 hidden bo-railroad-player" title="B&O Railroad"></td>
+          <td class="td3"><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small number-3 hidden bo-railroad-player" title="B and O Railroad"></td>
           <td class="td4"><img src="images/titledeed-railroad.png" alt="railroad" class="titledeed-small number-4 hidden short-line-player" title="Short Line"></td>
         </tr>
       </table>
@@ -598,24 +903,98 @@
       <table class="color-cards">
         <tr>
           <td><strong>Get-out-of-jail-free Cards:</strong></td>
-          <td class="td1"><img src="images/chance.png" alt="chance" class="chance-cc-small number-1 hidden jail-free-chance" title="Chance"></td>
-          <td class="td2"><img src="images/community-chest.png" alt="community-chest" class="chance-cc-small number-2 hidden jail-free-community-chest" title="Community Chest"></td>
+          <td class="td0"><img src="images/chance.png" alt="chance" class="chance-cc-small number-1 hidden jail-free-chance" title="Chance"></td>
+          <td class="td1"><img src="images/community-chest.png" alt="community-chest" class="chance-cc-small number-2 hidden jail-free-community-chest" title="Community Chest"></td>
         </tr>
       </table>
       <br>
+      <button class="btn-bankrupt">Declare Bankruptcy</button>
       <div class="player-details hidden" id="player-details"></div>
     </div>
-  </div>
 
-  <div class="empty">
-    <p>Alpha testing starts here.</p>
-  </div>
+    <div class="column-three-bankrupt">
+      <h1></h1>
+    </div>
 
-  <!-- <div class="buttons-test">
-    <button class="display-test-board">Display Baltic Avenue (Board Details)</button>
-    <button class="display-test-player">Display Kentucky Avenue (Player Details)</button>
-    <button class="display-chance">Display Sample Chance</button>
-  </div> -->
+    <div class="auction">
+      <h1>AUCTION</h1>
+      <hr class="auction-hr">
+      <div class="auction-property">
+        <img class="auction-property-deed titledeed-small" src="" alt="" title="">
+        <p class="auction-property-title"></p>
+        <p class="auction-property-price"></p>
+      </div>
+      <br>
+      <p class="leading-bid clear">&nbsp;</p>
+      <p class="leading-bidder inline">&nbsp;</p>
+      <img class="leading-bidder-token inline" src="" alt="">
+      <br>
+      <p class="auctioneer-announcement">&nbsp;</p>
+      <br>
+      <p class="bidding-player inline"></p>
+      <img class="bidding-player-token inline" src="" alt="">
+      <br>
+      <p class="auctioneer inline">Do we have an opening bid? $</p>
+      <input type="text" class="player-bid inline">
+      <br>
+      <button class="btn-bid">Bid</button>      
+      <button class="btn-no-bid">No Bid</button>
+      <br>
+      <p class="bid-status">&nbsp;</p>
+      <button class="btn-auction-buy"></button>
+      <button class="closer">Click here to close</button>
+    </div>
+
+    <div class="trading-box-reference">
+      <div class="propose-a-deal">
+        <p class="inline">Welcome to the backroom. Who is proposing the deal?</p>
+        <input type="text" class="trader-1-name inline">
+        <br>
+        <p class="inline">Who is the receipient the deal??</p>
+        <input type="text" class="trader-2-name inline">
+        <button class="traders-decider">Okay</button>
+        <p class="invalid-traders hidden">Both forms must be active players' names!</p>
+        <p class="cannot-trade-with-yourself hidden">You cannot trade with yourself, silly!</p>
+      </div>
+      <div class="trader-1-assets">
+        <div class="trading-button-blocker"></div>
+        <div class="trader-1-assets-details hidden" id="trader-1-assets-details"></div>
+      </div>
+      <div class="trader-1-offerings">
+        <h3 class="trader-1-offerings-label"></h3>
+        <p class="cash-offered"></p>
+        <button class="btn-cash-return-trader-1">Return Cash</button>
+        <div class="trading-button-blocker"></div>
+        <div class="trader-1-offerings-details hidden" id="trader-1-offerings-details"></div>
+      </div>
+      <div class="trader-2-offerings">
+        <h3 class="trader-2-offerings-label"></h3>
+        <p class="cash-offered"></p>
+        <button class="btn-cash-return-trader-2">Return Cash</button>
+        <div class="trading-button-blocker"></div>
+        <div class="trader-2-offerings-details hidden" id="trader-2-offerings-details"></div>
+      </div>
+      <div class="trader-2-assets">
+        <div class="trading-button-blocker"></div>
+        <div class="trader-2-assets-details hidden" id="trader-2-assets-details"></div>
+      </div>
+      <div class="trading-buttons">
+        <p class="dealer"></p>
+        <button class="btn-accept">Accept</button>
+        <button class="btn-counterpropose">Counterpropose</button>
+        <button class="btn-terminate">Terminate</button>
+        <button class="btn-propose-deal">Propose Deal</button>
+      </div>
+    </div>
+  </div>    
+
+  <div>
+    <p>This project was meant as a demonstration for Chris Peters's programming skills; not to be sold for profit. If you want to play the game for real, you should buy a legitimate copy from Hasbro Entertainment or play online at <a href="https://www.pogo.com/games/monopolyclassic">www.pogo.com</a> or other site.</p>
+    <br>
+    <p>If you want to see more of Chirs's projects, visit his Github page <a href="https://github.com/stardust1689">here</a>.</p>
+    <p><a href="https://www.linkedin.com/in/christopherpeters3/">LinkedIn</a></p>
+    <p><a href="https://stardust1689.github.io/CV/">Cirriculum Vitae</a></p>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="monopoly.js"></script>

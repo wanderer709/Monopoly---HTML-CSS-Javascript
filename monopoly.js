@@ -93,6 +93,34 @@ let mediterraneanAvenue = {
       displayProperty(mediterraneanAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (mediterraneanAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(mediterraneanAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(mediterraneanAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (mediterraneanAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(mediterraneanAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(mediterraneanAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (mediterraneanAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(mediterraneanAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(mediterraneanAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (mediterraneanAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(mediterraneanAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(mediterraneanAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let balticAvenue = {
@@ -123,6 +151,34 @@ let balticAvenue = {
       displayMortgagedProperty(balticAvenue);
     } else {
       displayProperty(balticAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (balticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(balticAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(balticAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (balticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(balticAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(balticAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (balticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(balticAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(balticAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (balticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(balticAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(balticAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -156,6 +212,35 @@ let orientalAvenue = {
       displayProperty(orientalAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function() {
+    if (orientalAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(orientalAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(orientalAvenue, "trader-1-assets-details");
+      displayTradingProperty(orientalAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (orientalAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(orientalAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(orientalAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (orientalAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(orientalAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(orientalAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (orientalAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(orientalAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(orientalAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let vermontAvenue = {
@@ -185,6 +270,34 @@ let vermontAvenue = {
       displayMortgagedProperty(vermontAvenue);
     } else {
       displayProperty(vermontAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (vermontAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(vermontAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(vermontAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (vermontAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(vermontAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(vermontAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (vermontAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(vermontAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(vermontAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (vermontAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(vermontAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(vermontAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -218,6 +331,34 @@ let connecticutAvenue = {
       displayProperty(connecticutAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (connecticutAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(connecticutAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(connecticutAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (connecticutAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(connecticutAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(connecticutAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (connecticutAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(connecticutAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(connecticutAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (connecticutAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(connecticutAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(connecticutAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let stCharlesPlace = {
@@ -247,6 +388,34 @@ let stCharlesPlace = {
       displayMortgagedProperty(stCharlesPlace);
     } else {
       displayProperty(stCharlesPlace, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (stCharlesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stCharlesPlace, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(stCharlesPlace, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (stCharlesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stCharlesPlace, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(stCharlesPlace, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (stCharlesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stCharlesPlace, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(stCharlesPlace, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (stCharlesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stCharlesPlace, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(stCharlesPlace, "trader-2-offerings-details");
     }
   },
 };
@@ -280,6 +449,34 @@ let statesAvenue = {
       displayProperty(statesAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (statesAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(statesAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(statesAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (statesAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(statesAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(statesAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (statesAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(statesAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(statesAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (statesAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(statesAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(statesAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let virginiaAvenue = {
@@ -309,6 +506,34 @@ let virginiaAvenue = {
       displayMortgagedProperty(virginiaAvenue);
     } else {
       displayProperty(virginiaAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (virginiaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(virginiaAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(virginiaAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (virginiaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(virginiaAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(virginiaAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (virginiaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(virginiaAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(virginiaAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (virginiaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(virginiaAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(virginiaAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -342,6 +567,34 @@ let stJamesPlace = {
       displayProperty(stJamesPlace, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (stJamesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stJamesPlace, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(stJamesPlace, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (stJamesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stJamesPlace, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(stJamesPlace, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (stJamesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stJamesPlace, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(stJamesPlace, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (stJamesPlace.isMortgaged) {
+      displayTradingMortgagedProperty(stJamesPlace, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(stJamesPlace, "trader-2-offerings-details");
+    }
+  },
 };
 
 let tenneseeAvenue = {
@@ -371,6 +624,34 @@ let tenneseeAvenue = {
       displayMortgagedProperty(tenneseeAvenue);
     } else {
       displayProperty(tenneseeAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (tenneseeAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(tenneseeAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(tenneseeAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (tenneseeAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(tenneseeAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(tenneseeAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (tenneseeAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(tenneseeAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(tenneseeAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (tenneseeAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(tenneseeAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(tenneseeAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -404,6 +685,34 @@ let newYorkAvenue = {
       displayProperty(newYorkAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (newYorkAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(newYorkAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(newYorkAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (newYorkAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(newYorkAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(newYorkAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (newYorkAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(newYorkAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(newYorkAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (newYorkAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(newYorkAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(newYorkAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let kentuckyAvenue = {
@@ -435,6 +744,34 @@ let kentuckyAvenue = {
       displayProperty(kentuckyAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (kentuckyAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(kentuckyAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(kentuckyAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (kentuckyAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(kentuckyAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(kentuckyAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (kentuckyAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(kentuckyAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(kentuckyAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (kentuckyAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(kentuckyAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(kentuckyAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let indianaAvenue = {
@@ -460,10 +797,38 @@ let indianaAvenue = {
     displayProperty(indianaAvenue, "board-details", "one");
   },
   playerClickResult: function() {
-    if (mediterraneanAvenue.isMortgaged) {
-      displayMortgagedProperty(mediterraneanAvenue);
+    if (indianaAvenue.isMortgaged) {
+      displayMortgagedProperty(indianaAvenue);
     } else {
       displayProperty(indianaAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (indianaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(indianaAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(indianaAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (indianaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(indianaAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(indianaAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (indianaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(indianaAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(indianaAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (indianaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(indianaAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(indianaAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -497,6 +862,34 @@ let illinoisAvenue = {
       displayProperty(illinoisAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (illinoisAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(illinoisAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(illinoisAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (illinoisAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(illinoisAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(illinoisAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (illinoisAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(illinoisAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(illinoisAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (illinoisAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(illinoisAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(illinoisAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let atlanticAvenue = {
@@ -526,6 +919,34 @@ let atlanticAvenue = {
       displayMortgagedProperty(atlanticAvenue);
     } else {
       displayProperty(atlanticAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (atlanticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(atlanticAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(atlanticAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (atlanticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(atlanticAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(atlanticAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (atlanticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(atlanticAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(atlanticAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (atlanticAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(atlanticAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(atlanticAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -559,6 +980,34 @@ let ventnorAvenue = {
       displayProperty(ventnorAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (ventnorAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(ventnorAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(ventnorAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (ventnorAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(ventnorAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(ventnorAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (ventnorAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(ventnorAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(ventnorAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (ventnorAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(ventnorAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(ventnorAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let marvinGardens = {
@@ -588,6 +1037,34 @@ let marvinGardens = {
       displayMortgagedProperty(marvinGardens);
     } else {
       displayProperty(marvinGardens, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (marvinGardens.isMortgaged) {
+      displayTradingMortgagedProperty(marvinGardens, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(marvinGardens, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (marvinGardens.isMortgaged) {
+      displayTradingMortgagedProperty(marvinGardens, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(marvinGardens, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (marvinGardens.isMortgaged) {
+      displayTradingMortgagedProperty(marvinGardens, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(marvinGardens, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (marvinGardens.isMortgaged) {
+      displayTradingMortgagedProperty(marvinGardens, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(marvinGardens, "trader-2-offerings-details");
     }
   },
 };
@@ -621,6 +1098,34 @@ let pacificAvenue = {
       displayProperty(pacificAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (pacificAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pacificAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(pacificAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (pacificAvenue.isMortgaged) {
+  displayTradingMortgagedProperty(pacificAvenue, "trader-2-assets-details");
+    } else {
+  displayTradingProperty(pacificAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (pacificAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pacificAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(pacificAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (pacificAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pacificAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(pacificAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let northCarolinaAvenue = {
@@ -650,6 +1155,34 @@ let northCarolinaAvenue = {
       displayMortgagedProperty(northCarolinaAvenue);
     } else {
       displayProperty(northCarolinaAvenue, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (northCarolinaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(northCarolinaAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(northCarolinaAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (northCarolinaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(northCarolinaAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(northCarolinaAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (northCarolinaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(northCarolinaAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(northCarolinaAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (northCarolinaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(northCarolinaAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(northCarolinaAvenue, "trader-2-offerings-details");
     }
   },
 };
@@ -683,6 +1216,34 @@ let pennsylvaniaAvenue = {
       displayProperty(pennsylvaniaAvenue, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (pennsylvaniaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaAvenue, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(pennsylvaniaAvenue, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (pennsylvaniaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaAvenue, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(pennsylvaniaAvenue, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (pennsylvaniaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaAvenue, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(pennsylvaniaAvenue, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (pennsylvaniaAvenue.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaAvenue, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(pennsylvaniaAvenue, "trader-2-offerings-details");
+    }
+  },
 };
 
 let parkPlace = {
@@ -712,6 +1273,34 @@ let parkPlace = {
       displayMortgagedProperty(parkPlace);
     } else {
       displayProperty(parkPlace, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (parkPlace.isMortgaged) {
+      displayTradingMortgagedProperty(parkPlace, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(parkPlace, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (parkPlace.isMortgaged) {
+      displayTradingMortgagedProperty(parkPlace, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(parkPlace, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (parkPlace.isMortgaged) {
+      displayTradingMortgagedProperty(parkPlace, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(parkPlace, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (parkPlace.isMortgaged) {
+      displayTradingMortgagedProperty(parkPlace, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(parkPlace, "trader-2-offerings-details");
     }
   },
 };
@@ -745,6 +1334,34 @@ let boardwalk = {
       displayProperty(boardwalk, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (boardwalk.isMortgaged) {
+      displayTradingMortgagedProperty(boardwalk, "trader-1-assets-details");
+    } else {
+      displayTradingProperty(boardwalk, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (boardwalk.isMortgaged) {
+      displayTradingMortgagedProperty(boardwalk, "trader-2-assets-details");
+    } else {
+      displayTradingProperty(boardwalk, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (boardwalk.isMortgaged) {
+      displayTradingMortgagedProperty(boardwalk, "trader-1-offerings-details");
+    } else {
+      displayTradingProperty(boardwalk, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (boardwalk.isMortgaged) {
+      displayTradingMortgagedProperty(boardwalk, "trader-2-offerings-details");
+    } else {
+      displayTradingProperty(boardwalk, "trader-2-offerings-details");
+    }
+  },
 };
 
 // RAILROADS
@@ -774,6 +1391,34 @@ let readingRailroad = {
       displayRailroad(readingRailroad, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (readingRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(readingRailroad, "trader-1-assets-details");
+    } else {
+      displayTradingRailroad(readingRailroad, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (readingRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(readingRailroad, "trader-2-assets-details");
+    } else {
+      displayTradingRailroad(readingRailroad, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (readingRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(readingRailroad, "trader-1-offerings-details");
+    } else {
+      displayTradingRailroad(readingRailroad, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (readingRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(readingRailroad, "trader-2-offerings-details");
+    } else {
+      displayTradingRailroad(readingRailroad, "trader-2-offerings-details");
+    }
+  },
 };
 
 let pennsylvaniaRailroad = {
@@ -801,13 +1446,41 @@ let pennsylvaniaRailroad = {
       displayRailroad(pennsylvaniaRailroad, "player-details", "three");
     }
   },
+    trader1AssetClickResult: function() {
+    if (pennsylvaniaRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaRailroad, "trader-1-assets-details");
+    } else {
+      displayTradingRailroad(pennsylvaniaRailroad, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (pennsylvaniaRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaRailroad, "trader-2-assets-details");
+    } else {
+      displayTradingRailroad(pennsylvaniaRailroad, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (pennsylvaniaRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaRailroad, "trader-1-offerings-details");
+    } else {
+      displayTradingRailroad(pennsylvaniaRailroad, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (pennsylvaniaRailroad.isMortgaged) {
+      displayTradingMortgagedProperty(pennsylvaniaRailroad, "trader-2-offerings-details");
+    } else {
+      displayTradingRailroad(pennsylvaniaRailroad, "trader-2-offerings-details");
+    }
+  },
 };
 
 let bORailroad = {
   boardSpace: $("#bo-railroad"),
   boardClass: "bo-railroad",
   type: "railroad",
-  title: "B&O Railroad",
+  title: "B and O Railroad",
   price: 200,
   mortgage: 100,
   isMortgaged: false,
@@ -826,6 +1499,34 @@ let bORailroad = {
       displayMortgagedProperty(bORailroad);
     } else {
       displayRailroad(bORailroad, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (bORailroad.isMortgaged) {
+      displayTradingMortgagedProperty(bORailroad, "trader-1-assets-details");
+    } else {
+      displayTradingRailroad(bORailroad, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (bORailroad.isMortgaged) {
+      displayTradingMortgagedProperty(bORailroad, "trader-2-assets-details");
+    } else {
+      displayTradingRailroad(bORailroad, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (bORailroad.isMortgaged) {
+      displayTradingMortgagedProperty(bORailroad, "trader-1-offerings-details");
+    } else {
+      displayTradingRailroad(bORailroad, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (bORailroad.isMortgaged) {
+      displayTradingMortgagedProperty(bORailroad, "trader-2-offerings-details");
+    } else {
+      displayTradingRailroad(bORailroad, "trader-2-offerings-details");
     }
   },
 };
@@ -853,6 +1554,34 @@ let shortLine = {
       displayMortgagedProperty(shortLine);
     } else {
       displayRailroad(shortLine, "player-details", "three");
+    }
+  },
+    trader1AssetClickResult: function() {
+    if (shortLine.isMortgaged) {
+      displayTradingMortgagedProperty(shortLine, "trader-1-assets-details");
+    } else {
+      displayTradingRailroad(shortLine, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (shortLine.isMortgaged) {
+      displayTradingMortgagedProperty(shortLine, "trader-2-assets-details");
+    } else {
+      displayTradingRailroad(shortLine, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (shortLine.isMortgaged) {
+      displayTradingMortgagedProperty(shortLine, "trader-1-offerings-details");
+    } else {
+      displayTradingRailroad(shortLine, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (shortLine.isMortgaged) {
+      displayTradingMortgagedProperty(shortLine, "trader-2-offerings-details");
+    } else {
+      displayTradingRailroad(shortLine, "trader-2-offerings-details");
     }
   },
 };
@@ -884,6 +1613,34 @@ let electricCompany = {
       displayUtility(electricCompany, "player-details", "three");
     }
   },
+  trader1AssetClickResult: function () {
+    if (electricCompany.isMortgaged) {
+      displayTradingMortgagedProperty(electricCompany, "trader-1-assets-details");
+    } else {
+      displayTradingUtility(electricCompany, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (electricCompany.isMortgaged) {
+      displayTradingMortgagedProperty(electricCompany, "trader-2-assets-details");
+    } else {
+      displayTradingUtility(electricCompany, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (electricCompany.isMortgaged) {
+      displayTradingMortgagedProperty(electricCompany, "trader-1-offerings-details");
+    } else {
+      displayTradingUtility(electricCompany, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (electricCompany.isMortgaged) {
+      displayTradingMortgagedProperty(electricCompany, "trader-2-offerings-details");
+    } else {
+      displayTradingUtility(electricCompany, "trader-2-offerings-details");
+    }
+  },
 };
 
 let waterWorks = {
@@ -909,6 +1666,34 @@ let waterWorks = {
       displayMortgagedProperty(waterWorks);
     } else {
       displayUtility(waterWorks, "player-details", "three");
+    }
+  },
+  trader1AssetClickResult: function () {
+    if (waterWorks.isMortgaged) {
+      displayTradingMortgagedProperty(waterWorks, "trader-1-assets-details");
+    } else {
+      displayTradingUtility(waterWorks, "trader-1-assets-details");
+    }
+  },
+  trader2AssetClickResult: function () {
+    if (waterWorks.isMortgaged) {
+      displayTradingMortgagedProperty(waterWorks, "trader-2-assets-details");
+    } else {
+      displayTradingUtility(waterWorks, "trader-2-assets-details");
+    }
+  },
+  trader1OfferingsClickResult: function () {
+    if (waterWorks.isMortgaged) {
+      displayTradingMortgagedProperty(waterWorks, "trader-1-offerings-details");
+    } else {
+      displayTradingUtility(waterWorks, "trader-1-offerings-details");
+    }
+  },
+  trader2OfferingsClickResult: function () {
+    if (waterWorks.isMortgaged) {
+      displayTradingMortgagedProperty(waterWorks, "trader-2-offerings-details");
+    } else {
+      displayTradingUtility(waterWorks, "trader-2-offerings-details");
     }
   },
 };
@@ -1094,7 +1879,7 @@ let luxuryTax = {
 
 let chanceDeck = [
   advanceToGoChance = {
-    text: "Advance to Go.",
+    text: "Advance to Go like a good dog.",
     buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(advanceToGoChance), 1);
@@ -1234,7 +2019,7 @@ let chanceDeck = [
   jailFreeChance = {
     text: 'The government has decided that your business ventures are "too big to fail" and is prepared to issue a pardon. You may use this pardon to get out of jail free. This card may be kept until needed or traded/sold.',
     buttonText: 'Okay',
-    title: "?",
+    title: "Chance",
     type: "card",
     isMortgaged: false,
     price: 0,
@@ -1260,10 +2045,58 @@ let chanceDeck = [
       $(".three > .player-details > .btn-chance-result").css("display", "inline");
       $(".three > .player-details > .btn-chance-result").removeClass("btn-chance-result");
       $(".three > .player-details").removeClass("hidden");
-    }
+    },
+    trader1AssetClickResult: function () {
+      $(".trading-box .trader-1-assets-details").addClass("chance");
+      $(".trading-box .trader-1-assets-details").append($(".reference > .chance").html());
+      $(".trading-box .trader-1-assets-details > .chance-text").append(jailFreeChance.text);
+      $(".trading-box .trader-1-assets-details > .btn-chance-result").append("Close");
+      $(".trading-box .trader-1-assets-details > .btn-chance-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-1-assets-details > .btn-chance-result").css("display", "inline");
+      $(".trading-box .trader-1-assets-details > .btn-chance-result").removeClass("btn-chance-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-1-assets-details > .btn-add").css("display", "inline");
+      $(".trading-box .trader-1-assets-details").removeClass("hidden");
+    },
+    trader2AssetClickResult: function() {
+      $(".trading-box .trader-2-assets-details").addClass("chance");
+      $(".trading-box .trader-2-assets-details").append($(".reference > .chance").html());
+      $(".trading-box .trader-2-assets-details > .chance-text").append(jailFreeChance.text);
+      $(".trading-box .trader-2-assets-details > .btn-chance-result").append("Close");
+      $(".trading-box .trader-2-assets-details > .btn-chance-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-2-assets-details > .btn-chance-result").css("display", "inline");
+      $(".trading-box .trader-2-assets-details > .btn-chance-result").removeClass("btn-chance-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-2-assets-details > .btn-add").css("display", "inline");
+      $(".trading-box .trader-2-assets-details").removeClass("hidden");
+    },
+    trader1OfferingsClickResult: function () {
+      $(".trading-box .trader-1-offerings-details").addClass("chance");
+      $(".trading-box .trader-1-offerings-details").append($(".reference > .chance").html());
+      $(".trading-box .trader-1-offerings-details > .chance-text").append(jailFreeChance.text);
+      $(".trading-box .trader-1-offerings-details > .btn-chance-result").append("Close");
+      $(".trading-box .trader-1-offerings-details > .btn-chance-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-1-offerings-details > .btn-chance-result").css("display", "inline");
+      $(".trading-box .trader-1-offerings-details > .btn-chance-result").removeClass("btn-chance-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-1-offerings-details > .btn-return").css("display", "inline");
+      $(".trading-box .trader-1-offerings-details").removeClass("hidden");
+    },
+    trader2OfferingsClickResult: function () {
+      $(".trading-box .trader-2-offerings-details").addClass("chance");
+      $(".trading-box .trader-2-offerings-details").append($(".reference > .chance").html());
+      $(".trading-box .trader-2-offerings-details > .chance-text").append(jailFreeChance.text);
+      $(".trading-box .trader-2-offerings-details > .btn-chance-result").append("Close");
+      $(".trading-box .trader-2-offerings-details > .btn-chance-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-2-offerings-details > .btn-chance-result").css("display", "inline");
+      $(".trading-box .trader-2-offerings-details > .btn-chance-result").removeClass("btn-chance-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-2-offerings-details > .btn-return").css("display", "inline");
+      $(".trading-box .trader-2-offerings-details").removeClass("hidden");
+    },
   },
   goBackThree = {
-    text: "Go back three spaces, stupid.",
+    text: "Your fortune cookie says: 'Go back three spaces, but always look ahead.'",
     buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(goBackThree), 1);
@@ -1278,7 +2111,7 @@ let chanceDeck = [
   },
   goToJailChance = {
     text: "What in the blazes is wrong with you?! While making a friendly vist to Alaska, you shove a moose out of a flightseeing aircraft. You are no doubt aware that this is illegal, so go to jail. Go directly to jail. Do not pass Go. Do not collect $200.",
-    buttonText: "Okay, officer. BTW, was it okay for me to wake that bear to take a selfie with it?",
+    buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(goToJailChance), 1);
       chanceDeckDiscarded.push(goToJailChance);
@@ -1300,7 +2133,7 @@ let chanceDeck = [
     }
   },
   propertyRepair = {
-    text: "Make general repairs on all your property: for each house, pay $25; for each hotel, pay $100.",
+    text: "Because you put so much effort into keeping spiders of off your property, termites have successfully ransacked it, so you must now make general repairs: for each house, pay $25; for each hotel, pay $100.",
     buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(propertyRepair), 1);
@@ -1361,7 +2194,7 @@ let chanceDeck = [
     }
   },
   advanceToBoardwalk = {
-    text: "Take a walk on the boardwalk. Advance token to Boardwalk.",
+    text: "Take a walk under the boardwalk. Advance token to Boardwalk.",
     buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(advanceToBoardwalk), 1);
@@ -1376,7 +2209,7 @@ let chanceDeck = [
     },
   },
   payFiftyToAll = {
-    text: "Pay each player $50.",
+    text: "The othe players find that you have been fracking underneath their property. Pay each of them $50 as a settlement.",
     buttonText: "Okay",
     result: function() {
       chanceDeck.splice(chanceDeck.indexOf(payFiftyToAll), 1);
@@ -1457,7 +2290,7 @@ let communityChestDeck = [
     }
   },
   stockSale = {
-    text: "From sale of stock you get $50.",
+    text: "collect $50 because you can.",
     buttonText: "Okay",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(stockSale), 1);
@@ -1469,7 +2302,7 @@ let communityChestDeck = [
     }
   },
   jailFreeCommunityChest = {
-    text: "Get out of Jail free.",
+    text: "Your connections with the local police allow you to get out of Jail free. This card may be kept until needed or sold.",
     buttonText: "Okay",
     title: "Community Chest",
     type: "card",
@@ -1491,14 +2324,62 @@ let communityChestDeck = [
       $(".three > .player-details").append($(".reference > .community-chest").html());
       $(".three > .player-details > .community-chest-text").append(jailFreeCommunityChest.text);
       $(".three > .player-details > .btn-cc-result").append("Click here to close.");
-      $(".three > .player-details > .btn-chance-result").addClass("closer");
+      $(".three > .player-details > .btn-cc-result").addClass("closer");
       $(".three > .player-details > .btn-cc-result").css("display", "inline");
       $(".three > .player-details > .btn-cc-result").removeClass("btn-cc-result");
       $(".three > .player-details").removeClass("hidden");
-    }
+    },
+    trader1AssetClickResult: function () {
+      $(".trading-box .trader-1-assets-details").addClass("community-chest");
+      $(".trading-box .trader-1-assets-details").append($(".reference > .community-chest").html());
+      $(".trading-box .trader-1-assets-details > .community-chest-text").append(jailFreeCommunityChest.text);
+      $(".trading-box .trader-1-assets-details > .btn-cc-result").append("Close");
+      $(".trading-box .trader-1-assets-details > .btn-cc-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-1-assets-details > .btn-cc-result").css("display", "inline");
+      $(".trading-box .trader-1-assets-details > .btn-cc-result").removeClass("btn-cc-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-1-assets-details > .btn-add").css("display", "inline");
+      $(".trading-box .trader-1-assets-details").removeClass("hidden");
+    },
+    trader2AssetClickResult: function () {
+      $(".trading-box .trader-2-assets-details").addClass("community-chest");
+      $(".trading-box .trader-2-assets-details").append($(".reference > .community-chest").html());
+      $(".trading-box .trader-2-assets-details > .community-chest-text").append(jailFreeCommunityChest.text);
+      $(".trading-box .trader-2-assets-details > .btn-cc-result").append("Close");
+      $(".trading-box .trader-2-assets-details > .btn-cc-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-2-assets-details > .btn-cc-result").css("display", "inline");
+      $(".trading-box .trader-2-assets-details > .btn-cc-result").removeClass("btn-cc-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-2-assets-details > .btn-add").css("display", "inline");
+      $(".trading-box .trader-2-assets-details").removeClass("hidden");
+    },
+    trader1OfferingsClickResult: function () {
+      $(".trading-box .trader-1-offerings-details").addClass("community-chest");
+      $(".trading-box .trader-1-offerings-details").append($(".reference > .community-chest").html());
+      $(".trading-box .trader-1-offerings-details > .community-chest-text").append(jailFreeCommunityChest.text);
+      $(".trading-box .trader-1-offerings-details > .btn-cc-result").append("Close");
+      $(".trading-box .trader-1-offerings-details > .btn-cc-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-1-offerings-details > .btn-cc-result").css("display", "inline");
+      $(".trading-box .trader-1-offerings-details > .btn-cc-result").removeClass("btn-cc-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-1-offerings-details > .btn-return").css("display", "inline");
+      $(".trading-box .trader-1-offerings-details").removeClass("hidden");
+    },
+    trader2OfferingsClickResult: function () {
+      $(".trading-box .trader-2-offerings-details").addClass("community-chest");
+      $(".trading-box .trader-2-offerings-details").append($(".reference > .community-chest").html());
+      $(".trading-box .trader-2-offerings-details > .community-chest-text").append(jailFreeCommunityChest.text);
+      $(".trading-box .trader-2-offerings-details > .btn-cc-result").append("Close");
+      $(".trading-box .trader-2-offerings-details > .btn-cc-result").addClass("btn-trade-closer");
+      $(".trading-box .trader-2-offerings-details > .btn-cc-result").css("display", "inline");
+      $(".trading-box .trader-2-offerings-details > .btn-cc-result").removeClass("btn-cc-result");
+      $(".three > .player-button-blocker").css("display", "block");
+      $(".trading-box .trader-2-offerings-details > .btn-return").css("display", "inline");
+      $(".trading-box .trader-2-offerings-details").removeClass("hidden");
+    },
   },
   goToJailCommunityChest = {
-    text: "The developer caught you writing a listing in a sentence but FAILING to use an OXFORD COMMA, so go to Jail. Go directly to jail. Do not pass Go. Do not collect $200.",
+    text: "The developer caught you  FAILING to use an OXFORD COMMA before the last of a series of at least three items in a sentence, so go to Jail. Go directly to jail. Do not pass Go. Do not collect $200.",
     buttonText: "But, but...it was all there fault!",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(goToJailCommunityChest), 1);
@@ -1533,10 +2414,12 @@ let communityChestDeck = [
         yetToPay.splice(index, 1);
       }
       let moneyCheck;
-      for (let player of yetToPay) {
+      let yetToPayCopy = yetToPay.slice();
+      for (let player of yetToPayCopy) {
+        let PayerIndex = yetToPay.indexOf(player);
         moneyCheck = pay(player, playerReceiving, 50);
         if (moneyCheck) {
-          yetToPay.splice(0, 1);
+          yetToPay.splice(PayerIndex, 1);
         } else {
           return false;
         }
@@ -1572,7 +2455,7 @@ let communityChestDeck = [
     }
   },
   happyBirthday = {
-    text: "Happy Birthday! Collect $10 from every player.",
+    text: "Happy Birthday! The rest of the players give you $10 to make it harder for you to demand extravagant gifts from them.",
     buttonText: "Okay",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(happyBirthday), 1);
@@ -1581,15 +2464,15 @@ let communityChestDeck = [
       if (yetToPay.length === 0) {
         yetToPay = activePlayers.slice();
         let index = yetToPay.indexOf(playerReceiving);
-        yetToPay.splice(playerIndex, 1);
+        yetToPay.splice(index, 1);
       }
-      // let moneyForPlayerReceiving = 10 * yetToPay.length;
       let moneyCheck;
-      for (let player of yetToPay) {
-        moneyCheck = pay(player, playerReceiving, 50);
+      let yetToPayCopy = yetToPay.slice();
+      for (let player of yetToPayCopy) {
+        let PayerIndex = yetToPay.indexOf(player);
+        moneyCheck = pay(player, playerReceiving, 10);
         if (moneyCheck) {
-          //          let playerIndex = yetToPay.indexOf(player);
-          yetToPay.splice(0, 1);
+          yetToPay.splice(PayerIndex, 1);
         } else {
           return false;
         }
@@ -1600,12 +2483,12 @@ let communityChestDeck = [
       }
     }
   },
-  lifeInsurance = {
-    text: "Within the box you find your life insurance fund, and you decide to cash it prematurely for yourself. Collect $100.",
+  bulgingChest = {
+    text: "The chest is locked tight, but it so full that you see a $100 bill poking through the cracks. You decide to take the $100 to help the community keep its chest together.",
     buttonText: "Okay",
     result: function() {
-      communityChestDeck.splice(communityChestDeck.indexOf(lifeInsurance), 1);
-      communityChestDeckDiscarded.push(lifeInsurance);
+      communityChestDeck.splice(communityChestDeck.indexOf(bulgingChest), 1);
+      communityChestDeckDiscarded.push(bulgingChest);
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 100);
       endTurn();
@@ -1629,7 +2512,7 @@ let communityChestDeck = [
     }
   },
   schoolFee = {
-    text: "Pay your tiny little school fee of $50.",
+    text: "Pay your student loan repayment bill of $50.",
     buttonText: "Okay",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(schoolFee), 1);
@@ -1644,12 +2527,12 @@ let communityChestDeck = [
       }
     }
   },
-  constultancyFee = {
-    text: "Receive consultancy fee of $25.",
+  scandalMoney = {
+    text: "You make up a scandal and receive $25 for the fake-scandal-derived merchandise you proceed proceed to sell.",
     buttonText: "Okay",
     result: function() {
-      communityChestDeck.splice(communityChestDeck.indexOf(constultancyFee), 1);
-      communityChestDeckDiscarded.push(constultancyFee);
+      communityChestDeck.splice(communityChestDeck.indexOf(scandalMoney), 1);
+      communityChestDeckDiscarded.push(scandalMoney);
       let player = gameStatus.currentPlayerTurn;
       moneyChange(player, 25);
       endTurn();
@@ -1692,7 +2575,7 @@ let communityChestDeck = [
     }
   },
   youInherit = {
-    text: "At long last, your billionaire uncle has passed! However, you get hardly a passing mention in his will, and only inherit $100. You cannont help but sulk into your pillow at this lousy inheritance.",
+    text: "At long last, your billionaire uncle has passed! However, you get hardly a passing mention in his will, and only inherit $100. You cannont help but sob uncontrollably into your pillow at this lousy inheritance.",
     buttonText: "Okay",
     result: function() {
       communityChestDeck.splice(communityChestDeck.indexOf(youInherit), 1);
@@ -1820,9 +2703,11 @@ const boardClassArray = board.map(function(space) {
 // PLAYERS
 
 const player1 = {
-  name: "player1",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: boot,
   tokenSpace: {
     "bottom": "50%",
@@ -1838,6 +2723,7 @@ const player1 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -1874,9 +2760,11 @@ const player1 = {
 };
 
 const player2 = {
-  name: "player2",
+  name: null,
   inGame: false,
   money: 1500,
+  moneyTrading: 0,
+  traderMoney: 1500,
   token: wheelbarrow,
   tokenSpace: {
     "bottom": "5%",
@@ -1893,6 +2781,7 @@ const player2 = {
   onSpace: null,
 
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -1929,9 +2818,11 @@ const player2 = {
 };
 
 const player3 = {
-  name: "player3",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: ship,
   tokenSpace: {
     "bottom": "27.5%",
@@ -1947,6 +2838,7 @@ const player3 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -1983,9 +2875,11 @@ const player3 = {
 };
 
 const player4 = {
-  name: "player4",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: car,
   tokenSpace: {
     "bottom": "72.5%",
@@ -2001,6 +2895,7 @@ const player4 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -2037,9 +2932,11 @@ const player4 = {
 };
 
 const player5 = {
-  name: "player5",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: thimble,
   tokenSpace: {
     "bottom": "72.5%",
@@ -2055,6 +2952,7 @@ const player5 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -2091,9 +2989,11 @@ const player5 = {
 };
 
 const player6 = {
-  name: "player6",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: iron,
   tokenSpace: {
     "bottom": "27.5%",
@@ -2109,6 +3009,7 @@ const player6 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -2145,9 +3046,11 @@ const player6 = {
 };
 
 const player7 = {
-  name: "player7",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: horseAndRider,
   tokenSpace: {
     "bottom": "5%",
@@ -2163,6 +3066,7 @@ const player7 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -2199,9 +3103,11 @@ const player7 = {
 };
 
 const player8 = {
-  name: "player8",
+  name: null,
   inGame: false,
   money: 1500,
+  traderMoney: 1500,
+  moneyTrading: 0,
   token: cannon,
   tokenSpace: {
     "bottom": "50%",
@@ -2217,6 +3123,7 @@ const player8 = {
   },
   onSpace: null,
   properties: [],
+  propertiesTrading: [],
   monopolies: [],
   inDebtTo: null,
   numberOfRailroads: function() {
@@ -2268,10 +3175,134 @@ let activePlayers = [player1, player2, player3, player4, player5, player6, playe
 let initialPlayers = [];
 let activePlayersOrdered = [];
 let multiplier = 1;
+let railroadMultiplier = 1;
 let onPlayer = 1;
 let cardDrawn;
 let firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
 let yetToPay = [];
+let trader1 = null;
+let trader2 = null;
+
+// AUCTION VARIABLES
+let biddingPlayer = null;
+let leadingBidder = null;
+let numberOfPasses = 0;
+let leadingBid = 0;
+let playerBid = null;
+let bidStatus = "&nbsp;";
+let auctioneerAnnouncement = "&nbsp;";
+let propertySold = null;
+
+$(document).on("click", ".one > .auction > .btn-bid", function() {
+  playerBid = Number($(".one > .auction > .player-bid").val());
+  if ((Number.isInteger(playerBid)) && (playerBid > leadingBid)) {
+    leadingBid = playerBid;
+    leadingBidder = biddingPlayer;
+    let leadingBidderIndex = activePlayers.indexOf(leadingBidder);
+    if (leadingBidderIndex === activePlayers.length - 1) {
+      biddingPlayer = activePlayers[0];
+    }
+    else {
+      biddingPlayer = activePlayers[leadingBidderIndex + 1];
+    }
+    auctioneerAnnouncement = "&nbsp;";
+    $(".one > .auction > .leading-bid").html("Leading Bid: <strong>$" + leadingBid + "</strong>");
+    $(".one > .auction > .leading-bidder").html("Leading Bidder: <strong>" + leadingBidder.name + "</strong>");
+    $(".one > .auction > .leading-bidder-token").attr("src", leadingBidder.token.image);
+    $(".one > .auction > .leading-bidder-token").attr("alt", leadingBidder.token.class);
+    $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
+    $(".one > .auction > .bidding-player").html("<strong>" + biddingPlayer.name  + "</strong>");
+    $(".one > .auction > .bidding-player-token").attr("src", biddingPlayer.token.image);
+    $(".one > .auction > .bidding-player-token").attr("alt", biddingPlayer.token.class);
+    $(".one > .auction > .auctioneer").html("What's you're bid? $");
+    $(".one > .auction > .bid-status").html("&nbsp;");
+    $(".one > .auction > .player-bid").val("");
+    numberOfPasses = 0;
+  }
+  else if (!(Number.isInteger(playerBid))) {
+    bidStatus = "<strong>Your bid must be a whole number!</strong>";
+    $(".one > .auction > .bid-status").html(bidStatus);
+  }
+  else if (playerBid <= leadingBid) {
+    bidStatus = "<strong>Your bid must be greater than the leading bid!</strong>";
+    $(".one > .auction > .bid-status").html(bidStatus);
+  }
+});
+
+$(document).on("click", ".one > .auction > .btn-no-bid", function() {
+  let biddingPlayerIndex = activePlayers.indexOf(biddingPlayer);
+  if (numberOfPasses !== 3 * (activePlayers.length - 1) - 1) {
+    if (biddingPlayerIndex === activePlayers.length - 1) {
+      biddingPlayer = activePlayers[0];
+    }
+    else {
+      biddingPlayer = activePlayers[biddingPlayerIndex + 1];
+    }
+    if (biddingPlayer === leadingBidder) {
+      biddingPlayerIndex = activePlayers.indexOf(biddingPlayer);
+      if (biddingPlayerIndex === activePlayers.length - 1) {
+        biddingPlayer = activePlayers[0];
+      }
+      else {
+        biddingPlayer = activePlayers[biddingPlayerIndex + 1];
+      }
+    }
+    $(".one > .auction > .bidding-player").html("<strong>" + biddingPlayer.name + "</strong>");
+    $(".one > .auction > .bidding-player-token").attr("src", biddingPlayer.token.image);
+    $(".one > .auction > .bidding-player-token").attr("alt", biddingPlayer.token.class);
+    $(".one > .auction > .auctioneer").html("What's you're bid?");
+    $(".one > .auction > .bid-status").html("&nbsp;");
+    numberOfPasses++;
+    if (numberOfPasses === activePlayers.length - 1) {
+      auctioneerAnnouncement = "Going once...";
+    }
+    else if (numberOfPasses === 2 * (activePlayers.length - 1)) {
+      auctioneerAnnouncement = "GOING TWICE...";
+    }
+    $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
+  }
+  else {
+    if (leadingBidder === null) {
+      auctioneerAnnouncement = "None of you bought it? You're all a bunch of dunderheads!";
+      $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
+      $(".one > .auction > .bidding-player," +
+        ".one > .auction > .bidding-player-token," +
+        ".one > .auction > .auctioneer," +
+        ".one > .auction > .player-bid," +
+        ".one > .auction > .btn-bid," +
+        ".one > .auction > .btn-no-bid").addClass("hidden");
+      $(".one > .auction > .bid-status").css("display", "none");
+      $(".one > .auction > .closer").css("display", "inline");
+      biddingPlayer = null;
+      leadingBidder = null;
+      numberOfPasses = 0;
+      leadingBid = 0;
+      playerBid = null;
+      bidStatus = "&nbsp;";
+      auctioneerAnnouncement = "&nbsp;";
+      endTurn();
+    }
+    else {
+      auctioneerAnnouncement = "SOLD to <strong>" + leadingBidder.name + "</strong> for <strong>$" + leadingBid + "!!</strong> What a dunderhead!!";
+      $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
+      $(".one > .auction > .bidding-player," +
+        ".one > .auction > .bidding-player-token," +
+        ".one > .auction > .auctioneer," +
+        ".one > .auction > .player-bid," +
+        ".one > .auction > .btn-bid," +
+        ".one > .auction > .btn-no-bid").addClass("hidden");
+      $(".one > .auction > .bid-status").css("display", "none")
+      for (property of properties) {
+        if ($(".one > .auction > .auction-property > .auction-property-deed").attr("title") === property.title) {
+          propertySold = property;
+          break;
+        }
+      }
+      $(".one > .auction > .btn-auction-buy").html("Buy " + propertySold.title + " - $" + leadingBid);
+      $(".one > .auction > .btn-auction-buy").css("display", "inline");
+    }
+  }
+});
 
 const tokensMatch = [
   ["boot", "cannon", "car", "dog", "hat", "horse-and-rider", "iron", "sack-of-money", "ship", "thimble", "wheelbarrow"],
@@ -2298,11 +3329,21 @@ function rollDice() {
 
 function moneyChange(player, money) {
   player.money += money;
+  player.traderMoney += money;
   $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
   if ($(".three > .player-heading > .token-small").attr("alt") === player.token.class) {
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
+    $(".three > .player-heading > .player-cash").empty();
+    $(".three > .player-heading > .player-cash").append("$" + player.money);
   }
+  if ($(".trader-1-assets > .player-heading > .token-small").attr("alt") === player.token.class) {
+    $(".trader-1-assets > .player-heading > .player-cash").empty();
+    $(".trader-1-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
+  else if ($(".trader-2-assets > .player-heading > .token-small").attr("alt") === player.token.class) {
+    $(".trader-2-assets > .player-heading > .player-cash").empty();
+    $(".trader-2-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
+
 }
 
 function colorChangePlusHighlight(string) {
@@ -2425,7 +3466,7 @@ function landOn(space) {
       $(".board-details > .btn-rent").css("display", "inline");
       rent(moneyOwed);
     } else {
-      $(".closer").css("display", "inline");
+      $(".board-details > .closer").css("display", "inline");
       endTurn();
     }
   } else if (space.type === "railroad") {
@@ -2437,7 +3478,7 @@ function landOn(space) {
       let moneyOwed = space.rent[space.owner.numberOfRailroads() - 1] * multiplier;
       rent(moneyOwed);
     } else {
-      $(".closer").css("display", "inline");
+      $(".board-details > .closer").css("display", "inline");
       endTurn();
     }
   } else if (space.type === "utility") {
@@ -2464,7 +3505,7 @@ function landOn(space) {
     } else {
       displayUtility(space, "board-details", "one");
       $(".board-button-blocker").css("display", "block");
-      $(".closer").css("display", "inline");
+      $(".board-details > .closer").css("display", "inline");
       endTurn();
     }
   } else if (space.type === "go") {
@@ -2506,12 +3547,10 @@ function landOn(space) {
   } else if (space.type === "incomeTax") {
     $(".board-details").empty();
     displayIncomeTax();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
   } else if (space.type === "luxuryTax") {
     $(".board-details").empty();
     displayLuxuryTax();
-    $(".player-button-blocker").css("display", "block");
     $(".board-button-blocker").css("display", "block");
   } else {
     endTurn();
@@ -2521,6 +3560,7 @@ function landOn(space) {
 // ENDING THE TURN
 
 function endTurn() {
+  $(".trade").css("display", "inline");
   if (gameStatus.currentPlayerTurn.inJail) {
     $(".roll").css("display", "none");
     $(".end-turn").css("display", "inline");
@@ -2575,6 +3615,48 @@ function displayProperty(property, location, column) {
   $("." + column + "> ." + location).removeClass("hidden");
 }
 
+function displayTradingProperty(property, div) {
+  $(".trading-box ." + div).empty();
+  $(".trading-box ." + div).append($(".reference > .titledeed").html());
+  $(".trading-box ." + div + " > .property-name").append(property.title);
+  $(".trading-box ." + div + " > .price").append("PRICE $" + property.price);
+  $(".trading-box ." + div + " > .base-rent").append("RENT $" + property.rent[0]);
+  $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-1-house > .right").append("$" + property.rent[1]);
+  $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-2-house > .right").append("$" + property.rent[2]);
+  $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-3-house > .right").append("$" + property.rent[3]);
+  $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-4-house > .right").append("$" + property.rent[4]);
+
+  for (let i = 1; i <= property.housesHotel; i++) {
+    $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-" + i + "-house > .left").append("&nbsp;&nbsp;&nbsp; <img src='images/house.png' alt='house' class='house-hotel-property'>");
+  }
+
+  $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-hotel > .rent-hotel").append("$" + property.rent[5]);
+
+  if (property.housesHotel === 5) {
+    $(".trading-box ." + div + " > .prop-details > .rents > tbody > .rent-hotel > .hotel-pic").append("&nbsp;&nbsp; <img src='images/hotel.png' alt='house' class='house-hotel-property'> &nbsp;&nbsp;");
+  }
+
+  $(".trading-box ." + div + " > .prop-details > .mortgage-value").append("Mortgage Value $" + property.mortgage);
+  $(".trading-box ." + div + " > .prop-details > .house-price").append("Houses cost $" + property.priceHouse + " each.");
+  $(".trading-box ." + div + " > .prop-details > .hotel-price").append("Hotels, $" + property.priceHouse + " plus 4 houses");
+
+  for (let color of propertyCategories) {
+    $(".trading-box ." + div).removeClass(color[0]);
+  }
+
+  $(".trading-box ." + div).addClass("titledeed " + property.color);
+  if ((div === "trader-1-assets-details" || div === "trader-2-assets-details") && property.housesHotel === 0) {
+    $(".trading-box ." + div + " > .btn-add").css("display", "inline");
+  }
+  else if (div === "trader-1-offerings-details" || div === "trader-2-offerings-details") {
+    $(".trading-box ." + div + " > .btn-return").css("display", "inline");
+  }
+  $(".trading-box ." + div + " > .btn-trade-closer").css("display", "inline");
+  $(".three > .player-button-blocker").css("display", "block");
+  $(".trading-box .trading-button-blocker").css("display", "block");
+  $(".trading-box ." + div).removeClass("hidden");
+}
+
 function displayRailroad(property, location, column) {
   $("." + location).empty();
   $("." + column + "> ." + location).append($(".reference > .railroad").html());
@@ -2590,6 +3672,26 @@ function displayRailroad(property, location, column) {
   }
   $("." + column + "> ." + location + "> .closer").css("display", "none");
   $("." + column + "> ." + location).removeClass("hidden");
+}
+
+function displayTradingRailroad(property, div) {
+  $(".trading-box ." + div).empty();
+  $(".trading-box ." + div).append($(".reference > .railroad").html());
+  $(".trading-box ." + div + " > .property-name").append(property.title);
+  for (let color of propertyCategories) {
+    $(".trading-box ." + div).removeClass(color[0]);
+  }
+  $(".trading-box ." + div).addClass("titledeed railroad");
+  if (div === "trader-1-assets-details" || div === "trader-2-assets-details") {
+    $(".trading-box ." + div + " > .btn-add").css("display", "inline");
+  }
+  else if (div === "trader-1-offerings-details" || div === "trader-2-offerings-details") {
+    $(".trading-box ." + div + " > .btn-return").css("display", "inline");
+  }
+  $(".trading-box ." + div + " > .btn-trade-closer").css("display", "inline");
+  $(".three > .player-button-blocker").css("display", "block");
+  $(".trading-box .trading-button-blocker").css("display", "block");
+  $(".trading-box ." + div).removeClass("hidden");
 }
 
 function displayUtility(property, location, column) {
@@ -2617,6 +3719,26 @@ function displayUtility(property, location, column) {
   $("." + column + "> ." + location).removeClass("hidden");
 }
 
+function displayTradingUtility(property, div) {
+  $(".trading-box ." + div).empty();
+  $(".trading-box ." + div).append($(".reference > .utility").html());
+  $(".trading-box ." + div + " > .property-name").append(property.title);
+  for (let color of propertyCategories) {
+    $(".trading-box ." + div).removeClass(color[0]);
+  }
+  $(".trading-box ." + div).addClass("titledeed " + property.utilityClass);
+  if (div === "trader-1-assets-details" || div === "trader-2-assets-details") {
+    $(".trading-box ." + div + " > .btn-add").css("display", "inline");
+  }
+  else if (div === "trader-1-offerings-details" || div === "trader-2-offerings-details") {
+    $(".trading-box ." + div + " > .btn-return").css("display", "inline");
+  }
+  $(".trading-box ." + div + " > .btn-trade-closer").css("display", "inline");
+  $(".three > .player-button-blocker").css("display", "block");
+  $(".trading-box .trading-button-blocker").css("display", "block");
+  $(".trading-box ." + div).removeClass("hidden");
+}
+
 function displayMortgagedProperty(property) {
   $(".three > .player-details").empty();
   $(".three > .player-details").addClass("mortgaged");
@@ -2630,6 +3752,24 @@ function displayMortgagedProperty(property) {
     $(".three > .player-details > .btn-lift-mortgage").css("display", "inline");
   }
   $(".three > .player-details").removeClass("hidden");
+}
+
+function displayTradingMortgagedProperty(property, div) {
+  $(".trading-box ." + div).empty();
+  $(".trading-box ." + div).addClass("mortgaged");
+  $(".trading-box ." + div).append($(".reference > .mortgaged").html());
+  $(".trading-box ." + div + " > .property-name").append(property.title);
+  $(".trading-box ." + div + " > .mortgage-value").append("for $" + property.mortgage);
+  if ((div === "trader-1-assets-details" || div === "trader-2-assets-details") && property.housesHotel === 0) {
+    $(".trading-box ." + div + " > .btn-add").css("display", "inline");
+  }
+  else if (div === "trader-1-offerings-details" || div === "trader-2-offerings-details") {
+    $(".trading-box ." + div + " > .btn-return").css("display", "inline");
+  }
+  $(".trading-box ." + div + " > .btn-trade-closer").css("display", "inline");
+  $(".three > .player-button-blocker").css("display", "block");
+  $(".trading-box .trading-button-blocker").css("display", "block");
+  $(".trading-box ." + div).removeClass("hidden");
 }
 
 function displayGo() {
@@ -2676,6 +3816,7 @@ function displayCommunityChest() {
 }
 
 function displayIncomeTax() {
+  $(".two, .three").addClass("hidden");
   $(".one > .board-details").empty();
   $(".one > .board-details").addClass("income-tax-board");
   $(".one > .board-details").append($(".reference > .income-tax-board").html());
@@ -2692,16 +3833,12 @@ function displayLuxuryTax() {
 }
 
 function displayAuctionBox() {
-  let biddingPlayer = gameStatus.currentPlayerTurn;
-  // let biddingPlayer = player;
+  biddingPlayer = gameStatus.currentPlayerTurn;
   let property = biddingPlayer.onSpace;
   $("#board-details").empty()
   $("#board-details").removeClass();
   $("#board-details").addClass("board-details auction");
-  // $("." + property.boardClass).css("box-shadow", "0 0 0.25rem 0.25rem green");
   $(".one > .auction").append($(".reference > .auction").html());
-  console.log(property);
-  console.log(biddingPlayer);
   let propertyType
   if (property.type === "coloredProperty") {
     propertyType = property.color;
@@ -2712,21 +3849,16 @@ function displayAuctionBox() {
   else if (property.type === "utility") {
     propertyType = property.utilityClass;
   }
-  console.log(propertyType);
-
   $(".one > .auction > .auction-property > .auction-property-deed").attr("src", "images/titledeed-" + propertyType + ".png");
   $(".one > .auction > .auction-property > .auction-property-deed").attr("alt", property.title);
   $(".one > .auction > .auction-property > .auction-property-deed").attr("title", property.title);
   $(".one > .auction > .auction-property > .auction-property-title").append("<strong>" + property.title + "</strong> up for grabs!");
   $(".one > .auction > .auction-property > .auction-property-price").append("Base Price: <strong>$" + property.price + "</strong>");
-  // FOODOO
-  $(".one > .auction > .bidding-player").append(biddingPlayer.name);
+  $(".one > .auction > .bidding-player").append("<strong>" + biddingPlayer.name + "</strong>");
   $(".one > .auction > .bidding-player-token").attr("src", biddingPlayer.token.image);
   $(".one > .auction > .bidding-player-token").attr("alt", biddingPlayer.token.class);
-  //
 
   $(".exit-auction").css("display", "inline");
-  // auction(biddingPlayer, property);
 }
 
 $(".exit-auction").click(function() {
@@ -2734,9 +3866,82 @@ $(".exit-auction").click(function() {
   $("#board-details").removeClass();
   $("#board-details").addClass("board-details hidden");
   $(".exit-auction").css("display", "none");
-  $(".board-button-blocker").addClass("hidden");
-  $(".player-button-blocker").addClass("hidden");
+  $(".board-button-blocker").css("display", "block");
+  $(".player-button-blocker").css("display", "block");
   endTurn();
+});
+
+function displayTradingBox() {
+  $(".trading-box").append($(".reference > .trading-box-reference").html());
+  $(".trading-box").removeClass("hidden");
+}
+
+$(".trade").click(function() {
+  window.scrollTo(0, 650);
+  displayTradingBox();
+  $(".one > button").addClass("hidden");
+});
+
+$(document).on("click", ".traders-decider", function() {
+  for (player of activePlayers) {
+    if ($(".trading-box > .propose-a-deal > .trader-1-name").val() === player.name) {
+      trader1 = player;
+      break;
+    }
+  }
+  for (player of activePlayers) {
+    if ($(".trading-box > .propose-a-deal > .trader-2-name").val() === player.name) {
+      trader2 = player;
+      break;
+    }
+  }
+  let traders = [0, trader1, trader2];
+  if (trader1 === null || trader2 === null) {
+    $(".trading-box > .propose-a-deal > .invalid-traders").removeClass("hidden");
+    $(".trading-box > .propose-a-deal > .cannot-trade-with-yourself").addClass("hidden");
+    trader1 = null;
+    trader2 = null;
+    return false;
+  }
+  if (trader1 === trader2) {
+    $(".trading-box > .propose-a-deal > .invalid-traders").addClass("hidden");
+    $(".trading-box > .propose-a-deal > .cannot-trade-with-yourself").removeClass("hidden");
+    trader1 = null;
+    trader2 = null;
+    return false;
+  }
+  for (let i = 1; i <= 2; i++) {
+    $(".trading-box > .trader-" + i + "-assets").append($(".reference > .column-three-reference").html());
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .player-name").append(traders[i].name);
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .token-small").attr("src", traders[i].token.image);
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .token-small").attr("alt", traders[i].token.class);
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .player-cash").append("$" + traders[i].traderMoney);
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .btn-add-cash").addClass("btn-add-cash-trader-" + i)
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .btn-add-cash").css("display", "inline");
+    $(".trading-box > .trader-" + i + "-assets > .player-heading > .amount").css("display", "inline");
+    $(".trading-box > .trader-" + i + "-offerings > .trader-" + i + "-offerings-label").append(traders[i].name + " gives:");
+    for (let color of propertyCategories) {
+      for (let j = 1; j <= color[1]; j++) {
+        for (let property of traders[i].properties) {
+          if (property.title === $(".trading-box > .trader-" + i + "-assets > .color-" + color[0] + " > tbody > tr > .td" + j + " > .number-" + j).attr("title")) {
+            $(".trading-box > .trader-" + i + "-assets > .color-" + color[0] + " > tbody > tr > .td" + j + " > .number-" + j).removeClass("hidden");
+          }
+        }
+      }
+    }
+    for (let card of jailFreeCards) {
+      if (card.owner === traders[i]) {
+        $(".trading-box > .trader-" + i + "-assets > .color-cards > tbody > tr > .td" + jailFreeCards.indexOf(card) + " > .chance-cc-small").removeClass("hidden");
+      }
+    }
+  }
+  $(".trading-box > .propose-a-deal").css("display", "none");
+  $(".trading-box > .trader-1-assets").css("display", "block");
+  $(".trading-box > .trader-1-offerings").css("display", "block");
+  $(".trading-box > .trader-2-assets").css("display", "block");
+  $(".trading-box > .trader-2-offerings").css("display", "block");
+  $(".trading-box > .trading-buttons > .btn-propose-deal").css("display", "inline");
+  $(".trading-box .dealer").html(trader1.name + ":");
 });
 
 // BUYING AND PAYING RENT
@@ -2780,7 +3985,7 @@ function buy(property) {
 function giveProperty(property, player) {
   player.properties.push(property);
   property.owner = player;
-  checkForMonoply(player);
+  checkForMonopoly(player);
   $(".three").empty();
   changePlayerColumn(player);
 }
@@ -2793,7 +3998,7 @@ function rent(money) {
   $(".board-details > .btn-rent").css("display", "inline");
 }
 
-function checkForMonoply(player) {
+function checkForMonopoly(player) {
   for (let color of propertyCategoriesColor) {
     let playerPropertiesColor = player.properties.filter(function(nextProperty) {
       return nextProperty.color === color[0];
@@ -2836,6 +4041,7 @@ function bankrupt(playerPaying, playerReceiving) {
   playerPaying.properties.forEach(function(property) {
     if (property.type !== "card") {
       if (property.type === "coloredProperty") {
+        moneyChange(playerPaying, 0.5 * property.housesHotel * property.priceHouse);
         property.housesHotel = 0;
       }
       if (!property.isMortgaged) {
@@ -2862,6 +4068,7 @@ function bankrupt(playerPaying, playerReceiving) {
         " class='token-tiny'>");
       property.owner = playerReceiving;
       playerReceiving.properties.push(property);
+      checkForMonopoly(playerReceiving);
     } else {
       $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").addClass("hidden");
       $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").empty();
@@ -2886,6 +4093,10 @@ function bankrupt(playerPaying, playerReceiving) {
   let playerTurnIndex = activePlayers.indexOf(gameStatus.currentPlayerTurn);
   activePlayers.splice(playerPayingIndex, 1);
   changePlayerColumn(playerPaying);
+  if (activePlayers.length === 1) {
+    $(".winner").html("<strong>" + activePlayers[0].name + "</strong> is the Lord of the Board!");
+    $(".winner").removeClass("hidden");
+  }
   $("." + playerPaying.token.class).css("display", "none");
   $(".two > ." + playerPaying.playerOrder + " > .player-name-cash").css("text-decoration", "line-through");
   $(".two > ." + playerPaying.playerOrder + " > .player-name-cash").css("background-color", "FireBrick");
@@ -2905,7 +4116,7 @@ function bankrupt(playerPaying, playerReceiving) {
         nextPlayer = activePlayers[nextPlayerIndex];
       }
     } else {
-      if (playerTurnIndex >= activePlayers.length - 1) {
+      if (playerTurnIndex >= activePlayers.length) {
         nextPlayer = activePlayers[0];
       } else {
         nextPlayer = activePlayers[playerTurnIndex];
@@ -2916,7 +4127,7 @@ function bankrupt(playerPaying, playerReceiving) {
     $("#board-details").removeClass();
     $("#board-details").addClass("board-details hidden");
     $(".board-button-blocker").css("display", "none");
-    for (player of activePlayers) {
+    for (player of initialPlayers) {
       $(".two > ." + player.playerOrder + " > .token-small").css("box-shadow", "none");
     }
     $(".two > ." + nextPlayer.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
@@ -2962,11 +4173,14 @@ function changePlayerColumn(player) {
     $(".three > h1").append(player.name + " has declared bankruptcy.");
     $(".three").css("background-color", "FireBrick");
   }
+  if ($(".trading-box").html().includes("close")) {
+    $(".three > .player-button-blocker").css("display", "block");
+  }
 }
 
 // BUTTON CLICK EVENTS
 
-// FIRST STRTING WINDOW: SELECTING THE NUMBER OF PLAYERS
+// FIRST STRTING BOX: SELECTING THE NUMBER OF PLAYERS
 
 $("#set-number").click(function() {
   numberOfPlayers = Number($("#number-of-players").val());
@@ -2979,7 +4193,7 @@ $("#set-number").click(function() {
   $(".number-of-players-eh").prepend(numberOfPlayers);
 });
 
-// SECOND STARTING WINDOW: SETTING NAMES AND TOKENS
+// SECOND STARTING BOX: SETTING NAMES AND TOKENS
 
 $("#tokens").click(function() {
   $(".token-selected").attr("src", "images/token-" + $("#tokens").val() + ".png");
@@ -2988,6 +4202,12 @@ $("#tokens").click(function() {
 });
 
 $("#set-name-token").click(function() {
+  for (otherPlayer of activePlayers) {
+    if ($("#name").val() === otherPlayer.name) {
+      $(".name-is-taken").removeClass("hidden");
+      return false;
+    }
+  }
   $(".player-list").append("<li class='player-listing'><strong>" + $("#name").val() + "</strong>   " + "<img class='active'></li>");
   $(".active").addClass("token-small");
   $(".active").attr("src", "images/token-" + $("#tokens").val() + ".png");
@@ -3003,6 +4223,7 @@ $("#set-name-token").click(function() {
       $("#tokens > #" + player.token.class).remove();
     }
   }
+  $(".name-is-taken").addClass("hidden");
   $("#name").val("");
   $(".token-selected").attr("src", "");
   $(".token-selected").attr("alt", "");
@@ -3042,7 +4263,7 @@ $(".next-names-tokens").click(function() {
   onPlayer = 1;
 });
 
-// THIRD STARTING WINDOW: SETTING THE TURN ORDER...
+// THIRD STARTING BOX: SETTING THE TURN ORDER...
 
 // ...BY DICE ROLL
 
@@ -3190,6 +4411,7 @@ $(".start-over").click(function() {
 
 $(".roll").click(function() {
   $(".roll").css("display", "none");
+  $(".trade").css("display", "none");
   let diceResult = rollDice();
   $('.dice1').attr("src", diceResult.dice1Image);
   $('.dice2').attr("src", diceResult.dice2Image);
@@ -3207,6 +4429,7 @@ $(".roll").click(function() {
 
 $(".end-turn").click(function() {
   $(".one > button").css("display", "none");
+  $(".trade").css("display", "inline");
   multiplier = 1;
   railroadMultiplier = 1;
   let player = gameStatus.currentPlayerTurn;
@@ -3240,6 +4463,7 @@ $(".end-turn").click(function() {
 $(".continue").click(function() {
   let nextPlayer = gameStatus.currentPlayerTurn;
   $(".one > button").css("display", "none");
+  $(".trade").css("display", "inline");
   multiplier = 1;
   railroadMultiplier = 1;
   if (nextPlayer.inJail) {
@@ -3392,18 +4616,32 @@ $(document).on('click', ".board-details > .btn-cc-result", function() {
 });
 
 $(document).on("click", ".board-details > .pay-10-percent", function() {
+  $(".two, .three").removeClass("hidden");
+  $(".board-details > .pay-200").css("display", "none");
   let player = gameStatus.currentPlayerTurn;
   let moneyOwed = Math.round(0.1 * player.totalNetWorth());
   let moneyCheck = pay(player, freeParking.jackpot, moneyOwed);
   if (moneyCheck) {
+    $("#board-details").empty();
+    $("#board-details").removeClass();
+    $("#board-details").addClass("board-details hidden");
+    $(".board-button-blocker").css("display", "none");
+    $(".player-button-blocker").css("display", "none");
     endTurn();
   }
 });
 
 $(document).on("click", ".board-details > .pay-200", function() {
+  $(".two, .three").removeClass("hidden");
+  $(".board-details > .pay-10-percent").css("display", "none");
   let player = gameStatus.currentPlayerTurn;
   let moneyCheck = pay(player, freeParking.jackpot, 200);
   if (moneyCheck) {
+    $("#board-details").empty();
+    $("#board-details").removeClass();
+    $("#board-details").addClass("board-details hidden");
+    $(".board-button-blocker").css("display", "none");
+    $(".player-button-blocker").css("display", "none");
     endTurn();
   }
 });
@@ -3412,6 +4650,11 @@ $(document).on("click", ".board-details > .pay-luxury", function() {
   let player = gameStatus.currentPlayerTurn;
   let moneyCheck = pay(player, freeParking.jackpot, 75);
   if (moneyCheck) {
+    $("#board-details").empty();
+    $("#board-details").removeClass();
+    $("#board-details").addClass("board-details hidden");
+    $(".board-button-blocker").css("display", "none");
+    $(".player-button-blocker").css("display", "none");
     endTurn();
   }
 });
@@ -3428,6 +4671,17 @@ $(document).on("click", ".player-details > .closer", function() {
   $("#player-details").empty();
   $("#player-details").removeClass();
   $("#player-details").addClass("player-details hidden");
+});
+
+$(document).on("click", ".btn-trade-closer", function () {
+  $(".trading-box .btn-trade-closer").parent().removeClass();
+  $(".trading-box .btn-trade-closer").parent().empty();
+  $("#trader-1-assets-details").addClass("trader-1-assets-details hidden");
+  $("#trader-1-offerings-details").addClass("trader-1-offerings-details hidden");
+  $("#trader-2-assets-details").addClass("trader-2-assets-details hidden");
+  $("#trader-2-offerings-details").addClass("trader-2-offerings-details hidden");
+  $(".three > .player-button-blocker").css("display", "none");
+  $(".trading-box .trading-button-blocker").css("display", "none");
 });
 
 $(document).on("click", ".btn-mortgage", function() {
@@ -3472,8 +4726,8 @@ $(document).on("click", ".btn-lift-mortgage", function() {
     } else if (property.type === "utility") {
       displayUtility(property, "player-details", "three");
     }
-    $(".three > .player-cash").empty();
-    $(".three > .player-cash").append("$" + player.money);
+    $(".three > .player-details > .player-cash").empty();
+    $(".three > .player-details > .player-cash").append("$" + player.money);
     $(".player-details > button").css("display", "none");
     $(".player-details > .closer").css("display", "inline");
     $(".player-details > .btn-mortgage").append("Mortgage - $" + property.mortgage);
@@ -3488,6 +4742,265 @@ $(document).on("click", ".btn-lift-mortgage", function() {
   }
 });
 
+$(document).on("click", ".btn-add", function() {
+  for (let property of properties) {
+    if (property.title === $(".trading-box .trader-1-assets-details > .property-name").html()) {
+      $(".trading-box .trader-1-offerings").append($(".trading-box ." + property.boardClass + "-player").parent().html());
+      $(".trading-box > .trader-1-assets ." + property.boardClass + "-player").addClass("hidden");
+      $(".trading-box .btn-trade-closer").parent().removeClass();
+      $(".trading-box .btn-trade-closer").parent().empty();
+      $("#trader-1-assets-details").addClass("trader-1-assets-details hidden");
+      $(".three > .player-button-blocker").css("display", "none");
+      $(".trading-box .trading-button-blocker").css("display", "none");
+      $(".trading-box .trader-1-offerings > ." + property.boardClass + "-player").css("border-color", "black");
+      trader1.propertiesTrading.push(property);
+    }
+    else if (property.title === $(".trading-box .trader-2-assets-details > .property-name").html()) {
+      $(".trading-box .trader-2-offerings").append($(".trading-box ." + property.boardClass + "-player").parent().html());
+      $(".trading-box > .trader-2-assets ." + property.boardClass + "-player").addClass("hidden");
+      $(".trading-box .btn-trade-closer").parent().removeClass();
+      $(".trading-box .btn-trade-closer").parent().empty();
+      $("#trader-2-assets-details").addClass("trader-2-assets-details hidden");
+      $(".three > .player-button-blocker").css("display", "none");
+      $(".trading-box .trading-button-blocker").css("display", "none");
+      $(".trading-box .trader-2-offerings > ." + property.boardClass + "-player").css("border-color", "black");
+      $(".trading-box .trader-2-offerings > ." + property.boardClass + "-player").removeClass("hidden");
+      trader2.propertiesTrading.push(property);
+    }
+  }
+
+  for (let card of jailFreeCards) {
+    if (card.title === $(".trading-box .trader-1-assets-details > .card-heading").html()) {
+      $(".trading-box .trader-1-offerings").append($(".trading-box ." + card.cardClass).parent().html());
+      $(".trading-box > .trader-1-assets ." + card.cardClass).addClass("hidden");
+      $(".trading-box .btn-trade-closer").parent().removeClass();
+      $(".trading-box .btn-trade-closer").parent().empty();
+      $("#trader-1-assets-details").addClass("trader-1-assets-details hidden");
+      $(".three > .player-button-blocker").css("display", "none");
+      $(".trading-box .trading-button-blocker").css("display", "none");
+      trader1.propertiesTrading.push(card);
+    }
+    else if (card.title === $(".trading-box .trader-2-assets-details > .card-heading").html()) {
+      $(".trading-box .trader-2-offerings").append($(".trading-box ." + card.cardClass).parent().html());
+      $(".trading-box > .trader-2-assets ." + card.cardClass).addClass("hidden");
+      $(".trading-box .btn-trade-closer").parent().removeClass();
+      $(".trading-box .btn-trade-closer").parent().empty();
+      $("#trader-2-assets-details").addClass("trader-2-assets-details hidden");
+      $(".three > .player-button-blocker").css("display", "none");
+      $(".trading-box .trading-button-blocker").css("display", "none");
+      $(".trading-box .trader-2-offerings > ." + card.cardClass).removeClass("hidden");
+      trader2.propertiesTrading.push(card);
+    }
+  }  
+});
+
+$(document).on("click", ".btn-return", function () {
+    for (let property of properties) {
+      if (property.title === $(".trading-box .trader-1-offerings-details > .property-name").html()) {
+        $(".trading-box > .trader-1-assets ." + property.boardClass + "-player").removeClass("hidden")
+        $(".trading-box .trader-1-offerings > img").remove("." + property.boardClass + "-player");
+        $(".trading-box .btn-trade-closer").parent().removeClass();
+        $(".trading-box .btn-trade-closer").parent().empty();
+        $("#trader-1-offerings-details").addClass("trader-1-offerings-details hidden");
+        $(".three > .player-button-blocker").css("display", "none");
+        $(".trading-box .trading-button-blocker").css("display", "none");
+        let index = trader1.propertiesTrading.indexOf(property);
+        trader1.propertiesTrading.splice(index, 1);
+      } else if (property.title === $(".trading-box .trader-2-offerings-details > .property-name").html()) {
+        $(".trading-box > .trader-2-assets ." + property.boardClass + "-player").removeClass("hidden")
+        $(".trading-box .trader-2-offerings > img").remove("." + property.boardClass + "-player");
+        $(".trading-box .btn-trade-closer").parent().removeClass();
+        $(".trading-box .btn-trade-closer").parent().empty();
+        $("#trader-2-offerings-details").addClass("trader-2-offerings-details hidden");
+        $(".three > .player-button-blocker").css("display", "none");
+        $(".trading-box .trading-button-blocker").css("display", "none");
+        let index = trader2.propertiesTrading.indexOf(property);
+        trader2.propertiesTrading.splice(index, 1);
+      }
+    }
+
+    for (let card of jailFreeCards) {
+      if (card.title === $(".trading-box .trader-1-offerings-details > .card-heading").html()) {
+        $(".trading-box > .trader-1-assets ." + card.cardClass).removeClass("hidden")
+        $(".trading-box .trader-1-offerings > img").remove("." + card.cardClass);
+        $(".trading-box .btn-trade-closer").parent().removeClass();
+        $(".trading-box .btn-trade-closer").parent().empty();
+        $("#trader-1-offerings-details").addClass("trader-1-offerings-details hidden");
+        $(".three > .player-button-blocker").css("display", "none");
+        $(".trading-box .trading-button-blocker").css("display", "none");
+        let index = trader1.propertiesTrading.indexOf(card);
+        trader1.propertiesTrading.splice(index, 1);
+      } else if (card.title === $(".trading-box .trader-2-offerings-details > .card-heading").html()) {
+        $(".trading-box > .trader-2-assets ." + card.cardClass).removeClass("hidden")
+        $(".trading-box .trader-2-offerings > img").remove("." + card.cardClass);
+        $(".trading-box .btn-trade-closer").parent().removeClass();
+        $(".trading-box .btn-trade-closer").parent().empty();
+        $("#trader-2-offerings-details").addClass("trader-2-offerings-details hidden");
+        $(".three > .player-button-blocker").css("display", "none");
+        $(".trading-box .trading-button-blocker").css("display", "none");
+        let index = trader2.propertiesTrading.indexOf(card);
+        trader2.propertiesTrading.splice(index, 1);
+      }
+    }
+});
+
+$(document).on("click", ".btn-add-cash-trader-1", function() {
+  let cashToAdd = Number($(".trading-box > .trader-1-assets .amount").val());
+  if ((Number.isInteger(cashToAdd)) && (cashToAdd <= trader1.traderMoney) && (cashToAdd > 0)) {
+    trader1.traderMoney -= cashToAdd;
+    $(".trading-box > .trader-1-offerings > .cash-offered").append("Cash: $" + cashToAdd);
+    $(".trading-box > .trader-1-assets .btn-add-cash-trader-1").addClass("hidden");
+    $(".trading-box > .trader-1-assets .amount").addClass("hidden");
+    $(".trading-box > .trader-1-offerings > .trader-1-cash-offered").css("display", "block");
+    $(".trading-box > .trader-1-offerings > .btn-cash-return-trader-1").css("display", "block");
+    $(".trading-box > .trader-1-assets .player-cash").empty();
+    $(".trading-box > .trader-1-assets .player-cash").append("$" + trader1.traderMoney);
+    $(".trading-box > .trader-1-assets .whole-number").addClass("hidden");
+    trader1.moneyTrading = cashToAdd;
+  }
+  else if (( !(Number.isInteger(cashToAdd)) ) || (cashToAdd < 0)) {
+    $(".trading-box > .trader-1-assets .whole-number").removeClass("hidden");
+  }
+  else if ((cashToAdd > trader1.traderMoney)) {
+    $(".trading-box > .trader-1-assets .whole-number").addClass("hidden");
+    $(".trading-box > .trader-1-assets .player-cash").css("color", "red");
+    setTimeout(function() {
+      $(".trading-box > .trader-1-assets .player-cash").css("color", "white");
+    }, 400);
+  }
+});
+
+$(document).on("click", ".btn-add-cash-trader-2", function () {
+  let cashToAdd = Number($(".trading-box > .trader-2-assets .amount").val());
+  if ((Number.isInteger(cashToAdd)) && (cashToAdd <= trader2.traderMoney) && (cashToAdd > 0)) {
+    trader2.traderMoney -= cashToAdd;
+    $(".trading-box > .trader-2-offerings > .cash-offered").append("Cash: $" + cashToAdd);
+    $(".trading-box > .trader-2-assets .btn-add-cash-trader-2").addClass("hidden");
+    $(".trading-box > .trader-2-assets .amount").addClass("hidden");
+    $(".trading-box > .trader-2-offerings > .trader-2-cash-offered").css("display", "block");
+    $(".trading-box > .trader-2-offerings > .btn-cash-return-trader-2").css("display", "block");
+    $(".trading-box > .trader-2-assets .player-cash").empty();
+    $(".trading-box > .trader-2-assets .player-cash").append("$" + trader2.traderMoney);
+    $(".trading-box > .trader-2-assets .whole-number").addClass("hidden");
+    trader2.moneyTrading = cashToAdd;
+  } else if ((!(Number.isInteger(cashToAdd))) || (cashToAdd < 0)) {
+    $(".trading-box > .trader-2-assets .whole-number").removeClass("hidden");
+  } else if ((cashToAdd > trader2.traderMoney)) {
+    $(".trading-box > .trader-2-assets .whole-number").addClass("hidden");
+    $(".trading-box > .trader-2-assets .player-cash").css("color", "red");
+    setTimeout(function () {
+      $(".trading-box > .trader-2-assets .player-cash").css("color", "white");
+    }, 400);
+  }
+});
+
+$(document).on("click", ".btn-cash-return-trader-1", function() {
+  let cashToReturn = Number( $(".trading-box > .trader-1-offerings .cash-offered").html().slice(7) );
+  trader1.traderMoney += cashToReturn
+  $(".trading-box > .trader-1-offerings .cash-offered").empty();
+  $(".trading-box > .trader-1-assets .player-cash").empty();
+  $(".trading-box > .trader-1-assets .player-cash").append("$" + trader1.traderMoney);
+  $(".trading-box > .trader-1-offerings > .trader-1-cash-offered").css("display", "none");
+  $(".trading-box > .trader-1-offerings > .btn-cash-return-trader-1").css("display", "none");
+  $(".trading-box > .trader-1-assets .btn-add-cash-trader-1").removeClass("hidden");
+  $(".trading-box > .trader-1-assets .amount").removeClass("hidden");
+  trader1.moneyTrading = 0;
+});
+
+$(document).on("click", ".btn-cash-return-trader-2", function () {
+  let cashToReturn = Number($(".trading-box > .trader-2-offerings .cash-offered").html().slice(7));
+  trader2.traderMoney += cashToReturn
+  $(".trading-box > .trader-2-offerings .cash-offered").empty();
+  $(".trading-box > .trader-2-assets .player-cash").empty();
+  $(".trading-box > .trader-2-assets .player-cash").append("$" + trader2.traderMoney);
+  $(".trading-box > .trader-2-offerings > .trader-2-cash-offered").css("display", "none");
+  $(".trading-box > .trader-2-offerings > .btn-cash-return-trader-2").css("display", "none");
+  $(".trading-box > .trader-2-assets .btn-add-cash-trader-2").removeClass("hidden");
+  $(".trading-box > .trader-2-assets .amount").removeClass("hidden");
+  trader2.moneyTrading = 0;
+});
+
+$(document).on("click", ".btn-propose-deal", function() {
+  if ($(".trading-box .dealer").html() === trader1.name + ":") {
+    $(".trading-box .dealer").html(trader2.name + ":");
+  } else {
+    $(".trading-box .dealer").html(trader1.name);
+  }
+  $(".trading-box .btn-propose-deal").css("display", "none");
+  $(".trading-box .btn-accept").css("display", "inline");
+  $(".trading-box .btn-counterpropose").css("display", "inline");
+  $(".trading-box .trading-button-blocker").css("display", "block");
+});
+
+$(document).on("click", ".btn-counterpropose", function () {
+  $(".trading-box .btn-propose-deal").css("display", "inline");
+  $(".trading-box .btn-accept").css("display", "none");
+  $(".trading-box .btn-counterpropose").css("display", "none");
+  $(".trading-box .trading-button-blocker").css("display", "none");
+});
+
+$(document).on("click", ".btn-accept", function () {
+
+  for (property of trader1.propertiesTrading) {
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").empty();
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${trader2.token.image}` +
+      " alt=" + `${trader2.token.class}` +
+      " class='token-tiny'>");
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").empty();
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${trader2.token.image}` +
+      " alt=" + `${trader2.token.class}` +
+      " class='token-tiny'>");
+    let index = trader1.properties.indexOf(property);
+    trader1.properties.splice(index, 1);
+    trader2.properties.push(property);
+    property.owner = trader2;
+  }
+
+  for (property of trader2.propertiesTrading) {
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").empty();
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${trader1.token.image}` +
+      " alt=" + `${trader1.token.class}` +
+      " class='token-tiny'>");
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").empty();
+    $(".one > ." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${trader1.token.image}` +
+      " alt=" + `${trader1.token.class}` +
+      " class='token-tiny'>");
+    let index = trader2.properties.indexOf(property);
+    trader2.properties.splice(index, 1);
+    trader1.properties.push(property);
+    property.owner = trader1;
+  }
+  trader1.propertiesTrading = [];
+  trader2.propertiesTrading = [];
+
+  pay(trader2, trader1, trader2.moneyTrading);
+  pay(trader1, trader2, trader1.moneyTrading);
+  trader1.moneyTrading = 0;
+  player2.moneyTrading = 0;
+  checkForMonopoly(trader1);
+  checkForMonopoly(trader2);
+  changePlayerColumn(trader1);
+  $(".trading-box").empty();
+  $(".trading-box").addClass("hidden");
+  $(".player-button-blocker").css("display", "none");
+  $(".one > button").removeClass("hidden");
+  trader1.traderMoney = trader1.money;
+  trader2.traderMoney = trader2.money;
+  trader1 = null;
+  trader2 = null;
+});
+
+$(document).on("click", ".btn-terminate", function() {
+  $(".trading-box").empty();
+  $(".trading-box").addClass("hidden");
+  $(".player-button-blocker").css("display", "none");
+  $(".one > button").removeClass("hidden");
+  trader1.traderMoney = trader1.money;
+  trader2.traderMoney = trader2.money;
+  trader1 = null;
+  trader2 = null;
+});
+
 for (let property of properties) {
   $(document).on("click", "." + property.boardClass, function() {
     $(".board-details").empty();
@@ -3498,7 +5011,7 @@ for (let property of properties) {
 }
 
 for (let property of properties) {
-  $(document).on("click", "." + property.boardClass + "-player", function() {
+  $(document).on("click", ".three ." + property.boardClass + "-player", function() {
     $(".player-details").empty();
     property.playerClickResult();
     $(".player-details > button").css("display", "none");
@@ -3527,12 +5040,60 @@ for (let property of properties) {
       $(".player-details > .btn-sell-hotel").css("display", "inline");
     }
   });
+
+  $(document).on("click", ".trading-box > .trader-1-assets ." + property.boardClass + "-player", function() {
+    $(".trading-box .trader-1-assets-details").empty();
+    property.trader1AssetClickResult();
+  });
+
+  $(document).on("click", ".trading-box > .trader-2-assets ." + property.boardClass + "-player", function () {
+    $(".trading-box .trader-2-assets-details").empty();
+    property.trader2AssetClickResult();
+  });
+
+  $(document).on("click", ".trading-box > .trader-1-offerings ." + property.boardClass + "-player", function () {
+    $(".trading-box .trader-1-offerings-details").empty();
+    property.trader1OfferingsClickResult();
+  });
+
+  $(document).on("click", ".trading-box > .trader-2-offerings ." + property.boardClass + "-player", function () {
+    $(".trading-box .trader-2-offerings-details").empty();
+    property.trader2OfferingsClickResult();
+  });
 }
 
 for (let card of jailFreeCards) {
-  $(document).on("click", "." + card.cardClass, function() {
+  $(document).on("click", ".three ." + card.cardClass, function() {
     $(".player-details").empty();
     card.playerClickResult();
+  });
+
+  $(document).on("click", ".trading-box > .trader-1-assets ." + card.cardClass, function() {
+    $(".trading-box .trader-1-assets-details").empty();
+    card.trader1AssetClickResult();
+    $(".three > .player-button-blocker").css("display", "block");
+    $(".trading-box .trading-button-blocker").css("display", "block");
+  });
+
+  $(document).on("click", ".trading-box > .trader-2-assets ." + card.cardClass, function () {
+    $(".trading-box .trader-2-assets-details").empty();
+    card.trader2AssetClickResult();
+    $(".three > .player-button-blocker").css("display", "block");
+    $(".trading-box .trading-button-blocker").css("display", "block");
+  });
+
+  $(document).on("click", ".trading-box > .trader-1-offerings ." + card.cardClass, function () {
+    $(".trading-box .trader-1-offerings-details").empty();
+    card.trader1OfferingsClickResult();
+    $(".three > .player-button-blocker").css("display", "block");
+    $(".trading-box .trading-button-blocker").css("display", "block");
+  });
+
+  $(document).on("click", ".trading-box > .trader-2-offerings ." + card.cardClass, function () {
+    $(".trading-box .trader-2-offerings-details").empty();
+    card.trader2OfferingsClickResult();
+    $(".three > .player-button-blocker").css("display", "block");
+    $(".trading-box .trading-button-blocker").css("display", "block");
   });
 }
 
@@ -3560,8 +5121,16 @@ $(document).on("click", ".btn-buy-house", function() {
       $(".player-details > .btn-buy-house").css("display", "none");
       $(".player-details > .btn-buy-hotel").css("display", "inline");
     }
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
+    $(".three > .player-heading > .player-cash").empty();
+    $(".three > .player-heading > .player-cash").append("$" + player.money);
+    if (trader1 === player1) {
+      $(".trader-box > trader-1-assets > .player-heading > .player-cash").empty();
+      $(".trader-box > trader-1-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+    }
+    if (trader2 === player1) {
+      $(".trader-box > trader-2-assets > .player-heading > .player-cash").empty();
+      $(".trader-box > trader-2-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+    }
     updateDetails(property);
   }
 });
@@ -3619,8 +5188,16 @@ $(document).on("click", ".btn-buy-hotel", function() {
     $(".player-details > .btn-buy-hotel").css("display", "none");
     $(".player-details > .btn-sell-house").css("display", "none");
     $(".player-details > .btn-sell-hotel").css("display", "inline");
-    $(".player-heading > .player-cash").empty();
-    $(".player-heading > .player-cash").append("$" + player.money);
+    $(".three > .player-heading > .player-cash").empty();
+    $(".three > .player-heading > .player-cash").append("$" + player.money);
+    if (trader1 === player1) {
+      $(".trader-box > trader-1-assets > .player-heading > .player-cash").empty();
+      $(".trader-box > trader-1-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+    }
+    if (trader2 === player1) {
+      $(".trader-box > trader-2-assets > .player-heading > .player-cash").empty();
+      $(".trader-box > trader-2-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+    }
     updateDetails(property);
   }
 });
@@ -3643,8 +5220,16 @@ $(document).on("click", ".btn-sell-hotel", function() {
   if (sellHouseNumberCheck(property)) {
     $(".player-details > .btn-sell-house").css("display", "inline");
   }
-  $(".player-heading > .player-cash").empty();
-  $(".player-heading > .player-cash").append("$" + player.money);
+  $(".three > .player-heading > .player-cash").empty();
+  $(".three > .player-heading > .player-cash").append("$" + player.money);
+    if (trader1 === player1) {
+    $(".trader-box > trader-1-assets > .player-heading > .player-cash").empty();
+    $(".trader-box > trader-1-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
+  if (trader2 === player1) {
+    $(".trader-box > trader-2-assets > .player-heading > .player-cash").empty();
+    $(".trader-box > trader-2-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
   updateDetails(property);
 });
 
@@ -3670,8 +5255,16 @@ $(document).on("click", ".btn-sell-house", function() {
     $(".player-details > .btn-sell-house").css("display", "none");
   }
   $(".player-details > .btn-buy-hotel").css("display", "none");
-  // $(".player-heading > .player-cash").empty();
-  // $(".player-heading > .player-cash").append("$" + player.money);
+  $(".three > .player-heading > .player-cash").empty();
+  $(".three > .player-heading > .player-cash").append("$" + player.money);
+    if (trader1 === player1) {
+    $(".trader-box > trader-1-assets > .player-heading > .player-cash").empty();
+    $(".trader-box > trader-1-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
+  if (trader2 === player1) {
+    $(".trader-box > trader-2-assets > .player-heading > .player-cash").empty();
+    $(".trader-box > trader-2-assets > .player-heading > .player-cash").append("$" + player.traderMoney);
+  }
   updateDetails(property);
 });
 
@@ -3682,11 +5275,11 @@ $(document).on("click", ".btn-buy", function() {
   if (moneyCheck) {
     player.properties.push(property);
     property.owner = player;
-    checkForMonoply(player);
-    $(".btn-buy").css("display", "none");
-    $(".btn-auction").css("display", "none");
-    $(".btn-decline").css("display", "none");
-    $(".closer").css("display", "inline");
+    checkForMonopoly(player);
+    $(".board-details > .btn-buy").css("display", "none");
+    $(".board-details > .btn-auction").css("display", "none");
+    $(".board-details > .btn-decline").css("display", "none");
+    $(".board-details > .closer").css("display", "inline");
     $(".btn-buy").empty();
     $(".three").empty();
     $("." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${player.token.image}` +
@@ -3702,12 +5295,41 @@ $(document).on("click", ".btn-buy", function() {
   }
 });
 
+$(document).on("click", ".btn-auction-buy", function () {
+  let moneyCheck = pay(leadingBidder, freeParking.jackpot, leadingBid);
+  if (moneyCheck) {
+    leadingBidder.properties.push(property);
+    property.owner = leadingBidder;
+    checkForMonopoly(leadingBidder);
+    $(".board-details > .btn-buy").css("display", "none");
+    $(".board-details > .btn-auction").css("display", "none");
+    $(".board-details > .btn-decline").css("display", "none");
+    $(".board-details > .closer").css("display", "inline");
+    $(".board-details > .btn-auction-buy").css("display", "none");
+    $(".three").empty();
+    $("." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src=" + `${leadingBidder.token.image}` +
+      " alt=" + `${leadingBidder.token.class}` +
+      " class='token-tiny'>");
+    $("." + property.boardClass + " > ." + property.boardClass + "-mortgaged > .token-goes-here").append("<img src=" + `${leadingBidder.token.image}` +
+      " alt=" + `${leadingBidder.token.class}` +
+      " class='token-tiny'>");
+    $("." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
+    changePlayerColumn(leadingBidder);
+    updateDetails(property);
+    biddingPlayer = null;
+    leadingBidder = null;
+    numberOfPasses = 0;
+    leadingBid = 0;
+    playerBid = null;
+    bidStatus = "&nbsp;";
+    auctioneerAnnouncement = "&nbsp;";
+    propertySold = null;
+    endTurn();
+  }
+});
+
 $(document).on("click", ".btn-auction", function() {
-  // let player = gameStatus.currentPlayerTurn;
-  // let property = player.onSpace
   displayAuctionBox();
-  // FOODOO
-  // $(".board-details").append($(".reference > .auction").html());
 });
 
 $(document).on("click", ".btn-decline", function() {
@@ -3715,7 +5337,7 @@ $(document).on("click", ".btn-decline", function() {
   $(".btn-buy").css("display", "none");
   $(".btn-auction").css("display", "none");
   $(".btn-decline").css("display", "none");
-  $(".closer").css("display", "inline");
+  $(".board-details > .closer").css("display", "inline");
   $(".btn-buy").empty();
   endTurn();
 });
@@ -3747,9 +5369,9 @@ $(document).on("click", ".btn-rent", function() {
     moneyOwed = property.rent[property.owner.numberOfRailroads() - 1] * multiplier;
   } else if (property.type === "utility") {
     if (multiplier === 1) {
-      if (space.owner.numberOfUtilities() === 1) {
+      if (property.owner.numberOfUtilities() === 1) {
         multiplier = 4;
-      } else if (space.owner.numberOfUtilities() === 2) {
+      } else if (property.owner.numberOfUtilities() === 2) {
         multiplier = 10;
       }
     }
@@ -3779,101 +5401,13 @@ $(document).on("click", ".btn-bankrupt", function() {
     }
   }
   playerReceiving = playerPaying.inDebtTo;
+  biddingPlayer = null;
+  leadingBidder = null;
+  numberOfPasses = 0;
+  leadingBid = 0;
+  playerBid = null;
+  bidStatus = "&nbsp;";
+  auctioneerAnnouncement = "&nbsp;";
+  propertySold = null;
   bankrupt(playerPaying, playerReceiving);
 });
-
-// TEST LOGIC
-
-activePlayers = [player4, player2, player3, player1, player6, player5];
-initialPlayers = [player4, player2, player3, player1, player6, player5];
-
-// // TESTING BANKRUPTCY
-//
-// initialPlayers = [player1, player2];
-// activePlayers = [player1, player2];
-// let activePlayersBeforeBankruptcy = activePlayers.slice();
-// player1.money = 10;
-// player1.properties = [parkPlace, boardwalk, illinoisAvenue, indianaAvenue, pennsylvaniaRailroad, waterWorks, jailFreeCommunityChest];
-// parkPlace.housesHotel = 4;
-// boardwalk.housesHotel = 5;
-// indianaAvenue.isMortgaged = true;
-// player1.properties.forEach(function(property) {
-//   property.owner = player1;
-//   if (property.type !== "card" && property !== indianaAvenue) {
-//     $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
-//     $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src='images/token-" + player1.token.class + ".png' alt=" + player1.token.class + " class='token-tiny'>");
-//   }
-// });
-//
-// $(".one > .indiana-ave > .indiana-ave-mortgaged").removeClass("hidden");
-// $(".one > .indiana-ave > .indiana-ave-mortgaged > .token-goes-here").append("<img src='images/token-" + player1.token.class + ".png' alt=" + player1.token.class + " class='token-tiny'>");
-// for (let i = 1; i <= 4; i++) {
-//   $(".one > .park-place > .house-right-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-//   $(".one > .park-place > .house-right-" + i).addClass("hidden");
-// }
-// $(".one > .park-place > .hotel-right").append("<img src='images/hotel.png' alt='hotel' class='house-hotel-board'>");
-// $(".one > .park-place > .hotel-right").removeClass("hidden");
-// for (let i = 1; i <= 4; i++) {
-//   $(".one > .boardwalk > .house-right-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-// }
-//
-// player2.properties = [orientalAvenue, vermontAvenue, connecticutAvenue];
-// player2.properties.forEach(function(property) {
-//   property.owner = player2;
-//   property.housesHotel = 4;
-//   for (let i = 1; i <= 4; i++) {
-//     $(".one > ." + property.boardClass + " .house-bottom-" + i).append("<img src='images/house.png' alt='house' class='house-hotel-board'>");
-//   }
-//   $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner").removeClass("hidden");
-//   $(".one > ." + property.boardClass + " > ." + property.boardClass + "-owner > .token-goes-here").append("<img src='images/token-" + player2.token.class + ".png' alt=" + player2.token.class + " class='token-tiny'>");
-// });
-//
-// //
-
-firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
-
-for (let player of activePlayers) {
-  $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
-  $(".active").addClass(`token ${player.token.class}`);
-  $("." + player.token.class).css(player.tokenSpace);
-  player.onSpace = go;
-  $(".active").removeClass("active");
-  player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
-  $("." + player.playerOrder).css("display", "block");
-  $("." + player.playerOrder + " > p:first-child").html(player.name);
-  $("." + player.playerOrder + " > img").attr("src", player.token.image);
-  $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
-}
-
-firstThroughEighth.forEach(function(div) {
-  $(document).on("click", "." + div, function() {
-    $(".three").empty();
-    let playerIndex = firstThroughEighth.indexOf(div);
-    let player = initialPlayers[playerIndex];
-    changePlayerColumn(player);
-  });
-});
-
-
-gameStatus.currentPlayerTurn = activePlayers[5];
-$(".two > ." + gameStatus.currentPlayerTurn.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
-
-$(".display-test-board").click(function() {
-  displayProperty(balticAvenue, "board-details", "one");
-  $(".board-details > .closer").css("display", "inline");
-});
-
-$(".display-test-player").click(function() {
-  displayProperty(kentuckyAvenue, "player-details", "three");
-  $(".player-details > .closer").css("display", "inline");
-});
-
-let names = activePlayers.map(function(player) {
-  return player.name;
-});
-
-// $(".one > .go").hover(function() {
-//   $(".one > .go").css("background-color", "#8ac6d1");
-// }, function() {
-//   $(".one > .go").css("background-color", "initial");
-// });

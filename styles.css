@@ -1,6 +1,7 @@
 
 body {
   background-image: url("images/table.jpg");
+  font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 35rem;
   height: 35rem;
   /* TEST: TURN TO "none" FOR PRESET BOARD AND PLAYERS; "block" FOR NORMAL PLAY */
-  display: none;
+  display: block;
 }
 
 .names-tokens {
@@ -45,10 +46,11 @@ h1, h2, h3, h4, h5, h6, p, hr {
 
 .token-small {
   height: 2.5rem;
+  border-radius: 0.85rem;
 }
 
 .player-list {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .buttons {
@@ -89,7 +91,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .player-list-dice-results {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .dice-small {
@@ -124,20 +126,20 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .finalize-player-list {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   list-style-type: none;
 }
 
-/* .column {
+.column {
   float: left;
   display: none;
-} */
+}
 
 /* TEST: TURN BELOW STYLE ON AND ABOVE OFF FOR PRESET BOARD AND PLAYERS */
 
-.column {
+/* .column {
   float: left;
-}
+} */
 
 .one {
   background-image: url("images/board.png");
@@ -152,6 +154,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
 .token {
   width: 1.25rem;
   position: absolute;
+  border-radius: 0.50rem;
 }
 
 .token-player-column {
@@ -207,6 +210,24 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.mediterranean-ave-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.mediterranean-ave-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
+}
+
 .community-chest1 {
   position: absolute;
   top: 30.38rem;
@@ -221,6 +242,24 @@ h1, h2, h3, h4, h5, h6, p, hr {
   left: 21.77rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.baltic-ave-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.baltic-ave-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
 }
 
 .income-tax {
@@ -239,12 +278,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.reading-railroad-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.reading-railroad-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
+}
+
 .oriental-ave {
   position: absolute;
   top: 30.38rem;
   left: 13.22rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.oriental-ave-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.oriental-ave-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
 }
 
 .chance1 {
@@ -263,12 +338,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.vermont-ave-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.vermont-ave-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
+}
+
 .connecticut-ave {
   position: absolute;
   top: 30.38rem;
   left: 4.67rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.connecticut-ave-owner {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom.png");
+  background-size: contain;
+}
+
+.connecticut-ave-mortgaged {
+  position: absolute;
+  bottom: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-bottom-mortgaged.png");
+  background-size: contain;
 }
 
 .jail {
@@ -287,12 +398,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.st-charles-place-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.st-charles-place-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
+}
+
 .electric-company {
   position: absolute;
   top: 24.66rem;
   left: 0;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.electric-company-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.electric-company-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
 }
 
 .states-ave {
@@ -303,12 +450,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.states-ave-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.states-ave-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
+}
+
 .virginia-ave {
   position: absolute;
   top: 18.94rem;
   left: 0;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.virginia-ave-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.virginia-ave-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
 }
 
 .pennsylvania-railroad {
@@ -319,12 +502,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.pennsylvania-railroad-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.pennsylvania-railroad-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
+}
+
 .st-james-place {
   position: absolute;
   top: 13.22rem;
   left: 0;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.st-james-place-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.st-james-place-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
 }
 
 .community-chest2 {
@@ -343,12 +562,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.tennessee-ave-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.tennessee-ave-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
+}
+
 .new-york-ave {
   position: absolute;
   top: 4.64rem;
   left: 0;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.new-york-ave-owner {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left.png");
+  background-size: contain;
+}
+
+.new-york-ave-mortgaged {
+  position: absolute;
+  left: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-left-mortgaged.png");
+  background-size: contain;
 }
 
 .free-parking {
@@ -367,6 +622,24 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.kentucky-ave-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.kentucky-ave-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
+}
+
 .chance2 {
   position: absolute;
   top: 0;
@@ -383,12 +656,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.indiana-ave-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.indiana-ave-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
+}
+
 .illinois-ave {
   position: absolute;
   top: 0;
   left: 13.22rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.illinois-ave-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.illinois-ave-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
 }
 
 .bo-railroad {
@@ -399,12 +708,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.bo-railroad-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.bo-railroad-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
+}
+
 .atlantic-ave {
   position: absolute;
   top: 0;
   left: 18.92rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.atlantic-ave-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.atlantic-ave-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
 }
 
 .ventnor-ave {
@@ -415,6 +760,24 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.ventnor-ave-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.ventnor-ave-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
+}
+
 .water-works {
   position: absolute;
   top: 0;
@@ -423,12 +786,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 2.85rem;
 }
 
+.water-works-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.water-works-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
+}
+
 .marvin-gardens {
   position: absolute;
   top: 0;
   left: 27.47rem;
   height: 4.64rem;
   width: 2.85rem;
+}
+
+.marvin-gardens-owner {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top.png");
+  background-size: contain;
+}
+
+.marvin-gardens-mortgaged {
+  position: absolute;
+  top: 100%;
+  height: 1.41rem;
+  width: 2.83rem;
+  background-image: url("images/property-owner-top-mortgaged.png");
+  background-size: contain;
 }
 
 .go-to-jail {
@@ -447,12 +846,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.pacific-ave-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.pacific-ave-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
+}
+
 .north-carolina-ave {
   position: absolute;
   top: 7.50rem;
   left: 30.32rem;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.north-carolina-ave-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.north-carolina-ave-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
 }
 
 .community-chest3 {
@@ -471,12 +906,48 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.pennsylvania-ave-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.pennsylvania-ave-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
+}
+
 .short-line {
   position: absolute;
   top: 16.08rem;
   left: 30.32rem;
   height: 2.86rem;
   width: 4.67rem;
+}
+
+.short-line-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.short-line-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
 }
 
 .chance3 {
@@ -495,6 +966,24 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.park-place-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.park-place-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
+}
+
 .luxury-tax {
   position: absolute;
   top: 24.66rem;
@@ -511,12 +1000,235 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 4.67rem;
 }
 
+.boardwalk-owner {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right.png");
+  background-size: contain;
+}
+
+.boardwalk-mortgaged {
+  position: absolute;
+  right: 100%;
+  width: 1.41rem;
+  height: 2.83rem;
+  background-image: url("images/property-owner-right-mortgaged.png");
+  background-size: contain;
+}
+
+.owner-token-bottom {
+  margin: auto;
+  margin-top: 0.47rem;
+  height: 0.95rem;
+  width: 0.95rem;
+  background-color: transparent;
+}
+
+.owner-token-left {
+  margin-left: 0;
+  margin-top: 0.95rem;
+  height: 0.95rem;
+  width: 0.95rem;
+  background-color: transparent;
+}
+
+.owner-token-top {
+  margin: auto;
+  height: 0.95rem;
+  width: 0.95rem;
+  background-color: transparent;
+}
+
+.owner-token-right {
+  margin-left: 0.47rem;
+  margin-top: 0.95rem;
+  height: 0.95rem;
+  width: 0.95rem;
+  background-color: transparent;
+}
+
+.token-tiny {
+  max-width: 0.95rem;
+  max-height: 0.95rem;
+}
+
+.house-hotel-board {
+  width: 0.8125rem;
+}
+
+.house-hotel-property {
+  width: 1rem;
+  vertical-align: -0.2rem;
+}
+
+.house-bottom-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-bottom-2 {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-bottom-3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-bottom-4 {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.hotel-bottom {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-left-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-left-2 {
+  position: absolute;
+  top: 22%;
+  right: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-left-3 {
+  position: absolute;
+  top: 44%;
+  right: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-left-4 {
+  position: absolute;
+  top: 66%;
+  right: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.hotel-left {
+  position: absolute;
+  top: 40%;
+  right: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-top-1 {
+  position: absolute;
+  bottom: 4%;
+  right: 0;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-top-2 {
+  position: absolute;
+  bottom: 4%;
+  right: 22%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-top-3 {
+  position: absolute;
+  bottom: 4%;
+  right: 44%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-top-4 {
+  position: absolute;
+  bottom: 4%;
+  right: 66%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.hotel-top {
+  position: absolute;
+  bottom: 4%;
+  right: 40%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-right-1 {
+  position: absolute;
+  bottom: 3%;
+  left: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-right-2 {
+  position: absolute;
+  bottom: 25%;
+  left: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-right-3 {
+  position: absolute;
+  bottom: 47%;
+  left: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.house-right-4 {
+  position: absolute;
+  bottom: 69%;
+  left: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
+.hotel-right {
+  position: absolute;
+  bottom: 40%;
+  left: 2.5%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+}
+
 .board-button-blocker {
   position: absolute;
   top: 0;
   color: transparent;
-  width: 35rem;
-  height: 35rem;
+  width: 35.50rem;
+  height: 35.50rem;
   display: none;
 }
 
@@ -532,13 +1244,19 @@ h1, h2, h3, h4, h5, h6, p, hr {
   height: 22.25rem;
 }
 
+.winner {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
 .dice1 {
-  margin-top: 22rem;
+  margin-top: 14.6875rem;
   width: 5rem;
 }
 
 .dice2 {
-  margin-top: 22rem;
+  margin-top: 14.6875rem;
   width: 5rem;
 }
 
@@ -558,7 +1276,18 @@ h1, h2, h3, h4, h5, h6, p, hr {
   display: none;
 }
 
+.btn-bankrupt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
 .end-turn {
+  display: none;
+}
+
+.continue {
   display: none;
 }
 
@@ -579,6 +1308,10 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .btn-auction {
+  display: none;
+}
+
+.btn-decline {
   display: none;
 }
 
@@ -606,9 +1339,257 @@ h1, h2, h3, h4, h5, h6, p, hr {
   display: none;
 }
 
+.btn-add {
+  display: none;
+}
+
+.btn-return {
+  display: none;
+}
+
+.btn-trade-closer {
+  display: none;
+}
+
 .closer {
   display: none;
   text-align: center;
+}
+
+.auction {
+  background-image: radial-gradient(white, green);
+  background-color: green;
+  background-size: 21rem 22.25rem;
+  text-align: center;
+}
+
+.exit-auction {
+  display: none;
+  text-align: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.clear {
+  clear: left;
+}
+
+.auction-property {
+  width: 100%;
+  margin: auto;
+}
+
+.auction-property-deed {
+  float: left;
+  margin: 0.25rem 0.5rem;
+}
+
+.auction-property-title {
+  float: left;
+}
+
+.auction-property-price {
+  float: left;
+}
+
+.btn-auction-buy {
+  display: none;
+}
+
+.leading-bidder-token {
+  vertical-align: -0.625rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+}
+
+.bidding-player-token {
+  vertical-align: -0.625rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+}
+
+.auction-hr {
+  margin: auto;
+  margin-bottom: 0.5rem;
+  border-style: none;
+  border-top: 0.2rem solid black;
+  width: 70%;
+}
+
+.player-bid {
+  width: 6.5rem;
+}
+
+.trading-box {
+  position: relative;
+  color: white;
+  border-color: white;
+  height: 35rem;
+}
+
+.trading-button-blocker {
+  position: absolute;
+  top: 0;
+  color: transparent;
+  width: 100%;
+  height: 35rem;
+  display: none;
+}
+
+.propose-a-deal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82.05rem;
+  height: 35rem;
+  border: 0.3rem solid;
+  background-color: black;
+}
+
+.trader-1-assets {
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  background-color: black;
+  border: 0.3rem solid;
+  float: left;
+  display: none;
+}
+
+.trader-1-offerings {
+  position: relative;
+  width: 10.65rem;
+  height: 35rem;
+  background-color: black;
+  border: 0.3rem solid;
+  border-left: 0;
+  float: left;
+  display: none;
+}
+
+.trader-1-cash-offered {
+  display: none;
+}
+
+.trader-2-offerings {
+  position: relative;
+  width: 10.65rem;
+  height: 35rem;
+  background-color: black;
+  border: 0.3rem solid;
+  border-left: 0;
+  border-right: 0;
+  float: left;
+  display: none;
+}
+
+.trader-2-cash-offered {
+  display: none;
+}
+
+.trader-2-assets {
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  background-color: black;
+  border: 0.3rem solid;
+  float: left;
+  display: none;
+}
+
+.trader-1-assets-details {
+  background-color: white;
+  color: black;
+  background-size: 21rem 22.25rem;
+  background-repeat: no-repeat;
+  border: solid;
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  left: 4.5rem;
+  width: 21rem;
+  height: 22.25rem;
+  z-index: 10;
+}
+
+.trader-2-assets-details {
+  background-color: white;
+  color: black;
+  background-size: 21rem 22.25rem;
+  background-repeat: no-repeat;
+  border: solid;
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  left: 4.5rem;
+  width: 21rem;
+  height: 22.25rem;
+  z-index: 10;
+}
+
+.trader-1-offerings-details {
+  background-color: white;
+  color: black;
+  background-size: 21rem 22.25rem;
+  background-repeat: no-repeat;
+  border: solid;
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  left: 0rem;
+  width: 21rem;
+  height: 22.25rem;
+  z-index: 10;
+}
+
+.trader-2-offerings-details {
+  background-color: white;
+  color: black;
+  background-size: 21rem 22.25rem;
+  background-repeat: no-repeat;
+  border: solid;
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  left: 0rem;
+  width: 21rem;
+  height: 22.25rem;
+  z-index: 10;
+}
+
+.trading-buttons {
+  width: 82.05rem;
+  background-color: black;
+  border: 0.3rem solid;
+  border-top: 0;
+  text-align: center;
+  clear: left;
+}
+
+.dealer {
+  margin: 0.25rem 0;
+  display: inline;
+}
+
+.btn-accept {
+  margin: 0.25rem 0;
+  display: none;
+}
+
+.btn-counterpropose {
+  margin: 0.25rem 0;
+  display: none;
+}
+
+.btn-terminate {
+  margin: 0.25rem 0;
+  display: inline;
+}
+
+.btn-propose-deal {
+  display: none;
 }
 
 .chance-land {
@@ -644,7 +1625,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
 .luxury-tax-board {
   background-color: #cae8e0;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .luxury-tax-img {
@@ -714,18 +1695,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
   position: relative;
 }
 
-.auction {
-  background-image: radial-gradient(white, green);
-  background-color: green;
-  text-align: center;
-  width: 46rem;
-  height: 35rem;
-  border: solid;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .righto {
   position: absolute;
   top: 0;
@@ -778,17 +1747,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
   position: absolute;
   top: 80%;
   right: 5%;
-}
-
-.auction-property {
-  background-color: pink;
-  background-size: cover;
-  border: solid;
-  position: absolute;
-  top: 6rem;
-  left: 12.5rem;
-  width: 21rem;
-  height: 22rem;
 }
 
 .player-summary {
@@ -860,7 +1818,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
 
 .player-details {
   background-color: white;
-  background-size: 21rem;
+  background-size: 21rem 22.25rem;
   background-repeat: no-repeat;
   border: solid;
   position: absolute;
@@ -891,6 +1849,23 @@ h1, h2, h3, h4, h5, h6, p, hr {
   display: inline;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.btn-add-cash {
+  display: none;
+}
+
+.amount {
+  display: none;
+  width: 4.5rem;
+}
+
+.btn-cash-return-trader-1 {
+  display: none;
+}
+
+.btn-cash-return-trader-2 {
+  display: none;
 }
 
 .properties {
@@ -959,13 +1934,20 @@ h1, h2, h3, h4, h5, h6, p, hr {
   width: 100%;
 }
 
+.player-button-blocker {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
 .titledeed {
   text-align: center;
+  background-size: 21rem 22.25rem;
 }
 
 .purple {
   background-image: url("images/titledeed-purple.png");
-
 }
 
 .light-blue {
@@ -998,7 +1980,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
 
 .railroad {
   background-image: url("images/titledeed-railroad.png");
-  background-size: cover;
 }
 
 .property-heading {
@@ -1010,30 +1991,32 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .prop-details {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .prop-footer {
-  font-size: 0.65rem;
+  font-size: 0.5625rem;
   color: #4d4646;
+}
+
+.railroad-details {
+  font-size: 0.75rem;
 }
 
 .electric {
   background-image: url("images/titledeed-electric.png");
-  background-size: cover;
   text-align: center;
 }
 
 .water {
   background-image: url("images/titledeed-water.png");
-  background-size: cover;
   text-align: center;
 }
 
 .utility-rent {
   text-align: left;
   text-indent: 7%;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-bottom: 16px;
   line-height: 175%;
 }
@@ -1058,13 +2041,26 @@ h1, h2, h3, h4, h5, h6, p, hr {
 .chance {
   background-color: orange;
   height: 14rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .community-chest {
   background-color: yellow;
   height: 14rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.empty {
+  clear: left;
+}
+
+.space {
+  height: 5rem;
+}
+
+.reference {
+  display: none;
+  clear: left;
 }
 
 .shown {
@@ -1073,15 +2069,6 @@ h1, h2, h3, h4, h5, h6, p, hr {
 
 .hidden {
   visibility: hidden;
-}
-
-.reference {
-  display: none;
-  clear: left;
-}
-
-.empty {
-  clear: left;
 }
 
 .test {
