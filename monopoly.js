@@ -3263,7 +3263,14 @@ $(document).on("click", ".one > .auction > .btn-no-bid", function() {
   }
   else {
     if (leadingBidder === null) {
-      auctioneerAnnouncement = "None of you bought it? You're all a bunch of dunderheads!";
+      let property;
+      for (propertyCheck of properties) {
+        if ($(".one > .auction > .auction-property > .auction-property-deed").attr("title") === propertyCheck.title) {
+          property = propertyCheck;
+          break;
+        }
+      }
+      auctioneerAnnouncement = "None of you bought it? Sorry " + property.title + ", nobody wants to be your friend.";
       $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
       $(".one > .auction > .bidding-player," +
         ".one > .auction > .bidding-player-token," +
@@ -3283,7 +3290,7 @@ $(document).on("click", ".one > .auction > .btn-no-bid", function() {
       endTurn();
     }
     else {
-      auctioneerAnnouncement = "SOLD to <strong>" + leadingBidder.name + "</strong> for <strong>$" + leadingBid + "!!</strong> What a dunderhead!!";
+      auctioneerAnnouncement = "SOLD to <strong>" + leadingBidder.name + "</strong> for <strong>$" + leadingBid + "!!</strong>!!";
       $(".one > .auction > .auctioneer-announcement").html(auctioneerAnnouncement);
       $(".one > .auction > .bidding-player," +
         ".one > .auction > .bidding-player-token," +
@@ -3436,6 +3443,7 @@ function moveToken(diceResult, player, direction = "forward") {
         player.onSpace.result();
       }
     }, 250 * num);
+    // 333 * num
   });
 }
 
