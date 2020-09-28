@@ -611,7 +611,7 @@ let pennsylvaniaRailroad = new Railroad($('#pennsylvania-railroad'), 'pennsylvan
 
 let bORailroad = new Railroad($('#bo-railroad'), 'bo-railroad', 'B&O Railroad');
 
-let shortLine = new Railroad($('#short-line'), 'short-line', 'Short Line', 200, 100);
+let shortLine = new Railroad($('#short-line'), 'short-line', 'Short Line');
 
 // UTILITIES
 
@@ -4662,42 +4662,42 @@ $(document).on('click', '.btn-bankrupt', function () {
 // firstThroughEighth = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
 
 // for (let player of activePlayers) {
-//   $("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
-//   $(".active").addClass(`token ${player.token.class}`);
-//   $("." + player.token.class).css(player.tokenSpace);
-//   player.onSpace = go;
-//   $(".active").removeClass("active");
-//   player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
-//   $("." + player.playerOrder).css("display", "block");
-//   $("." + player.playerOrder + " > p:first-child").html(player.name);
-//   $("." + player.playerOrder + " > img").attr("src", player.token.image);
-//   $("." + player.playerOrder + " > p:last-child").html("$" + player.money);
+// 	$("#go").append("<img src=" + player.token.image + " alt=" + player.token.class + " class='token active'>");
+// 	$(".active").addClass(`token ${player.token.class}`);
+// 	$("." + player.token.class).css(player.tokenSpace);
+// 	player.onSpace = go;
+// 	$(".active").removeClass("active");
+// 	player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
+// 	$("." + player.playerOrder).css("display", "block");
+// 	$("." + player.playerOrder + " > p:first-child").html(player.name);
+// 	$("." + player.playerOrder + " > img").attr("src", player.token.image);
+// 	$("." + player.playerOrder + " > p:last-child").html("$" + player.money);
 // }
 
 // firstThroughEighth.forEach(function (div) {
-//   $(document).on("click", "." + div, function () {
-//     $(".three").empty();
-//     let playerIndex = firstThroughEighth.indexOf(div);
-//     let player = initialPlayers[playerIndex];
-//     changePlayerColumn(player);
-//   });
+// 	$(document).on("click", "." + div, function () {
+// 		$(".three").empty();
+// 		let playerIndex = firstThroughEighth.indexOf(div);
+// 		let player = initialPlayers[playerIndex];
+// 		changePlayerColumn(player);
+// 	});
 // });
 
 // gameStatus.currentPlayerTurn = activePlayers[5];
 // $(".two > ." + gameStatus.currentPlayerTurn.playerOrder + " > .token-small").css("box-shadow", "0 0 0.25rem 0.25rem #f6d743");
 
 // $(".display-test-board").click(function () {
-//   displayProperty(balticAvenue, "board-details", "one");
-//   $(".board-details > .closer").css("display", "inline");
+// 	displayProperty(balticAvenue, "board-details", "one");
+// 	$(".board-details > .closer").css("display", "inline");
 // });
 
 // $(".display-test-player").click(function () {
-//   displayProperty(kentuckyAvenue, "player-details", "three");
-//   $(".player-details > .closer").css("display", "inline");
+// 	displayProperty(kentuckyAvenue, "player-details", "three");
+// 	$(".player-details > .closer").css("display", "inline");
 // });
 
 // let names = activePlayers.map(function (player) {
-//   return player.name;
+// 	return player.name;
 // });
 
 // // $(".one > .go").hover(function() {
