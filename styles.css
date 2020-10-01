@@ -1,1883 +1,1889 @@
-
 body {
-  background-image: url("images/table.jpg");
-  font-family: "Play", Arial, Helvetica, sans-serif;
+	background-image: url("images/table.jpg");
+	font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
 a {
-  color: blue;
+	color: blue;
 }
 
 table {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, p, hr {
-  margin: 0.125rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr {
+	margin: 0.125rem;
 }
 
 .game-start {
-  background-color: #CAE8E0;
-  text-align: center;
-  top: 0;
-  left: 0;
-  width: 35rem;
-  height: 35rem;
-  /* TEST: TURN TO "none" FOR PRESET BOARD AND PLAYERS; "block" FOR NORMAL PLAY */
-  display: block;
+	background-color: #cae8e0;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 35rem;
+	height: 35rem;
+	/* TEST: TURN TO "none" FOR PRESET BOARD AND PLAYERS; "block" FOR NORMAL PLAY */
+	display: block;
 }
 
 .names-tokens {
-  display: none;
+	display: none;
 }
 
 .selector {
-  height: 1.25rem;
+	height: 1.25rem;
 }
 
 .name-token-select {
-  float: left;
-  width: 21rem;
+	float: left;
+	width: 21rem;
 }
 
 .token-selected {
-  height: 15rem;
+	height: 15rem;
 }
 
 .name-token-list {
-  float: left;
+	float: left;
 }
 
 .token-small {
-  height: 2.5rem;
-  border-radius: 0.85rem;
+	height: 2.5rem;
+	border-radius: 0.85rem;
 }
 
 .player-list {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .buttons {
-  clear: left;
+	clear: left;
 }
 
 .next-names-tokens {
-  display: none;
+	display: none;
 }
 
 .turn-order {
-  display: none;
+	display: none;
 }
 
 .dice-roll {
-  display: none;
+	display: none;
 }
 
 .to-roll-dice {
-  float: left;
+	float: left;
 }
 
 .rolling-div {
-  width: 16rem;
-  float: left;
+	width: 16rem;
+	float: left;
 }
 
 .dice1-turn-order {
-  width: 5rem;
+	width: 5rem;
 }
 
 .dice2-turn-order {
-  width: 5rem;
+	width: 5rem;
 }
 
 .results-div {
-  float: left;
+	float: left;
 }
 
 .player-list-dice-results {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .dice-small {
-  height: 2.5rem;
+	height: 2.5rem;
 }
 
 .auto-random {
-  display: none;
+	display: none;
 }
 
 .player-decide {
-  display: none;
+	display: none;
 }
 
 .players-to-choose {
-  width: 17.375rem;
-  height: 24rem;
-  border-right: 0.25rem solid;
-  float: left;
+	width: 17.375rem;
+	height: 24rem;
+	border-right: 0.25rem solid;
+	float: left;
 }
 
 .chosen-order {
-  float: left;
+	float: left;
 }
 
 .next-turn-order {
-  display: none;
+	display: none;
 }
 
 .finalize {
-  display: none;
+	display: none;
 }
 
 .finalize-player-list {
-  font-size: 1.25rem;
-  list-style-type: none;
+	font-size: 1.25rem;
+	list-style-type: none;
 }
 
 .column {
-  float: left;
-  display: none;
+	float: left;
+	display: none;
 }
 
 /* TEST: TURN BELOW STYLE ON AND ABOVE OFF FOR PRESET BOARD AND PLAYERS */
 
 /* .column {
-  float: left;
+	float: left;
 } */
 
 .one {
-  background-image: url("images/board.png");
-  background-size: cover;
-  width: 35rem;
-  height: 35rem;
-  border: 0.3rem solid blue;
-  position: relative;
-  text-align: center;
+	background-image: url("images/board.png");
+	background-size: cover;
+	width: 35rem;
+	height: 35rem;
+	border: 0.3rem solid blue;
+	position: relative;
+	text-align: center;
 }
 
 .token {
-  width: 1.25rem;
-  position: absolute;
-  border-radius: 0.50rem;
+	width: 1.25rem;
+	position: absolute;
+	border-radius: 0.50rem;
 }
 
 .token-player-column {
-  width: 2.5rem;
+	width: 2.5rem;
 }
 
 .corner-space {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .bottom-space {
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  height: 75%;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	height: 75%;
 }
 
 .left-space {
-  position: absolute;
-  right: 25%;
-  width: 75%;
-  height: 100%;
+	position: absolute;
+	right: 25%;
+	width: 75%;
+	height: 100%;
 }
 
 .top-space {
-  position: absolute;
-  bottom: 25%;
-  width: 100%;
-  height: 75%;
+	position: absolute;
+	bottom: 25%;
+	width: 100%;
+	height: 75%;
 }
 
 .right-space {
-  position: absolute;
-  left: 25%;
-  width: 75%;
-  height: 100%;
+	position: absolute;
+	left: 25%;
+	width: 75%;
+	height: 100%;
 }
 
 .go {
-  position: absolute;
-  top: 30.38rem;
-  left: 30.32rem;
-  height: 4.64rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 30.32rem;
+	height: 4.64rem;
+	width: 4.67rem;
 }
 
 .mediterranean-ave {
-  position: absolute;
-  top: 30.38rem;
-  left: 27.47rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 27.47rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .mediterranean-ave-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .mediterranean-ave-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .community-chest1 {
-  position: absolute;
-  top: 30.38rem;
-  left: 24.64rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 24.64rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .baltic-ave {
-  position: absolute;
-  top: 30.38rem;
-  left: 21.77rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 21.77rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .baltic-ave-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .baltic-ave-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .income-tax {
-  position: absolute;
-  top: 30.38rem;
-  left: 18.92rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 18.92rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .reading-railroad {
-  position: absolute;
-  top: 30.38rem;
-  left: 16.07rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 16.07rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .reading-railroad-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .reading-railroad-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .oriental-ave {
-  position: absolute;
-  top: 30.38rem;
-  left: 13.22rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 13.22rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .oriental-ave-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .oriental-ave-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .chance1 {
-  position: absolute;
-  top: 30.38rem;
-  left: 10.37rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 10.37rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .vermont-ave {
-  position: absolute;
-  top: 30.38rem;
-  left: 7.52rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 7.52rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .vermont-ave-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .vermont-ave-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .connecticut-ave {
-  position: absolute;
-  top: 30.38rem;
-  left: 4.67rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 4.67rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .connecticut-ave-owner {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom.png");
+	background-size: contain;
 }
 
 .connecticut-ave-mortgaged {
-  position: absolute;
-  bottom: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-bottom-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	bottom: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-bottom-mortgaged.png");
+	background-size: contain;
 }
 
 .jail {
-  position: absolute;
-  top: 30.38rem;
-  left: 0;
-  height: 4.64rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 30.38rem;
+	left: 0;
+	height: 4.64rem;
+	width: 4.67rem;
 }
 
 .st-charles-place {
-  position: absolute;
-  top: 27.52rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 27.52rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .st-charles-place-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .st-charles-place-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .electric-company {
-  position: absolute;
-  top: 24.66rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 24.66rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .electric-company-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .electric-company-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .states-ave {
-  position: absolute;
-  top: 21.80rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 21.80rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .states-ave-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .states-ave-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .virginia-ave {
-  position: absolute;
-  top: 18.94rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 18.94rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .virginia-ave-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .virginia-ave-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .pennsylvania-railroad {
-  position: absolute;
-  top: 16.08rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 16.08rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .pennsylvania-railroad-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .pennsylvania-railroad-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .st-james-place {
-  position: absolute;
-  top: 13.22rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 13.22rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .st-james-place-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .st-james-place-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .community-chest2 {
-  position: absolute;
-  top: 10.36rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 10.36rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .tennessee-ave {
-  position: absolute;
-  top: 7.50rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 7.50rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .tennessee-ave-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .tennessee-ave-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .new-york-ave {
-  position: absolute;
-  top: 4.64rem;
-  left: 0;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 4.64rem;
+	left: 0;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .new-york-ave-owner {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left.png");
+	background-size: contain;
 }
 
 .new-york-ave-mortgaged {
-  position: absolute;
-  left: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-left-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	left: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-left-mortgaged.png");
+	background-size: contain;
 }
 
 .free-parking {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4.64rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4.64rem;
+	width: 4.67rem;
 }
 
 .kentucky-ave {
-  position: absolute;
-  top: 0;
-  left: 4.67rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 4.67rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .kentucky-ave-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .kentucky-ave-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .chance2 {
-  position: absolute;
-  top: 0;
-  left: 7.52rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 7.52rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .indiana-ave {
-  position: absolute;
-  top: 0;
-  left: 10.37rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 10.37rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .indiana-ave-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .indiana-ave-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .illinois-ave {
-  position: absolute;
-  top: 0;
-  left: 13.22rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 13.22rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .illinois-ave-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .illinois-ave-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .bo-railroad {
-  position: absolute;
-  top: 0;
-  left: 16.07rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 16.07rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .bo-railroad-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .bo-railroad-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .atlantic-ave {
-  position: absolute;
-  top: 0;
-  left: 18.92rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 18.92rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .atlantic-ave-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .atlantic-ave-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .ventnor-ave {
-  position: absolute;
-  top: 0;
-  left: 21.77rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 21.77rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .ventnor-ave-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .ventnor-ave-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .water-works {
-  position: absolute;
-  top: 0;
-  left: 24.62rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 24.62rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .water-works-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .water-works-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .marvin-gardens {
-  position: absolute;
-  top: 0;
-  left: 27.47rem;
-  height: 4.64rem;
-  width: 2.85rem;
+	position: absolute;
+	top: 0;
+	left: 27.47rem;
+	height: 4.64rem;
+	width: 2.85rem;
 }
 
 .marvin-gardens-owner {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top.png");
+	background-size: contain;
 }
 
 .marvin-gardens-mortgaged {
-  position: absolute;
-  top: 100%;
-  height: 1.41rem;
-  width: 2.83rem;
-  background-image: url("images/property-owner-top-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	top: 100%;
+	height: 1.41rem;
+	width: 2.83rem;
+	background-image: url("images/property-owner-top-mortgaged.png");
+	background-size: contain;
 }
 
 .go-to-jail {
-  position: absolute;
-  top: 0;
-  left: 30.32rem;
-  height: 4.64rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 0;
+	left: 30.32rem;
+	height: 4.64rem;
+	width: 4.67rem;
 }
 
 .pacific-ave {
-  position: absolute;
-  top: 4.64rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 4.64rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .pacific-ave-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .pacific-ave-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .north-carolina-ave {
-  position: absolute;
-  top: 7.50rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 7.50rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .north-carolina-ave-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .north-carolina-ave-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .community-chest3 {
-  position: absolute;
-  top: 10.36rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 10.36rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .pennsylvania-ave {
-  position: absolute;
-  top: 13.22rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 13.22rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .pennsylvania-ave-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .pennsylvania-ave-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .short-line {
-  position: absolute;
-  top: 16.08rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 16.08rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .short-line-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .short-line-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .chance3 {
-  position: absolute;
-  top: 18.94rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 18.94rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .park-place {
-  position: absolute;
-  top: 21.80rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 21.80rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .park-place-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .park-place-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .luxury-tax {
-  position: absolute;
-  top: 24.66rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 24.66rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .boardwalk {
-  position: absolute;
-  top: 27.52rem;
-  left: 30.32rem;
-  height: 2.86rem;
-  width: 4.67rem;
+	position: absolute;
+	top: 27.52rem;
+	left: 30.32rem;
+	height: 2.86rem;
+	width: 4.67rem;
 }
 
 .boardwalk-owner {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right.png");
+	background-size: contain;
 }
 
 .boardwalk-mortgaged {
-  position: absolute;
-  right: 100%;
-  width: 1.41rem;
-  height: 2.83rem;
-  background-image: url("images/property-owner-right-mortgaged.png");
-  background-size: contain;
+	position: absolute;
+	right: 100%;
+	width: 1.41rem;
+	height: 2.83rem;
+	background-image: url("images/property-owner-right-mortgaged.png");
+	background-size: contain;
 }
 
 .owner-token-bottom {
-  margin: auto;
-  margin-top: 0.47rem;
-  height: 0.95rem;
-  width: 0.95rem;
-  background-color: transparent;
+	margin: auto;
+	margin-top: 0.47rem;
+	height: 0.95rem;
+	width: 0.95rem;
+	background-color: transparent;
 }
 
 .owner-token-left {
-  margin-left: 0;
-  margin-top: 0.95rem;
-  height: 0.95rem;
-  width: 0.95rem;
-  background-color: transparent;
+	margin-left: 0;
+	margin-top: 0.95rem;
+	height: 0.95rem;
+	width: 0.95rem;
+	background-color: transparent;
 }
 
 .owner-token-top {
-  margin: auto;
-  height: 0.95rem;
-  width: 0.95rem;
-  background-color: transparent;
+	margin: auto;
+	height: 0.95rem;
+	width: 0.95rem;
+	background-color: transparent;
 }
 
 .owner-token-right {
-  margin-left: 0.47rem;
-  margin-top: 0.95rem;
-  height: 0.95rem;
-  width: 0.95rem;
-  background-color: transparent;
+	margin-left: 0.47rem;
+	margin-top: 0.95rem;
+	height: 0.95rem;
+	width: 0.95rem;
+	background-color: transparent;
 }
 
 .token-tiny {
-  max-width: 0.95rem;
-  max-height: 0.95rem;
+	max-width: 0.95rem;
+	max-height: 0.95rem;
 }
 
 .house-hotel-board {
-  width: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-hotel-property {
-  width: 1rem;
-  vertical-align: -0.2rem;
+	width: 1rem;
+	vertical-align: -0.2rem;
 }
 
 .house-bottom-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-bottom-2 {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-bottom-3 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-bottom-4 {
-  position: absolute;
-  top: 0;
-  left: 75%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	left: 75%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .hotel-bottom {
-  position: absolute;
-  top: 0;
-  left: 40%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	left: 40%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-left-1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-left-2 {
-  position: absolute;
-  top: 22%;
-  right: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 22%;
+	right: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-left-3 {
-  position: absolute;
-  top: 44%;
-  right: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 44%;
+	right: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-left-4 {
-  position: absolute;
-  top: 66%;
-  right: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 66%;
+	right: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .hotel-left {
-  position: absolute;
-  top: 40%;
-  right: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	top: 40%;
+	right: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-top-1 {
-  position: absolute;
-  bottom: 4%;
-  right: 0;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 4%;
+	right: 0;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-top-2 {
-  position: absolute;
-  bottom: 4%;
-  right: 22%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 4%;
+	right: 22%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-top-3 {
-  position: absolute;
-  bottom: 4%;
-  right: 44%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 4%;
+	right: 44%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-top-4 {
-  position: absolute;
-  bottom: 4%;
-  right: 66%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 4%;
+	right: 66%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .hotel-top {
-  position: absolute;
-  bottom: 4%;
-  right: 40%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 4%;
+	right: 40%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-right-1 {
-  position: absolute;
-  bottom: 3%;
-  left: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 3%;
+	left: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-right-2 {
-  position: absolute;
-  bottom: 25%;
-  left: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 25%;
+	left: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-right-3 {
-  position: absolute;
-  bottom: 47%;
-  left: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 47%;
+	left: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .house-right-4 {
-  position: absolute;
-  bottom: 69%;
-  left: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 69%;
+	left: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .hotel-right {
-  position: absolute;
-  bottom: 40%;
-  left: 2.5%;
-  height: 0.8125rem;
-  width: 0.8125rem;
+	position: absolute;
+	bottom: 40%;
+	left: 2.5%;
+	height: 0.8125rem;
+	width: 0.8125rem;
 }
 
 .board-button-blocker {
-  position: absolute;
-  top: 0;
-  color: transparent;
-  width: 35.50rem;
-  height: 35.50rem;
-  display: none;
+	position: absolute;
+	top: 0;
+	color: transparent;
+	width: 35.50rem;
+	height: 35.50rem;
+	display: none;
 }
 
 .board-details {
-  background-color: pink;
-  background-size: cover;
-  border: solid;
-  margin: auto;
-  position: absolute;
-  top: 6rem;
-  left: 6.8125rem;
-  width: 21rem;
-  height: 22.25rem;
+	background-color: pink;
+	background-size: cover;
+	border: solid;
+	margin: auto;
+	position: absolute;
+	top: 6rem;
+	left: 6.8125rem;
+	width: 21rem;
+	height: 22.25rem;
 }
 
 .winner {
-  margin-top: 5rem;
-  margin-bottom: 0;
-  font-size: 1.5rem;
+	margin-top: 5rem;
+	margin-bottom: 0;
+	font-size: 1.5rem;
 }
 
 .dice1 {
-  margin-top: 14.6875rem;
-  width: 5rem;
+	margin-top: 14.6875rem;
+	width: 5rem;
 }
 
 .dice2 {
-  margin-top: 14.6875rem;
-  width: 5rem;
+	margin-top: 14.6875rem;
+	width: 5rem;
 }
 
 .roll {
-  display: inline;
+	display: inline;
 }
 
 .roll-riot {
-  display: none;
+	display: none;
 }
 
 .roll-for-utility-card {
-  display: none;
+	display: none;
 }
 
 .bribe {
-  display: none;
+	display: none;
 }
 
 .btn-bankrupt {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
 }
 
 .end-turn {
-  display: none;
+	display: none;
 }
 
 .continue {
-  display: none;
+	display: none;
 }
 
 .use-jail-free-chance {
-  display: none;
+	display: none;
 }
 
 .use-jail-free-community-chest {
-  display: none;
+	display: none;
 }
 
 .btn-buy {
-  display: none;
+	display: none;
 }
 
 .btn-rent {
-  display: none;
+	display: none;
 }
 
 .btn-auction {
-  display: none;
+	display: none;
 }
 
 .btn-decline {
-  display: none;
+	display: none;
 }
 
 .btn-mortgage {
-  display: none;
+	display: none;
 }
 
 .btn-lift-mortgage {
-  display: none;
+	display: none;
 }
 
 .btn-buy-house {
-  display: none;
+	display: none;
 }
 
 .btn-buy-hotel {
-  display: none;
+	display: none;
 }
 
 .btn-sell-house {
-  display: none;
+	display: none;
 }
 
 .btn-sell-hotel {
-  display: none;
+	display: none;
 }
 
 .btn-add {
-  display: none;
+	display: none;
 }
 
 .btn-return {
-  display: none;
+	display: none;
 }
 
 .btn-trade-closer {
-  display: none;
+	display: none;
 }
 
 .closer {
-  display: none;
-  text-align: center;
+	display: none;
+	text-align: center;
 }
 
 .auction {
-  background-image: radial-gradient(white, green);
-  background-color: green;
-  background-size: 21rem 22.25rem;
-  text-align: center;
+	background-image: radial-gradient(white, green);
+	background-color: green;
+	background-size: 21rem 22.25rem;
+	text-align: center;
 }
 
 .exit-auction {
-  display: none;
-  text-align: left;
+	display: none;
+	text-align: left;
 }
 
 .inline {
-  display: inline;
+	display: inline;
 }
 
 .clear {
-  clear: left;
+	clear: left;
 }
 
 .auction-property {
-  width: 100%;
-  margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 .auction-property-deed {
-  float: left;
-  margin: 0.25rem 0.5rem;
+	float: left;
+	margin: 0.25rem 0.5rem;
 }
 
 .auction-property-title {
-  float: left;
+	float: left;
 }
 
 .auction-property-price {
-  float: left;
+	float: left;
 }
 
 .btn-auction-buy {
-  display: none;
+	display: none;
 }
 
 .leading-bidder-token {
-  vertical-align: -0.625rem;
-  margin-top: 0.5rem;
-  height: 2rem;
+	vertical-align: -0.625rem;
+	margin-top: 0.5rem;
+	height: 2rem;
 }
 
 .bidding-player-token {
-  vertical-align: -0.625rem;
-  margin-top: 0.5rem;
-  height: 2rem;
+	vertical-align: -0.625rem;
+	margin-top: 0.5rem;
+	height: 2rem;
 }
 
 .auction-hr {
-  margin: auto;
-  margin-bottom: 0.5rem;
-  border-style: none;
-  border-top: 0.2rem solid black;
-  width: 70%;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	border-style: none;
+	border-top: 0.2rem solid black;
+	width: 70%;
 }
 
 .player-bid {
-  width: 6.5rem;
+	width: 6.5rem;
 }
 
 .trading-box {
-  position: relative;
-  color: white;
-  border-color: white;
-  height: 35rem;
+	position: relative;
+	color: white;
+	border-color: white;
+	height: 35rem;
 }
 
 .trading-button-blocker {
-  position: absolute;
-  top: 0;
-  color: transparent;
-  width: 100%;
-  height: 35rem;
-  display: none;
+	position: absolute;
+	top: 0;
+	color: transparent;
+	width: 100%;
+	height: 35rem;
+	display: none;
 }
 
 .propose-a-deal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 82.05rem;
-  height: 35rem;
-  border: 0.3rem solid;
-  background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 82.05rem;
+	height: 35rem;
+	border: 0.3rem solid;
+	background-color: black;
 }
 
 .trader-1-assets {
-  position: relative;
-  width: 30rem;
-  height: 35rem;
-  background-color: black;
-  border: 0.3rem solid;
-  float: left;
-  display: none;
+	position: relative;
+	width: 30rem;
+	height: 35rem;
+	background-color: black;
+	border: 0.3rem solid;
+	float: left;
+	display: none;
 }
 
 .trader-1-offerings {
-  position: relative;
-  width: 10.65rem;
-  height: 35rem;
-  background-color: black;
-  border: 0.3rem solid;
-  border-left: 0;
-  float: left;
-  display: none;
+	position: relative;
+	width: 10.65rem;
+	height: 35rem;
+	background-color: black;
+	border: 0.3rem solid;
+	border-left: 0;
+	float: left;
+	display: none;
 }
 
 .trader-1-cash-offered {
-  display: none;
+	display: none;
 }
 
 .trader-2-offerings {
-  position: relative;
-  width: 10.65rem;
-  height: 35rem;
-  background-color: black;
-  border: 0.3rem solid;
-  border-left: 0;
-  border-right: 0;
-  float: left;
-  display: none;
+	position: relative;
+	width: 10.65rem;
+	height: 35rem;
+	background-color: black;
+	border: 0.3rem solid;
+	border-left: 0;
+	border-right: 0;
+	float: left;
+	display: none;
 }
 
 .trader-2-cash-offered {
-  display: none;
+	display: none;
 }
 
 .trader-2-assets {
-  position: relative;
-  width: 30rem;
-  height: 35rem;
-  background-color: black;
-  border: 0.3rem solid;
-  float: left;
-  display: none;
+	position: relative;
+	width: 30rem;
+	height: 35rem;
+	background-color: black;
+	border: 0.3rem solid;
+	float: left;
+	display: none;
 }
 
 .trader-1-assets-details {
-  background-color: white;
-  color: black;
-  background-size: 21rem 22.25rem;
-  background-repeat: no-repeat;
-  border: solid;
-  position: absolute;
-  text-align: center;
-  top: 6rem;
-  left: 4.5rem;
-  width: 21rem;
-  height: 22.25rem;
-  z-index: 10;
+	background-color: white;
+	color: black;
+	background-size: 21rem 22.25rem;
+	background-repeat: no-repeat;
+	border: solid;
+	position: absolute;
+	text-align: center;
+	top: 6rem;
+	left: 4.5rem;
+	width: 21rem;
+	height: 22.25rem;
+	z-index: 10;
 }
 
 .trader-2-assets-details {
-  background-color: white;
-  color: black;
-  background-size: 21rem 22.25rem;
-  background-repeat: no-repeat;
-  border: solid;
-  position: absolute;
-  text-align: center;
-  top: 6rem;
-  left: 4.5rem;
-  width: 21rem;
-  height: 22.25rem;
-  z-index: 10;
+	background-color: white;
+	color: black;
+	background-size: 21rem 22.25rem;
+	background-repeat: no-repeat;
+	border: solid;
+	position: absolute;
+	text-align: center;
+	top: 6rem;
+	left: 4.5rem;
+	width: 21rem;
+	height: 22.25rem;
+	z-index: 10;
 }
 
 .trader-1-offerings-details {
-  background-color: white;
-  color: black;
-  background-size: 21rem 22.25rem;
-  background-repeat: no-repeat;
-  border: solid;
-  position: absolute;
-  text-align: center;
-  top: 6rem;
-  left: 0rem;
-  width: 21rem;
-  height: 22.25rem;
-  z-index: 10;
+	background-color: white;
+	color: black;
+	background-size: 21rem 22.25rem;
+	background-repeat: no-repeat;
+	border: solid;
+	position: absolute;
+	text-align: center;
+	top: 6rem;
+	left: 0rem;
+	width: 21rem;
+	height: 22.25rem;
+	z-index: 10;
 }
 
 .trader-2-offerings-details {
-  background-color: white;
-  color: black;
-  background-size: 21rem 22.25rem;
-  background-repeat: no-repeat;
-  border: solid;
-  position: absolute;
-  text-align: center;
-  top: 6rem;
-  left: 0rem;
-  width: 21rem;
-  height: 22.25rem;
-  z-index: 10;
+	background-color: white;
+	color: black;
+	background-size: 21rem 22.25rem;
+	background-repeat: no-repeat;
+	border: solid;
+	position: absolute;
+	text-align: center;
+	top: 6rem;
+	left: 0rem;
+	width: 21rem;
+	height: 22.25rem;
+	z-index: 10;
 }
 
 .trading-buttons {
-  width: 82.05rem;
-  background-color: black;
-  border: 0.3rem solid;
-  border-top: 0;
-  text-align: center;
-  clear: left;
+	width: 82.05rem;
+	background-color: black;
+	border: 0.3rem solid;
+	border-top: 0;
+	text-align: center;
+	clear: left;
 }
 
 .dealer {
-  margin: 0.25rem 0;
-  display: inline;
+	margin: 0.25rem 0;
+	display: inline;
 }
 
 .btn-accept {
-  margin: 0.25rem 0;
-  display: none;
+	margin: 0.25rem 0;
+	display: none;
 }
 
 .btn-counterpropose {
-  margin: 0.25rem 0;
-  display: none;
+	margin: 0.25rem 0;
+	display: none;
 }
 
 .btn-terminate {
-  margin: 0.25rem 0;
-  display: inline;
+	margin: 0.25rem 0;
+	display: inline;
 }
 
 .btn-propose-deal {
-  display: none;
+	display: none;
 }
 
 .chance-land {
-  background-color: #cae8e0;
-  text-align: center;
+	background-color: #cae8e0;
+	text-align: center;
 }
 
 .chance-land-img {
-  height: 80%;
-  margin: auto;
+	height: 80%;
+	margin: auto;
 }
 
 .cc-land {
-  background-color: #cae8e0;
-  text-align: center;
+	background-color: #cae8e0;
+	text-align: center;
 }
 
 .cc-land-img {
-  height: 80%;
-  margin: auto;
+	height: 80%;
+	margin: auto;
 }
 
 .income-tax-board {
-  background-color: #cae8e0;
-  text-align: center;
-  font-size: 1rem;
+	background-color: #cae8e0;
+	text-align: center;
+	font-size: 1rem;
 }
 
 .income-tax-img {
-  height: 72%;
+	height: 72%;
 }
 
 .luxury-tax-board {
-  background-color: #cae8e0;
-  text-align: center;
-  font-size: 0.75rem;
+	background-color: #cae8e0;
+	text-align: center;
+	font-size: 0.75rem;
 }
 
 .luxury-tax-img {
-  height: 80%;
+	height: 80%;
 }
 
 .go-board {
-  background-color: #cae8e0;
-  text-align: center;
-  font-size: 1rem;
+	background-color: #cae8e0;
+	text-align: center;
+	font-size: 1rem;
 }
 
 .go-img {
-  height: 75%;
+	height: 75%;
 }
 
 .jail-board {
-  background-image: url("images/jail.png");
-  background-color: #cae8e0;
-  background-size: cover;
-  font-size: 1rem;
+	background-image: url("images/jail.png");
+	background-color: #cae8e0;
+	background-size: cover;
+	font-size: 1rem;
 }
 
 .back-away {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .free-parking-board {
-  background-color: #cae8e0;
-  text-align: center;
-  font-size: 1rem;
+	background-color: #cae8e0;
+	text-align: center;
+	font-size: 1rem;
 }
 
 .free-parking-img {
-  height: 55%;
+	height: 55%;
 }
 
 .integral {
-  height: 25%;
+	height: 25%;
 }
 
 .go-to-jail-board {
-  background-color: green;
-  text-align: center;
-  font-size: 1rem;
+	background-color: green;
+	text-align: center;
+	font-size: 1rem;
 }
 
 .go-to-jail-doubles {
-  background-color: black;
-  text-align: center;
-  color: white;
-  font-size: 1rem;
-  height: 11rem;
+	background-color: black;
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+	height: 11rem;
 }
 
 .go-to-jail-img {
-  height: 70%;
+	height: 70%;
 }
 
 .two {
-  background-color: #cae8e0;
-  width: 16rem;
-  height: 35rem;
-  border: 0.3rem solid;
-  position: relative;
+	background-color: #cae8e0;
+	width: 16rem;
+	height: 35rem;
+	border: 0.3rem solid;
+	position: relative;
 }
 
 .righto {
-  position: absolute;
-  top: 0;
-  right: 10%;
+	position: absolute;
+	top: 0;
+	right: 10%;
 }
 
 .auction-player-1 {
-  position: absolute;
-  top: 20%;
-  left: 5%;
+	position: absolute;
+	top: 20%;
+	left: 5%;
 }
 
 .auction-player-2 {
-  position: absolute;
-  top: 40%;
-  left: 5%;
+	position: absolute;
+	top: 40%;
+	left: 5%;
 }
 
 .auction-player-3 {
-  position: absolute;
-  top: 60%;
-  left: 5%;
+	position: absolute;
+	top: 60%;
+	left: 5%;
 }
 
 .auction-player-4 {
-  position: absolute;
-  top: 80%;
-  left: 5%;
+	position: absolute;
+	top: 80%;
+	left: 5%;
 }
 
 .auction-player-5 {
-  position: absolute;
-  top: 20%;
-  right: 5%;
+	position: absolute;
+	top: 20%;
+	right: 5%;
 }
 
 .auction-player-6 {
-  position: absolute;
-  top: 40%;
-  right: 5%;
+	position: absolute;
+	top: 40%;
+	right: 5%;
 }
 
 .auction-player-7 {
-  position: absolute;
-  top: 60%;
-  right: 5%;
+	position: absolute;
+	top: 60%;
+	right: 5%;
 }
 
 .auction-player-8 {
-  position: absolute;
-  top: 80%;
-  right: 5%;
+	position: absolute;
+	top: 80%;
+	right: 5%;
 }
 
 .player-summary {
-  background-color: transparent;
-  width: 100%;
-  height: 9.375%;
-  border-bottom: solid;
+	background-color: transparent;
+	width: 100%;
+	height: 9.375%;
+	border-bottom: solid;
 }
 
 .player-name-cash {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left: 0.375rem;
-  display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 0.375rem;
+	display: inline-block;
 }
 
 .vertical-middle {
-  vertical-align: -0.625rem;
-  margin-top: 0.5rem;
+	vertical-align: -0.625rem;
+	margin-top: 0.5rem;
 }
 
 .first {
-  display: none;
+	display: none;
 }
 
 .second {
-  display: none;
+	display: none;
 }
 
 .third {
-  display: none;
+	display: none;
 }
 
 .fourth {
-  display: none;
+	display: none;
 }
 
 .fifth {
-  display: none;
+	display: none;
 }
 
 .sixth {
-  display: none;
+	display: none;
 }
 
 .seventh {
-  display: none;
+	display: none;
 }
 
 .eighth {
-  display: none;
+	display: none;
 }
 
 .event-box {
-  background-color: #cae8e0;
+	background-color: #cae8e0;
 }
 
 .three {
-  background-color: #cae8e0;
-  width: 30rem;
-  height: 35rem;
-  border: 0.3rem solid;
-  position: relative;
+	background-color: #cae8e0;
+	width: 30rem;
+	height: 35rem;
+	border: 0.3rem solid;
+	position: relative;
 }
 
 .player-heading {
-  padding: 0.75rem 0.75rem;
+	padding: 0.75rem 0.75rem;
 }
 
 .player-details {
-  background-color: white;
-  background-size: 21rem 22.25rem;
-  background-repeat: no-repeat;
-  border: solid;
-  position: absolute;
-  text-align: center;
-  top: 6rem;
-  left: 4.5rem;
-  width: 21rem;
-  height: 26rem;
+	background-color: white;
+	background-size: 21rem 22.25rem;
+	background-repeat: no-repeat;
+	border: solid;
+	position: absolute;
+	text-align: center;
+	top: 6rem;
+	left: 4.5rem;
+	width: 21rem;
+	height: 26rem;
 }
 
 .player-size {
-  width: 3rem;
+	width: 3rem;
 }
 
 .player-name {
-  display: inline;
-  font-size: 1.5rem;
-  font-weight: bold;
+	display: inline;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .cash-label {
-  display: inline;
-  font-size: 1.5rem;
-  font-weight: bold;
+	display: inline;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .player-cash {
-  display: inline;
-  font-size: 1.5rem;
-  font-weight: bold;
+	display: inline;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .btn-add-cash {
-  display: none;
+	display: none;
 }
 
 .amount {
-  display: none;
-  width: 4.5rem;
+	display: none;
+	width: 4.5rem;
 }
 
 .btn-cash-return-trader-1 {
-  display: none;
+	display: none;
 }
 
 .btn-cash-return-trader-2 {
-  display: none;
+	display: none;
 }
 
 .properties {
-  margin: 0.25rem 0.125rem;
-  font-weight: bold;
-  display: inline-block;
-  border: solid 0.125rem;
-  border-radius: 0.5rem;
+	margin: 0.25rem 0.125rem;
+	font-weight: bold;
+	display: inline-block;
+	border: solid 0.125rem;
+	border-radius: 0.5rem;
 }
 
 /* .background-purple {
@@ -1913,175 +1919,175 @@ h1, h2, h3, h4, h5, h6, p, hr {
 } */
 
 .c3-hr {
-  margin: auto;
-  border-style: none;
-  border-top: 0.3rem dotted black;
-  width: 70%;
+	margin: auto;
+	border-style: none;
+	border-top: 0.3rem dotted black;
+	width: 70%;
 }
 
 .properties-label {
-  margin: 1.1rem;
+	margin: 1.1rem;
 }
 
 .titledeed-small {
-  width: 3rem;
-  border: solid 0.0625rem;
+	width: 3rem;
+	border: solid 0.0625rem;
 }
 
 .chance-cc-small {
-  width: 3rem;
+	width: 3rem;
 }
 
 .page-button-blocker {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 
 .player-button-blocker {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: none;
 }
 
 .titledeed {
-  text-align: center;
-  background-size: 21rem 22.25rem;
+	text-align: center;
+	background-size: 21rem 22.25rem;
 }
 
 .purple {
-  background-image: url("images/titledeed-purple.png");
+	background-image: url("images/titledeed-purple.png");
 }
 
 .light-blue {
-  background-image: url("images/titledeed-light-blue.png");
+	background-image: url("images/titledeed-light-blue.png");
 }
 
 .magenta {
-  background-image: url("images/titledeed-magenta.png");
+	background-image: url("images/titledeed-magenta.png");
 }
 
 .orange {
-  background-image: url("images/titledeed-orange.png");
+	background-image: url("images/titledeed-orange.png");
 }
 
 .red {
-  background-image: url("images/titledeed-red.png");
+	background-image: url("images/titledeed-red.png");
 }
 
 .yellow {
-  background-image: url("images/titledeed-yellow.png");
+	background-image: url("images/titledeed-yellow.png");
 }
 
 .green {
-  background-image: url("images/titledeed-green.png");
+	background-image: url("images/titledeed-green.png");
 }
 
 .blue {
-  background-image: url("images/titledeed-blue.png");
+	background-image: url("images/titledeed-blue.png");
 }
 
 .railroad {
-  background-image: url("images/titledeed-railroad.png");
+	background-image: url("images/titledeed-railroad.png");
 }
 
 .property-heading {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .property-name {
-  margin: 0;
+	margin: 0;
 }
 
 .prop-details {
-  font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 
 .prop-footer {
-  font-size: 0.5625rem;
-  color: #4d4646;
+	font-size: 0.5625rem;
+	color: #4d4646;
 }
 
 .railroad-details {
-  font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 
 .electric {
-  background-image: url("images/titledeed-electric.png");
-  text-align: center;
+	background-image: url("images/titledeed-electric.png");
+	text-align: center;
 }
 
 .water {
-  background-image: url("images/titledeed-water.png");
-  text-align: center;
+	background-image: url("images/titledeed-water.png");
+	text-align: center;
 }
 
 .utility-rent {
-  text-align: left;
-  text-indent: 7%;
-  font-size: 0.75rem;
-  margin-bottom: 16px;
-  line-height: 175%;
+	text-align: left;
+	text-indent: 7%;
+	font-size: 0.75rem;
+	margin-bottom: 16px;
+	line-height: 175%;
 }
 
 .left {
-  text-align: left;
+	text-align: left;
 }
 
 .right {
-  text-align: right;
+	text-align: right;
 }
 
 .wide {
-  width: 80%;
+	width: 80%;
 }
 
 .mortgaged {
-  background-color: white;
-  text-align: center;
+	background-color: white;
+	text-align: center;
 }
 
 .chance {
-  background-color: orange;
-  height: 14rem;
-  font-size: 1rem;
+	background-color: orange;
+	height: 14rem;
+	font-size: 1rem;
 }
 
 .community-chest {
-  background-color: yellow;
-  height: 14rem;
-  font-size: 1rem;
+	background-color: yellow;
+	height: 14rem;
+	font-size: 1rem;
 }
 
 .empty {
-  clear: left;
+	clear: left;
 }
 
 .space {
-  height: 5rem;
+	height: 5rem;
 }
 
 .reference {
-  display: none;
-  clear: left;
+	display: none;
+	clear: left;
 }
 
 .shown {
-  visibility: visible;
+	visibility: visible;
 }
 
 .hidden {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .test {
-  display: block;
-  margin: 0;
-  top: auto;
-  position: static;
+	display: block;
+	margin: 0;
+	top: auto;
+	position: static;
 }
 
 .bottom-writing {
-  color: #cae8e0;
+	color: #cae8e0;
 }
