@@ -640,13 +640,13 @@ let chanceDeck = [
 		}
 	}),
 	(propertyRepair = {
-		text: 'Because you put so much effort into keeping spiders of off your property, termites and mosquitoes have successfully invaded it, so you must now make general repairs and tenant compensation: for each house, pay $25; for each hotel, pay $100.',
+		text: 'Because you put so much effort into keeping spiders off of your property, termites and mosquitoes have successfully invaded it, so you must now make general repairs and tenant compensation: for each house, pay $25; for each hotel, pay $100.',
 		buttonText: 'Okay',
 		result: function () {
 			chanceDeck.splice(chanceDeck.indexOf(propertyRepair), 1);
 			chanceDeckDiscarded.push(propertyRepair);
 			let player = gameStatus.currentPlayerTurn;
-			let coloredProperties = player.properties.filter((property) => property.type === 'coloredProperty');
+			// let coloredProperties = player.properties.filter((property) => property.type === 'coloredProperty');
 			let moneyOwed = 0;
 			for (let property of player.properties) {
 				if (property.housesHotel === 5) {
@@ -1053,9 +1053,9 @@ let communityChestDeck = [
 			communityChestDeck.splice(communityChestDeck.indexOf(streetRepairs), 1);
 			communityChestDeckDiscarded.push(streetRepairs);
 			let player = gameStatus.currentPlayerTurn;
-			coleredProperties = player.properties.filter((property) => property.type === 'coloredProperty');
+			// coleredProperties = player.properties.filter((property) => property.type === 'coloredProperty');
 			let moneyOwed = 0;
-			for (let property of coleredProperties) {
+			for (let property of player.properties) {
 				if (property.housesHotel === 5) {
 					moneyOwed += 275;
 				} else {
@@ -1231,9 +1231,9 @@ function Player(playerNumber, token, tokenSpace, inJailSpace, justVisitingSpace)
 	this.onspace = null;
 	this.properties = [];
 	this.propertiesTrading = [];
-	this.monopolies = [];
 	this.inDebtTo = null;
 	this.name = null;
+	this.playerOrder = null;
 	this.numberOfRailroads = function () {
 		let count = 0;
 		for (let i = 0; i <= this.properties.length - 1; i++) {
@@ -2718,6 +2718,9 @@ $('.play-game').click(function () {
 		$('.active').removeClass('active');
 		player.playerOrder = firstThroughEighth[activePlayers.indexOf(player)];
 		$('.' + player.playerOrder).css('display', 'block');
+		if (player.name.length > 7) {
+			$('.' + player.playerOrder + ' > p:first-child').css("font-size", "1rem")
+		};
 		$('.' + player.playerOrder + ' > p:first-child').html(player.name);
 		$('.' + player.playerOrder + ' > img').attr('src', player.token.image);
 		$('.' + player.playerOrder + ' > p:last-child').html('$' + player.money);
@@ -2732,7 +2735,7 @@ $('.play-game').click(function () {
 		});
 	});
 
-	let activePlayersBeforeBankruptcy = activePlayers.slice();
+	// let activePlayersBeforeBankruptcy = activePlayers.slice();
 	gameStatus.currentPlayerTurn = activePlayers[0];
 	$('.two > .' + gameStatus.currentPlayerTurn.playerOrder + ' > .token-small').css(
 		'box-shadow',
