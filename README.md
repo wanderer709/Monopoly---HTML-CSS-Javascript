@@ -4,7 +4,8 @@ Recreation of the classic game "Monopoly", written in HTML / CSS / Javascript.
 
 Link to game: https://stardust1689.github.io/Monopoly---HTML-CSS-Javascript/
 
-===============================================================================
+=====================================================================
+
 UPDATE ON SEPTEMBER 30th, 2020
 
 CHANGES:
