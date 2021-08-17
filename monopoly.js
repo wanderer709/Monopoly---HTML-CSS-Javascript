@@ -1035,7 +1035,7 @@ let communityChestDeck = [
 		}
 	}),
 	(scandalMoney = {
-		text: 'You make up a scandal and receive $25 for the fake-scandal-derived merchandise you proceed proceed to sell.',
+		text: 'You make up a scandal and receive $25 for the fake-scandal-derived merchandise you immediately proceed to sell.',
 		buttonText: 'Okay',
 		result: function () {
 			communityChestDeck.splice(communityChestDeck.indexOf(scandalMoney), 1);
